@@ -1,4 +1,4 @@
-# Holiday in Ireland
+# Online Cookbook project
 
 The Holiday in Ireland website is designed such that people at home in Ireland and abroad may search for four different types of holiday as indicated below;
 
@@ -356,6 +356,7 @@ Basic information
 
 Creating the repository
 
+- cloned the repository from milestone project 2
 - To make the project in my github repository I went to the code institute recommended repository via this link https://github.com/Code-Institute-Org/gitpod-full-template
 - I then clicked on use this template and created a new repository in my github account
 - The screenshots of this process are available by following the directories below
