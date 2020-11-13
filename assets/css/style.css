@@ -1,0 +1,327 @@
+/*-----Fonts-----*/
+@import url("https://fonts.googleapis.com/css2?family=Recursive&display=swap");
+
+/*-----Style choice background #f0f8ff (light blue) stronger blue #80C4FF  Writing #1a1a1a old color text color: #a8afb3 Alert #fff7f0---/*
+
+/*--------------------------------Header-----------------------------------------------------------------------*/
+
+nav {
+    overflow: auto;
+}
+
+/*--------------------------------------------Alert Bar-------------------------------------------------------*/
+.alert-danger {
+  background-color:#FF9180;
+  color:#1a1a1a;
+  text-align: center;
+  font-family: Recursive, sans-serif;
+  font-weight: bold;
+  margin-bottom: 0;
+  border-color:#FF9180;
+  border-radius: 0%;
+  overflow:auto;
+}
+
+.alert-danger a {
+  color: #1a1a1a;
+}
+
+/*------------------------------------Navbar---------------------------------------------------------------------*/
+.navbar-color {
+  background-color: #80C4FF;
+  color: #1a1a1a;
+  text-align: center;
+  font-family: Recursive, sans-serif;
+}
+
+.nav-link {
+  color: #1a1a1a;
+  text-align: center;
+  font-family: Recursive, sans-serif;
+}
+
+.nav-color {
+  background-color: #f0f8ff;
+}
+
+
+.navbar-toggler-icon{
+    color: #1a1a1a;
+    height: 15px;
+}
+
+.nav-link.current{
+     background-color:#FFE680;
+ }
+
+ i:hover, a:hover {
+     color: #1236A3;
+     text-decoration: none;
+ }
+
+/*-------------------------------------Body-----------------------------------------------------*/
+body{
+    height:auto; 
+    background-color: #f0f8ff;
+}
+
+/* ----------index page ------------ */
+
+ul {
+    list-style-type: none;
+}
+
+
+.guitar, .bridge{
+    object-fit:cover;
+    width: 80%; 
+    height: 300px; 
+    border-radius: 21px 21px 0 0; 
+}
+
+.guitar2, .bridge2{
+    width:100%
+}
+
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #80C4FF;
+  display:grid; 
+  }
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  display:inline;
+  color:#1a1a1a;
+}
+
+/* -Change background color of buttons on hover -*/
+.tab button:hover {
+  background-color: #c4ff80;
+}
+
+/* -Create an active/current tablink class- */
+.tab button.active {
+  background-color: #FFE680;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.underlinemaplink{
+    text-decoration:underline;
+}
+
+/*-------------------------------General Section -----------------------------------------------------------*/
+
+section {
+  background-color: #f0f8ff;
+  font-family: Recursive, sans-serif;
+  color: #1a1a1a;
+}
+.sectionpaddinglearnaboutireland {
+    padding-top: 50px;
+    padding-bottom: 70px;
+    overflow-y:scroll;
+}
+
+.sectionpaddingfaq
+{
+    padding-top: 120px;
+    padding-bottom: 50px;
+    overflow-y:scroll;
+}
+
+.sectionpaddingexplore{
+    padding-top:80px;
+}
+
+.hero-image {
+  background-image: url("../images/heroimage.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: #c4ff80;
+  text-shadow:2px 2px#1a1a1a;
+  min-height:50vh;
+  width: 100%;
+}
+
+
+/*-----------------------------------learnaboutireland-------------------------------------------------------------*/
+
+/*------Card flip code renders in exploreireland page as well----*/
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; 
+  object-fit:cover;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width:100%;
+  height:100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #f0f8ff;
+  color: #1a1a1a;
+  transform: rotateY(180deg);
+}
+
+h3{
+    font-family: Recursive, sans-serif;
+}
+
+
+.history{
+    padding-top:10px; 
+}
+
+
+.row {
+  color: #1a1a1a;
+  height: auto;
+}
+
+
+.nineteenthcentury, .twentiethcentury, .twentyfirstcentury{
+    background-color: #f0f8ff;
+    height:75%;
+    overflow:auto;
+}
+
+.Dimensions, .climate, .wildanimals {
+    background-color: #f0f8ff;
+    height:75%;
+    overflow:auto;
+}
+
+.gaa, .soccer, .rugby {
+    background-color: #f0f8ff;
+    height:75%;
+    overflow:auto;
+}
+
+.music, .language, .science {
+    background-color: #f0f8ff;
+    height:75%;
+    overflow:auto;
+}
+
+/*----------------------------------contact us-------------------------------------*/
+
+
+.form-group {
+  background-color: #f0f8ff;
+  color: #1a1a1a;
+  padding: 15px 10px 15px 10px;
+}
+
+button {
+  color: #1a1a1a;
+  font-family: Recursive, sans-serif;
+  border: #1a1a1a; /*-----May need to change border here----*/
+}
+
+h2{
+    text-align: center;
+    text-decoration: underline; 
+}
+
+
+
+/*--------------------------------------explore ireland----------------------------------------------------------*/
+
+#map {
+  height: 100vh;
+}
+
+.activity, .activity2, .cities, .cities2, .wellness, .wellness2, .culture, .culture2 {
+    background-color: #f0f8ff;
+    color: #1a1a1a;
+    height:100%;
+    overflow:auto;
+    
+}
+
+.exploreactivityimg, .exploreviolinimg, .explorewellnessimg, .explorecitiesimg {
+    object-fit:cover;
+    width:100%;
+    height:100%;
+}
+
+/*-------FAQ--------------------------------------------------------------------------------------------------*/
+
+.card {
+    width:100%;
+}
+
+/*----------------------------------------Footer--------------------------------------------------------------*/
+
+footer {
+  background-color: #80C4FF;
+  color: #1a1a1a;
+  font-family: Recursive, sans-serif;
+  height:100%;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+
+li a i {
+  font-size: 16px;
+  color: #1a1a1a;
+}
+
+.social-media i {
+  font-size: 36px;
+  padding-right: 30px;
+  color: #1a1a1a;
+}
+
+.social-media i:hover{
+   color: #1236A3;
+   text-decoration: none; 
+}
+
+a {
+    color:#1a1a1a
+}

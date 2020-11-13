@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Holiday in Ireland</title>
+  </head>
+
+  <body>
+    <header>
+      <!--Navigation-->
+      <div class="fixed-top nav-color">
+        <nav class="site-header sticky-top py-1 navbar-color navbar-expand-lg">
+          <button
+            class="navbar-toggler d-lg-none"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"> <i class="fas fa-cog"></i></span>
+          </button>
+          <div
+            class="container flex-column flex-md-row justify-content-between collapse navbar-collapse"
+            id="navbarSupportedContent"
+          >
+            <a class="nav-link" href="index.html"
+              ><i class="fas fa-home"> Home </i></a
+            >
+            <a class="nav-link" href="learnaboutireland.html">
+              <i class="fab fa-leanpub"></i> Learn about Ireland</a
+            >
+            <a class="nav-link" href="exploreireland.html"
+              ><i class="fas fa-hiking"></i> Explore Ireland</a
+            >
+            <a class="nav-link" href="faq.html">
+              <i class="far fa-question-circle"></i> FAQ</a
+            >
+            <a class="nav-link current" href="contactus.html"
+              ><i class="fas fa-envelope-square"></i> Contact Us</a
+            >
+          </div>
+        </nav>
+      </div>
+    </header>
+    
+    <!--Wired up Email JS Form-->
+    <section class="sectionpaddingfaq">
+      <div class="container-fluid">
+        <div>
+          <h2>Let us find the perfect holiday in Ireland for you</h2>
+        </div>
+        <form
+          class="contactForm"
+          id="contactForm"
+          onsubmit="return sendMail(this);"
+        >
+          <div class="form-group row">
+            <label for="from_name" class="col-sm-2 col-form-label"
+              >Full Name :
+            </label>
+            <div class="col-sm-10">
+              <input
+                type="text"
+                name="from_name"
+                id="from_name"
+                class="form-control"
+                placeholder="Full Name"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="from_email" class="col-sm-2 col-form-label"
+              >Email :
+            </label>
+            <div class="col-sm-10">
+              <input
+                type="email"
+                name="from_email"
+                class="form-control"
+                id="from_email"
+                placeholder="Email Address"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="holiday_ire" class="col-sm-2"
+              >Please select the type of holiday you wish to take:
+            </label>
+            <select
+              class="form-control col-sm-10"
+              name="holiday_ire"
+              id="holiday_ire"
+            >
+              <option>Activity</option>
+              <option>City Break</option>
+              <option>Culture</option>
+              <option>Wellness</option>
+            </select>
+          </div>
+          <div class="form-group row">
+            <label for="number_people" class="col-sm-2"
+              >Please select the number of people in your holiday party/family :
+            </label>
+            <select
+              class="form-control col-sm-10"
+              name="number_people"
+              id="number_people"
+            >
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5+</option>
+            </select>
+          </div>
+          <div class="form-group row">
+            <label for="transport_mode" class="col-sm-2"
+              >Please indicate your preferred mode of transport during your stay
+              in Ireland :
+            </label>
+            <select
+              class="form-control col-sm-10"
+              name="transport_mode"
+              id="transport_mode"
+            >
+              <option>Bicycle</option>
+              <option>Motor Bike</option>
+              <option>Car</option>
+              <option>Public Transport</option>
+              <option>Rail</option>
+              <option>Walking</option>
+            </select>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-2" for="message_ire"
+              >Message to Holiday in Ireland Team</label
+            >
+            <textarea
+              class="col-sm-10"
+              rows="5"
+              name="message_ire"
+              id="message_ire"
+              placeholder="enter your message to the Holiday in Ireland team"
+            ></textarea>
+            <div class="valid-feedback"></div>
+          </div>
+          <fieldset class="form-group row">
+            <legend class="col-form-label col-sm-2 pt-0">
+              Please add me to the Holiday in Ireland email list
+            </legend>
+            <div class="col-sm-10">
+              <div class="form-group form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="gridRadios1"
+                  id="gridRadios1"
+                  value="Yes add me to the email list"
+                />
+                <label class="form-check-label" for="gridRadios1">
+                  Yes add me to the email list
+                </label>
+                <br />
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="gridRadios1"
+                  id="gridRadios1"
+                  value="No thanks please leave me off the email list"
+                />
+                <label class="form-check-label" for="gridRadios1">
+                  No thanks please leave me off the email list
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          <div class="form-group row">
+            <div class="col-sm-10">
+              <button type="submit" class="btn btn-primary">
+                Submit up your Holiday in Ireland form
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    
+    <!--Footer-->
+    <footer class="container-fluid">
+      <div class="row">
+        <div class="col-sm-4">
+          <h5>Developed with</h5>
+          <ul>
+            <li>
+              <a href="https://getbootstrap.com/" target="_blank"
+                ><i class="fab fa-bootstrap footercredits"></i> Bootstrap</a
+              >
+            </li>
+            <li>
+              <a href="https://jquery.com/" target="_blank"
+                ><i class="fab fa-js"></i> JavaScript & jQuery</a
+              >
+            </li>
+            <li>
+              <a href="https://codeinstitute.net/" target="_blank"
+                ><i class="fas fa-code"></i> Code Institute</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!--Divider-->
+        <div class="col-sm-4"></div>
+        <!--Social Media-->
+        <div class="row">
+          <div class="col-sm-12">
+            <h5>Social Media</h5>
+            <a
+              class="social-media"
+              href="https://www.instagram.com/andrew_burns_moves/"
+              target="_blank"
+              ><i class="fab fa-instagram-square"></i
+            ></a>
+            <a
+              class="social-media"
+              href="https://www.facebook.com/andrewburnsmoves"
+              target="_blank"
+              ><i class="fab fa-facebook-square"></i
+            ></a>
+            <a
+              class="social-media"
+              href="https://twitter.com/aburnsmoves"
+              target="_blank"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a
+              class="social-media"
+              href="https://www.youtube.com/channel/UCRAIA8-iy_A7460Ix0PjTYg?view_as=subscriber"
+              target="_blank"
+              ><i class="fab fa-youtube"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <!--JavaScript, jQuery and CDNs-->
+    <script
+      src="https://kit.fontawesome.com/ba4b42ff38.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init("user_iaRGP46OEvnR1B9F7NHo6");
+      })();
+    </script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/sendEmail.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

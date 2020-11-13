@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+	<script src="https://kit.fontawesome.com/ba4b42ff38.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="assets/css/style.css" />
+	<title>Holiday in Ireland</title>
+</head>
+
+<body>
+	<header>
+		<!--Navigation-->
+		<div class="fixed-top nav-color">
+			<nav class="site-header sticky-top py-1 navbar-color navbar-expand-lg">
+				<button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"> <i class="fas fa-cog"></i></span>
+  </button>
+				<div class="container flex-column flex-md-row justify-content-between collapse navbar-collapse"
+					id="navbarSupportedContent">
+					<a class="nav-link current" href="index.html"><i class="fas fa-home"> Home </i></a>
+					<a class="nav-link" href="learnaboutireland.html"> <i class="fab fa-leanpub"></i> Learn about
+						Ireland</a>
+					<a class="nav-link" href="exploreireland.html"><i class="fas fa-hiking"></i> Explore Ireland</a>
+					<a class="nav-link" href="faq.html"> <i class="far fa-question-circle"></i> FAQ</a>
+					<a class="nav-link" href="contactus.html"><i class="fas fa-envelope-square"></i> Contact Us</a>
+				</div>
+			</nav>
+		</div>
+	</header>
+	
+    <section>
+    <!--Hero image-->
+	<div class="position-relative overflow-hidden text-center bg-light hero-image">
+		<div class="col-md-5 p-lg-5 mx-auto my-5">
+			<h1 class="display-4 font-weight-normal">Ireland</h1>
+			<p class="lead font-weight-normal">
+				Discover what Ireland has to offer for your next holiday
+			</p>
+		</div>
+	</div>
+	<!--Basic information Card-->
+	<div class="container">
+		<div class="row">
+			<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+				<div class="mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+					<div class="my-3 p-3">
+						<h2 class="display-5"> Activity Holiday</h2>
+						<div class="tab lead">
+							<button class="tablinks" onclick="openCity(event, 'Delphiresort')">Delphi Resort</button>
+							<button class="tablinks" onclick="openCity(event, 'CenterParcs')">CenterParcs</button>
+							<button class="tablinks" onclick="openCity(event, 'DonegalAdventureCenter')">Donegal Adventure Center</button>
+							<button class="tablinks" onclick="openCity(event, 'WaterfordGreenway')">Waterford Greenway</button>
+						</div>
+						<!--Activity Tab content-->
+						<div id="Delphiresort" class="tabcontent">
+							<h3>Delphi Resort</h3>
+							<p>With a clever blend of land and water activities Delphi Resort is a top destination for a
+								activity holiday. With packages for families, company team building and young couples on
+								a weekend away Delphi has
+								everything you need to get active on your next holiday. Check out were Delphi in on our
+								bespoke holiday in Ireland <a class="underlinemaplink" href="exploreireland.html"> map.
+								</a> For a preferential rate let us make a booking for you at Delphi Resort <a
+									class="underlinemaplink" href="contactus.html">here</a></p>
+						</div>
+						<div id="CenterParcs" class="tabcontent">
+							<h3>CenterParcs</h3>
+							<p>Take an adrenaline fueled segway ride out a CenterParcs resort that you will never
+								forget. CenterParcs is reknowned across Ireland for it's two wheeled self powered or
+								motorised fun.
+								Check out were CenterParcs is on our
+								bespoke holiday in Ireland <a class="underlinemaplink" href="exploreireland.html"> map
+								</a> For a preferential rate let us make a booking for you at CenterParcs <a
+									class="underlinemaplink" href="contactus.html">here</a></p>
+						</div>
+						<div id="DonegalAdventureCenter" class="tabcontent">
+							<h3>Donegal Adventure Center</h3>
+							<p>Surf, Kayak and Abseil your way to a great holiday at the Donegal Adventure Center.Check
+								out were Donegal Adventure Center is on our
+								bespoke holiday in Ireland <a class="underlinemaplink" href="exploreireland.html"> map
+								</a> For a preferential rate let us make a booking for you at Donegal Adventure Center
+								<a class="underlinemaplink" href="contactus.html">here</a></p>
+						</div>
+						<div id="WaterfordGreenway" class="tabcontent">
+							<h3>Waterford Greenway</h3>
+							<p>Hire a bike and cycle from Dungarvan to Waterford city.
+								This greenway is 46 km of beautiful Irish scenery.
+								A great way to get active and take in the country side.Check
+								out were Waterford Greenway is on our
+								bespoke holiday in Ireland <a class="underlinemaplink" href="exploreireland.html"> map
+								</a> For a preferential rate let us make a booking for you at the Waterford Greenway <a
+									class="underlinemaplink" href="contactus.html">here</a>
+							</p>
+						</div>
+					</div>
+					<div class="shadow-sm mx-auto guitar">
+						<img class="guitar2" alt="greenway style footpath" src="assets/images/activitygreenway.jpg">
+                </div>
+					</div>
+					<div class="mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+						<div class="my-3 py-3">
+							<h2 class="display-5"> Culture Holiday</h2>
+							<div class="tab lead">
+								<button class="tablinks" onclick="openCity(event, 'Newgrange')">Newgrange</button>
+								<button class="tablinks" onclick="openCity(event, 'CrokePark')">Croke Park</button>
+								<button class="tablinks" onclick="openCity(event, 'DeBarraFolkClub')">De Barra Folk Club</button>
+								<button class="tablinks" onclick="openCity(event, 'JamesonDistillery')">Jameson Distillery</button>
+							</div>
+							<!--Culture Tab content-->
+							<div id="Newgrange" class="tabcontent">
+								<h3>Newgrange</h3>
+								<p>Travel back over 5,000 years and see Irelands ancient east. This stone age historical
+									site is a one of kind monument still surrounded with intrigue and mystery.
+									Check
+									out were Newgrange is on our
+									bespoke holiday in Ireland <a class="underlinemaplink" href="exploreireland.html">
+										map </a> For a preferential rate let us make a booking for you at Newgrange <a
+										class="underlinemaplink" href="contactus.html">here</a> </p>
+							</div>
+							<div id="CrokePark" class="tabcontent">
+								<h3>Croke Park</h3>
+								<p> Come visit the home of the Gaelic Athletic Association and immerse yourself in
+									Irelands national sports. Marvel at a live Hurling match as you experience fastest
+									field game in the world. Check
+									out were Croke Park is on our
+									bespoke holiday in Ireland <a href="exploreireland.html">map.</a>
+									For a preferential rate let us make a booking for you at CenterParcs <a
+										class="underlinemaplink" href="contactus.html">here</a></p>
+							</div>
+							<div id="DeBarraFolkClub" class="tabcontent">
+								<h3>De Barra Folk Club</h3>
+								<p>Experience 40 years of traditional folk music at De Barra Folk Club Clonakilty Cork.
+									Come visit the place where music legends such a Noel Redding, Christy Moore, Paddy
+									Keenan
+									and Sharon Shannon honed their world famous musical talent. Check
+									out were the De Barra Folk Club is on our
+									bespoke holiday in Ireland <a class="underlinemaplink"
+										href="exploreireland.html">map.</a> For a preferential rate let us make a
+									booking for you at the De Barra Folk Club <a class="underlinemaplink"
+										href="contactus.html">here</a></p>
+							</div>
+							<div id="JamesonDistillery" class="tabcontent">
+								<h3>Jameson Distillery</h3>
+								<p>Drink some of Irelands finely crafted Whiskey on one the Jameson distillery tours.
+									Check
+									out were the Jameson Distillery is on our
+									bespoke holiday in Ireland <a class="underlinemaplink" href="exploreireland.html">
+										map.</a>For a preferential rate let us make a booking for you at Jameson
+									Distillery <a class="underlinemaplink" href="contactus.html">here</a></p>
+							</div>
+						</div>
+						<div class="shadow-sm mx-auto bridge">
+							<img class="bridge2" alt="Man with Guitar" src= "assets/images/guitar.jpg">
+					</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+							<div class="mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+								<div class="my-3 py-3">
+									<h2 class="display-5">Wellness Holiday</h2>
+									<div class="tab lead">
+										<button class="tablinks" onclick="openCity(event, 'Powerscourt')">Powerscourt</button>
+										<button class="tablinks" onclick="openCity(event, 'Inchodoney')">Inchodoney</button>
+										<button class="tablinks" onclick="openCity(event, 'TheEurope')">The Europe</button>
+										<button class="tablinks" onclick="openCity(event, 'WicklowYogaRetreat')">Wicklow Yoga Retreat</button>
+									</div>
+									<!--Wellness Tab content-->
+									<div id="Powerscourt" class="tabcontent">
+										<h3>Powerscourt</h3>
+										<p>Relax and unwind in the famous gardens of Powerscourt. Restore your peace
+											with a visit to the Powerscourt waterfall. Check
+											out were Powerscourt is on our
+											bespoke holiday in Ireland <a class="underlinemaplink"
+												href="exploreireland.html">map.</a>For a preferential rate let us make a
+											booking for you at Powerscourt <a class="underlinemaplink"
+												href="contactus.html">here</a></p>
+									</div>
+									<div id="Inchodoney" class="tabcontent">
+										<h3>Inchodoney Lodge and Spa</h3>
+										<p>Vist Irelands first Seawater Spa at Indchodoney Island. Avail of
+											comprehensive range of Seawater treatments. Check
+											out were Inchodoney is on our
+											bespoke holiday in Ireland <a class="underlinemaplink"
+												href="exploreireland.html">map.</a>For a preferential rate let us make
+											a booking for you at Inchodoney <a class="underlinemaplink"
+												href="contactus.html">here</a></p>
+									</div>
+									<div id="TheEurope" class="tabcontent">
+										<h3>The Europe Hotel & Resort</h3>
+										<p>The Europe is surrounded by the lakes of Kilarney. The Europe Hotel and
+											Resort is an unparrelled luxury hotel situated in the aptly named "Kingdom"
+											of
+											Ireland.Check
+											out were The Europe Hotel & Resort is on our
+											bespoke holiday in Ireland <a class="underlinemaplink"
+												href="exploreireland.html">map.</a> For a preferential rate let us make
+											a booking for you at The Europe Hotel & Resort<a class="underlinemaplink"
+												href="contactus.html">here</a></p>
+									</div>
+									<div id="WicklowYogaRetreat" class="tabcontent">
+										<h3>Wicklow Yoga Retreat</h3>
+										<p>Experience the power of yoga, mindulness and meditation at the courtyard yoga
+											retreats Wicklow.
+											The Courtyard retreat offers you the chance to reset the balance in your
+											lifestyle in a fully restored property. Check
+											out were the Wicklow Yoga Retreat is on our
+											bespoke holiday in Ireland <a href="exploreireland.html">map.</a>For a
+											preferential rate let us make
+											a booking for you at Inchodoney <a class="underlinemaplink"
+												href="contactus.html">here</a></p>
+									</div>
+								</div>
+								<div class="shadow-sm mx-auto bridge">
+									<img class="bridge2" alt="Woman lying on bed in spa" src= "assets/images/wellness2.jpg">
+					</div>
+								</div>
+								<div class="mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+									<div class="my-3 py-3">
+										<h2 class="display-5"> City Break </h2>
+										<div class="tab lead">
+											<button class="tablinks" onclick="openCity(event, 'Dublin')">Dublin</button>
+											<button class="tablinks" onclick="openCity(event, 'Cork')">Cork</button>
+											<button class="tablinks" onclick="openCity(event, 'Limerick')">Limerick</button>
+											<button class="tablinks" onclick="openCity(event, 'Kilkenny')">Kilkenny</button>
+										</div>
+										<!--City Break Tab content-->
+										<div id="Dublin" class="tabcontent">
+											<h3>Dublin</h3>
+											<p>If you're looking for a city break with a vibrant night life look no
+												further
+												than
+												temple bar street in Dublin. With a wide selection of pubs and night
+												clubs
+												you're sure to find the
+												best craic in Ireland at Temple Bar.Check
+												out were Dublin is on our
+												bespoke holiday in Ireland <a class="underlinemaplink"
+													href="exploreireland.html">map.</a>For a preferential rate let us
+												make
+												a booking for you in Dublin<a class="underlinemaplink"
+													href="contactus.html">here.</a></p>
+										</div>
+										<div id="Cork" class="tabcontent">
+											<h3>Cork</h3>
+											<p> Come to Cork and sample the Irelands best food. From gourmet Burgers all
+												the way to fresh Irish stew it's all on in Cork.
+												Check
+												out were Cork is on our
+												bespoke holiday in Ireland <a class="underlinemaplink"
+													href="exploreireland.html">map.</a>For a preferential rate let us
+												make
+												a booking for you in Cork <a class="underlinemaplink"
+													href="contactus.html">here.</a></p>
+										</div>
+										<div id="Limerick" class="tabcontent">
+											<h3>Limerick</h3>
+											<p>Learn about Irelands fascinating history at Glenstal Abbey Limerick.
+												Check
+												out were the Limerick is on our
+												bespoke holiday in Ireland <a class="underlinemaplink"
+													href="exploreireland.html">map.</a>For a preferential rate let us
+												make
+												a booking for you in Limerick<a class="underlinemaplink"
+													href="contactus.html">here</a></p>
+										</div>
+										<div id="Kilkenny" class="tabcontent">
+											<h3>Kilkenny</h3>
+											<p> Visit the home of Irelands all time Hurling Champions in Kilkenny. With
+												a medieval history it is no wonder the people of Kilkenny have mastered
+												the game of the warrior. Check
+												out were the Kilkenny is on our
+												bespoke holiday in Ireland <a class="underlinemaplink"
+													href="exploreireland.html">map</a>For a preferential rate let us
+												make
+												a booking for you in Kilkenny <a class="underlinemaplink"
+													href="contactus.html">here</a></p>
+										</div>
+									</div>
+									<div class="shadow-sm mx-auto bridge">
+										<img class="bridge2" alt="Bridge in city" src= "assets/images/cities2.jpg">
+					</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+                    </section>
+					
+                    <!--footer-->
+					<footer class="container-fluid">
+						<div class="row">
+							<div class="col-sm-4">
+								<h5>Developed with</h5>
+								<ul>
+									<li><a href="https://getbootstrap.com/"
+											target="_blank"><i class="fab fa-bootstrap footercredits"></i>
+											Bootstrap</a></li>
+									<li><a href="https://jquery.com/" target="_blank"><i class="fab fa-js"></i>
+											JavaScript &
+											jQuery</a></li>
+									<li><a href="https://codeinstitute.net/" target="_blank"><i class="fas fa-code"></i>
+											Code
+											Institute</a></li>
+								</ul>
+							</div>
+							<!--Divider-->
+							<div class="col-sm-4">
+							</div>
+							<!--Social Media-->
+							<div class="row">
+								<div class="col-sm-12">
+									<h5>Social Media</h5>
+									<a class="social-media" href="https://www.instagram.com/andrew_burns_moves/"
+										target="_blank"><i class="fab fa-instagram-square"></i></a>
+									<a class="social-media" href="https://www.facebook.com/andrewburnsmoves"
+										target="_blank"><i class="fab fa-facebook-square"></i></a>
+									<a class="social-media" href="https://twitter.com/aburnsmoves"
+										target="_blank"><i class="fab fa-twitter"></i></a>
+									<a class="social-media"
+										href="https://www.youtube.com/channel/UCRAIA8-iy_A7460Ix0PjTYg?view_as=subscriber"
+										target="_blank"><i class="fab fa-youtube"></i></a>
+								</div>
+							</div>
+						</div>
+					</footer>
+					
+                    <!--JavaScript jQuery and CDNs-->
+					<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+						integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+						crossorigin="anonymous">
+					</script>
+					<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+						integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+						crossorigin="anonymous">
+					</script>
+					<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+						integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+						crossorigin="anonymous">
+					</script>
+					<script src="https://kit.fontawesome.com/ba4b42ff38.js" crossorigin="anonymous"></script>
+					<script src="assets/js/index.js"></script>
+</body>
+
+</html>
