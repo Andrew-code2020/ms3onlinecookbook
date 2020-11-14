@@ -1,11 +1,12 @@
 # Online Cookbook project
 
-The Holiday in Ireland website is designed such that people at home in Ireland and abroad may search for four different types of holiday as indicated below;
+The Recipe website is designed such that people at home in Ireland and abroad may search for four different types of holiday as indicated below;
 
-1. Activity 
-2. Culture
-3. Wellness
-4. City Breaks. 
+1. Breakfast 
+2. Lunch 
+3. Dinner
+4. Snacks
+5. Desserts
 
 The problem that we are trying to solve is that current holiday websites in Ireland offer too many different types of holiday. We want to slim down the offerings and focus
 on the above named four strategically valuable markets. We have designed the website to offer bitesize information on the best quality holidays in these four areas. The success
