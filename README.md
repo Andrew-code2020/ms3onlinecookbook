@@ -176,6 +176,12 @@ Mobile Device wireframe
 
 ### Testing
 
+outline of Testing 
+-test planning 
+-implementation
+-results
+-outcomes
+
 Testing 
 - Subject Test app.py inital ran 
    - used python3 app.py to run the app.py file from gitpod
