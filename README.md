@@ -381,8 +381,7 @@ Deploying the project
 ### Credits
 
 - I consulted the folowing websites to learn about taking a holiday in Ireland and to help construct meaningful content for this web page
-   - https://www.discoveringireland.com/fly-to-ireland/
-   - https://www.failteireland.ie/
+   - 
    - Activity
      - https://www.waterfordgreenwaybikehire.com/ 
      - https://www.delphiadventureresort.com/
@@ -446,6 +445,7 @@ Deploying the project
   - User Centric Front End Development
   - JavaScript Fundamentals
   - Interactive Front End Development
+  - Data Centric Development Milestone Project 
 
 - I copied the knowledge of how to implement Bootstrap CDN and Font awesome CDN links from my previous milestone project. Link here https://andrew-code2020.github.io/CI-MS-1-Lean-Temple/
 
