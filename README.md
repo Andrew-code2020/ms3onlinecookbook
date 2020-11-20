@@ -176,6 +176,16 @@ Mobile Device wireframe
 
 ### Testing
 
+Testing 
+- Subject Test app.py inital ran 
+   - used python3 app.py to run the app.py file from gitpod
+   - screenshots in readmedocs/testing/initalapppyrun.jpg
+- Result
+   - Hello World of Temple Lean Again appeared in the browser as expected
+- Conclusion
+  - initial set up worked well"
+		
+
 Testing Browsers and screens you tested it on
 
 - I tested the website by copying and pasting the Github pages link https://andrew-code2020.github.io/MS2/ into Chrome and Edge Browsers
