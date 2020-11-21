@@ -381,7 +381,7 @@ Creating the repository
     - assets/readmedocs/creatingrepo/step1copyrepotemplate.png
     - assets/readmedocs/creatingrepo/step2creatingreponame.png
 
-Deploying the project
+Deploying the project to Github
 
 - To deploy the project I went into the repository on this link https://github.com/Andrew-code2020/MS2
 - Clicked on the settings button
@@ -394,6 +394,13 @@ Deploying the project
     - assets/readmedocs/deploytheproject/step2deploymentselectnone.png
     - assets/readmedocs/deploytheproject/step3deploymentselectsave.png
     - assets/readmedocs/deploytheproject/step4deployedsite.png
+
+Deploying the project to Heroku
+
+- creating app in Heroku
+- automatic deployment enabled
+- readmedocs/deploytheproject/deployonheroku .jpg
+
 
 ### Credits
 
