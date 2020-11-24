@@ -183,6 +183,19 @@ outline of Testing
 -results
 -outcomes
 
+-test planning 
+    - Premise is our custom css file 
+-implementation
+    - At the beginning of the project we checked to see if the background color red appeared when we added background color red to style.css
+-fix (if applicable)
+    - not applicable code worked
+-results
+ - readmedocs/testingtestinglinkbetweenbasetemplateandcustomcss.jpg
+-outcomes
+ - test was successful
+
+
+
 Testing 
 - Subject Test app.py inital ran 
    - used python3 app.py to run the app.py file from gitpod

@@ -1,6 +1,10 @@
 /*-----Fonts-----*/
 @import url("https://fonts.googleapis.com/css2?family=Recursive&display=swap");
 
+body {
+    background-color: red;
+}
+
 /*-----Style choice background #f0f8ff (light blue) stronger blue #80C4FF  Writing #1a1a1a old color text color: #a8afb3 Alert #fff7f0---/*
 
 /*--------------------------------Header-----------------------------------------------------------------------*/
