@@ -21,7 +21,7 @@ mongo = PyMongo(app)
 @app.route("/get_recipes")
 def get_recipes():
     lean_recipes = mongo.db.lean_recipes.find()
-    return render_template("index.html", lean_recipes=lean_recipes)
+    return render_template("base.html", lean_recipes=lean_recipes)
 
 
 #debug=false before submission
