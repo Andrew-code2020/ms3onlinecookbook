@@ -1,125 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-      crossorigin="anonymous"
-      type="text/css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-      type="text/css"
-    />
-    <link
-      rel="stylesheet"
-      href="{{ url_for('static', filename='css/style.css') }}"
-    />
-    <!--custom css block tags for other pages-->
-    {% block styles %} {% endblock %}
-    <title>Temple Lean Recipes</title>
-  </head>
-  <body>
-    <header>
 
-      <!--Extended Navbar with Tabs from Materialise-->
-      <nav class="nav-extended light-green">
-        <div class="nav-wrapper text-shadow">
-          <a href="#" class="brand-logo">Temple Lean Recipes</a>
-          <a href="#" data-target="mobile-demo" class="right sidenav-trigger"
-            ><i class="fas fa-apple-alt"></i
-          ></a>
-          <ul
-            id="nav-mobile"
-            class="right hide-on-med-and-down text-shadow"
-          >
-            <li><a href="">Log In</a></li>
-            <li><a href="">Register</a></li>
-            <li><a href="">Search</a></li>
-            <!--Need to add search functionality here-->
-          </ul>
-        </div>
-        <div class="nav-content">
-          <ul class="tabs tabs-transparent text-shadow">
-            <li class="tab"><a href="#test1">Breakfast</a></li>
-            <li class="tab"><a href="#test2">Lunch</a></li>
-            <li class="tab"><a href="#test3">Dinner</a></li>
-            <li class="tab"><a href="#test4">Snack</a></li>
-          </ul>
-        </div>
-      </nav>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+		integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+		crossorigin="anonymous" type="text/css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+		type="text/css" />
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+	<!--custom css block tags for other pages-->
+	{% block styles %} {% endblock %}
+	<title>Temple Lean Recipes</title>
+</head>
 
-    <ul class="sidenav" id="mobile-demo">
-        <li><a href="">Log In</a></li>
-        <li><a href="">Register</a></li>
-        <li><a href="">Search</a></li>
-      </ul>  
-    </header>
-<section>
-<div class="container">  
-<div class="row">
-    <div class="col s12 m12">
-      <div class="card">
-        <div class="card-image">
-          <img src="static/images/saladheroimage.jpg">
-          <span class="card-title">Temple Lean Recipes</span>
-        </div>
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p>
-        </div>
-        <div class="card-action">
-          <a href="#">This is a link</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
+<body>
+	<header>
 
-</section>
+		<!--Extended Navbar with Tabs from Materialise-->
+		<nav class="nav-extended light-green">
+			<div class="nav-wrapper text-shadow">
+				<a href="#" class="brand-logo">Temple Lean Recipes</a>
+				<a href="#" data-target="mobile-demo" class="right sidenav-trigger"><i class="fas fa-apple-alt"></i></a>
+				<ul id="nav-mobile" class="right hide-on-med-and-down text-shadow">
+					<li><a href="">Log In</a></li>
+					<li><a href="">Register</a></li>
+					<li><a href="">Search</a></li>
+					<!--Need to add search functionality here-->
+				</ul>
+			</div>
+			<div class="nav-content">
+				<ul class="tabs tabs-transparent text-shadow">
+					<li class="tab"><a href="#test1">Breakfast</a></li>
+					<li class="tab"><a href="#test2">Lunch</a></li>
+					<li class="tab"><a href="#test3">Dinner</a></li>
+					<li class="tab"><a href="#test4">Snack</a></li>
+				</ul>
+			</div>
+		</nav>
 
-<footer class="page-footer light-green">
-          <div class="container">
-            <div class="row">
-              <div class="col l6 s12">
-                <h5 class="white-text">Footer Content</h5>
-                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-              </div>
-              <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Social Media</h5>
-                <ul>
-					<li><a class="social-media" href="https://www.instagram.com/andrew_burns_moves/"
-										target="_blank"><i class="fab fa-instagram-square"></i></a></li>
-					<li><a class="social-media" href="https://www.facebook.com/andrewburnsmoves"
-										target="_blank"><i class="fab fa-facebook-square"></i></a></li>
-									<a class="social-media" href="https://twitter.com/aburnsmoves"
-										target="_blank"><i class="fab fa-twitter"></i></a>
-									<a class="social-media"
-										href="https://www.youtube.com/channel/UCRAIA8-iy_A7460Ix0PjTYg?view_as=subscriber"
-										target="_blank"><i class="fab fa-youtube"></i></a>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="footer-copyright">
-            <div class="container">
-            © 2014 Copyright Text
-            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-            </div>
-          </div>
-        </footer>
+		<ul class="sidenav" id="mobile-demo">
+			<li><a href="">Log In</a></li>
+			<li><a href="">Register</a></li>
+			<li><a href="">Search</a></li>
+		</ul>
+	</header>
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col s12 m12">
+					<div class="card">
+						<div class="card-image">
+							<img src="static/images/saladheroimage.jpg">
+							<span class="card-title">Temple Lean Recipes</span>
+						</div>
+						<div class="card-content">
+							<p>I am a very simple card. I am good at containing small bits of information.
+								I am convenient because I require little markup to use effectively.</p>
+						</div>
+						<div class="card-action">
+							<a href="#">This is a link</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-    {% block content %} {% endblock %}
+	</section>
 
-    <!--script tags-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js" integrity="sha512-WNLxfP/8cVYL9sj8Jnp6et0BkubLP31jhTG9vhL/F5uEZmg5wEzKoXp1kJslzPQWwPT1eyMiSxlKCgzHLOTOTQ==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js" integrity="sha512-m2PhLxj2N91eYrIGU2cmIu2d0SkaE4A14bCjVb9zykvp6WtsdriFCiXQ/8Hdj0kssUB/Nz0dMBcoLsJkSCto0Q==" crossorigin="anonymous"></script>
-    <script src="{{ url_for('static', filename='js/recipe.js') }}"></script>
-    <!--custom script block tags for other pages-->
-    {% block scripts %} {% endblock %}
-  </body>
+	<footer class="page-footer light-green">
+		<div class="container">
+			<div class="row">
+				<div class="col l6 s12">
+					<h5 class="white-text">Footer Content</h5>
+					<p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer
+						content.</p>
+				</div>
+				<div class="col l4 offset-l2 s12">
+					<h5 class="white-text">Social Media</h5>
+					<ul>
+						<li><a class="social-media" href="https://www.instagram.com/andrew_burns_moves/"
+								target="_blank"><i class="fab fa-instagram-square"></i></a></li>
+						<li><a class="social-media" href="https://www.facebook.com/andrewburnsmoves"
+								target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+						<li><a class="social-media" href="https://twitter.com/aburnsmoves"
+								target="_blank"><i class="fab fa-twitter"></i></a></li>
+						<li><a class="social-media"
+								href="https://www.youtube.com/channel/UCRAIA8-iy_A7460Ix0PjTYg?view_as=subscriber"
+								target="_blank"><i class="fab fa-youtube"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container">
+				© 2020 Copyright Text
+				<a class="grey-text text-lighten-4 right" href="#!">Link to Temple Lean Gym</a>
+			</div>
+		</div>
+	</footer>
+
+	{% block content %} {% endblock %}
+
+	<!--script tags-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"
+		integrity="sha512-WNLxfP/8cVYL9sj8Jnp6et0BkubLP31jhTG9vhL/F5uEZmg5wEzKoXp1kJslzPQWwPT1eyMiSxlKCgzHLOTOTQ=="
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"
+		integrity="sha512-m2PhLxj2N91eYrIGU2cmIu2d0SkaE4A14bCjVb9zykvp6WtsdriFCiXQ/8Hdj0kssUB/Nz0dMBcoLsJkSCto0Q=="
+		crossorigin="anonymous"></script>
+	<script src="{{ url_for('static', filename='js/recipe.js') }}"></script>
+	<!--custom script block tags for other pages-->
+	{% block scripts %} {% endblock %}
+</body>
+
 </html>

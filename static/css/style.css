@@ -1,7 +1,7 @@
 /*-----Fonts-----*/
 @import url("https://fonts.googleapis.com/css2?family=Recursive&display=swap");
 
-/*-----Colors background body #bfcfff-----*/
+/*-----Colors background body #bfcfff---Hover choice #1236A3 or #bfcfff--*/
 
 body {
   background-color: #bfcfff;
@@ -38,3 +38,14 @@ body {
 /*-------FAQ--------------------------------------------------------------------------------------------------*/
 
 /*--------------Footer--------------------------------------------------------------*/
+
+.social-media i {
+  font-size: 36px;
+  padding-right: 5px;
+  color: #ffffff;
+}
+
+.social-media i:hover{
+   color: #bfcfff;
+   text-decoration: none; 
+}
