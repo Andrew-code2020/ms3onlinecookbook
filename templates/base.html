@@ -7,19 +7,46 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
       integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-      crossorigin="anonymous" type="text/css"
+      crossorigin="anonymous"
+      type="text/css"
     />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
       type="text/css"
     />
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
     <!--custom css block tags for other pages-->
     {% block styles %} {% endblock %}
     <title>Temple Lean Recipes</title>
   </head>
   <body>
+    <header>
+      <nav class="nav-extended light-green">
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo"><i class="fas fa-apple-alt"></i></a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+            ><i class="fas fa-apple-alt"></i></a
+          >
+          <ul id="nav-mobile" class="right hide-on-med-and-down text-shadow">
+            <li><a href="">Log In</a></li>
+            <li><a href="">Register</a></li>
+            <li><a href="">Search</a></li> <!--Need to add search functionality here-->
+          </ul>
+        </div>
+        <div class="nav-content">
+          <ul class="center tabs tabs-transparent text-shadow">
+            <li class="tab"><a href="#test1">Breakfast</a></li>
+            <li class="tab"><a href="#test2">Lunch</a></li>
+            <li class="tab"><a href="#test3">Dinner</a></li>
+            <li class="tab"><a href="#test4">Snack</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
     {% block content %} {% endblock %}
 
     <!--script tags-->

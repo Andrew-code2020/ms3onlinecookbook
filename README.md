@@ -190,7 +190,7 @@ outline of Testing
 -fix (if applicable)
     - not applicable code worked
 -results
- - readmedocs/testingtestinglinkbetweenbasetemplateandcustomcss.jpg
+ - readmedocs/testing/testinglinkbetweenbasetemplateandcustomcss.jpg
 -outcomes
  - test was successful
 
