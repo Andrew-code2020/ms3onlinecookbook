@@ -23,6 +23,11 @@ def get_recipes():
     lean_recipes = mongo.db.lean_recipes.find()
     return render_template("base.html", lean_recipes=lean_recipes)
 
+@app.route("/home_page")
+def home_page():
+    lean_recipes = mongo.db.lean_recipes.find()
+    return render_template("index.html", lean_recipes=lean_recipes)
+
 
 #debug=false before submission
 if __name__ == "__main__":
