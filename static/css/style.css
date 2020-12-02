@@ -50,6 +50,16 @@ i {
     text-shadow:2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
+.input-field input[type=text]:focus + label {
+     color: #ffffff;
+}
+
+/* label underline focus color */
+.input-field input[type=text]:focus {
+     border-bottom: 1px solid #ffffff;
+     box-shadow: 0 1px 0 0 #ffffff;
+   }
+
 /*-------------------------------Section General -----------------------------------------------------------*/
 
 /*-----------------------------------page TBC-------------------------------------------------------------*/
