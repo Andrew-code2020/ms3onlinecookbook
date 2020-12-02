@@ -184,7 +184,7 @@ outline of Testing
 -outcomes
 
 -test planning 
-    - Premise is our custom css file 
+    - Premise is our custom css file talks to our html files through python 
 -implementation
     - At the beginning of the project we checked to see if the background color red appeared when we added background color red to style.css
 -fix (if applicable)
@@ -204,7 +204,19 @@ Testing
    - Hello World of Temple Lean Again appeared in the browser as expected
 - Conclusion
   - initial set up worked well"
-		
+
+outline of Testing 
+-test planning
+   - Registeration form check the content renders on our app 
+-implementation
+   -used python3 app.py to run the app.py file from gitpod to visualise our registeration file
+-fix (if applicable)
+    - icons render on top of label text
+    - to fix we placed the icons within the label element
+-results
+ -visually the icon and the label are no longer over lapping
+-outcomes
+  - Fixed a visual bug
 
 Testing Browsers and screens you tested it on
 
@@ -521,6 +533,10 @@ Deploying the project to Heroku
   - These photos are placed in the website on the following pages;
     - Learn about Ireland page
     - Explore Ireland page
+- The photos used in this site were obtained from https://unsplash.com/
+    These photos are placed in the website on the following pages;
+    -index page
+    -Registeration page
 
 
 ##### Acknowledgements
