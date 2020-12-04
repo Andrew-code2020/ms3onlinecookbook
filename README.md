@@ -378,6 +378,9 @@ I also used following website to help me correct any formatting anomalies in my 
 
 #### Bugs
 
+Container class in materialise (Be careful !!!)
+-If included in base html and code extended to other html then if class container present appears to wrap content twice and shrink size noticeably. Removed container from register html to solve this. 
+
 Future Development
 - reset your password function
 
