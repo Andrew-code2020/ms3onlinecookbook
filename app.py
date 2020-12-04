@@ -4,7 +4,7 @@ from flask import (
     redirect, request, session, url_for)
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
-from werkzeug.security import check_password_hash, check_password_hash
+from werkzeug.security import generate_password_hash, check_password_hash
 if os.path.exists("env.py"):
     import env
 
@@ -32,6 +32,26 @@ def home_page():
 
 @app.route("/register", methods=["GET", "POST"])
 def register():
+    if request.method == "POST":
+        # check if username already exists in db
+        existing_user = mongo.db.users.find_one(
+            {"email": request.form.get("email").lower()})
+        if existing_user:
+            flash("email address already in use please use another email or reset your password")
+            return redirect(url_for("register"))
+        register = {
+            "first_name": request.form.get("first_name").lower(),
+            "last_name": request.form.get("last_name").lower(),
+            "recipe_interest": request.form.get("recipe_interest").lower(),
+            "email": request.form.get("email").lower(),
+            "password": generate_password_hash(request.form.get("password"))
+        }
+        mongo.db.users.insert_one(register)
+
+    # put the new user into 'session' cookie
+        session["user"] = request.form.get("first_name").lower()
+        flash("Registration with Temple Lean Recipes Successful!")
+
     return render_template("register.html")
 
 

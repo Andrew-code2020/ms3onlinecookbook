@@ -378,6 +378,9 @@ I also used following website to help me correct any formatting anomalies in my 
 
 #### Bugs
 
+Future Development
+- reset your password function
+
 - Fixed Top overlaying my alert bar. During develpment I played around with a fixed top for the Navbar. At first the Alert Bar would disappear behind the Navbar. Then as I corrected the code the alert bar came in on top of the navbar but this would then overlay onto the section of each page. I used padding and height settings to solve this problem but I also used the sticky-top class in the navbar. I am unsure whether the sticky-top class changed things very much. I did a lot of refining with heights and padding to get the website to render the way it looks now.
 - Fixed Bottom I deployed a fixed bottom for the footer early in the development process. Unfortunately this overlayed  in the section element of each page. I was unable to resolve this using height, padding and overflow css properties and values. Research and feedback would seem to indicate that fixed bottom is very hard to use appropriately. Perhaps future development will reveal a solution.
 - On the learn about Ireland page when you hover the cursor over the card and then toggle any of the buttons you will notice that unless you toggle the same button to "close" the content before moving onto the next button will simple add it's content underneath. This is a bug that needs to be resolved in future development. 
