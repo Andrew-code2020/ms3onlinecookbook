@@ -33,14 +33,15 @@
           <!--email-->
           <div class="row">
           <div class="input-field col s12">
-            <input placeholder="Email" id="email" name="email" type="text" class="validate"/>
+            <input placeholder="Email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Please enter a valid email address" type="text" class="validate" required/>
             <label for="email"><i class="fas fa-envelope-square"></i> Email</label>
           </div>
           </div>
           <!--password-->
           <div class="row">
           <div class="input-field col s12">
-            <input placeholder="Password" id="password" name="password" type="text" class="validate"/>
+            <input placeholder="Password" id="password" name="password" minlength="5"
+                            maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" title="Password must be between 5 and 15 characters long" type="text" class="validate" required/>
             <label for="password"><i class="fas fa-unlock-alt"></i> Password</label>
           </div>
           </div>

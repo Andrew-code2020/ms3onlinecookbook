@@ -37,7 +37,7 @@ def register():
         existing_user = mongo.db.users.find_one(
             {"email": request.form.get("email").lower()})
         if existing_user:
-            flash("email address already in use please use another email or reset your password")
+            flash("email address already in use")
             return redirect(url_for("register"))
         register = {
             "first_name": request.form.get("first_name").lower(),
