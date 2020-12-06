@@ -42,6 +42,7 @@ def register():
         register = {
             "first_name": request.form.get("first_name").lower(),
             "last_name": request.form.get("last_name").lower(),
+            "recipe_type":request.form.get("recipe_type").lower(),
             "recipe_interest": request.form.get("recipe_interest").lower(),
             "email": request.form.get("email").lower(),
             "password": generate_password_hash(request.form.get("password"))
