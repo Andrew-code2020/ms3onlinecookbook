@@ -24,6 +24,7 @@ def get_recipes():
     lean_recipes = mongo.db.lean_recipes.find()
     return render_template("base.html", lean_recipes=lean_recipes)
 
+
 @app.route("/home_page")
 def home_page():
     lean_recipes = mongo.db.lean_recipes.find()
@@ -54,6 +55,35 @@ def register():
         flash("Registration with Temple Lean Recipes Successful!")
 
     return render_template("register.html")
+
+
+
+@app.route("/login", methods=["GET", "POST"])
+def login():
+    if request.method == "POST":
+        # check if username exists in db
+        existing_user = mongo.db.users.find_one(
+            {"email": request.form.get("email").lower()})
+
+        if existing_user:
+            username = existing_user["first_name"]
+            # ensure hashed password matches user input
+            if check_password_hash(
+                existing_user["password"], request.form.get("password")):
+                    session["user"] = request.form.get("email").lower()
+                    flash(f"Welcome, {username.capitalize()}")
+            else:
+                # invalid password match
+                flash("Incorrect email and/or Password")
+                return redirect(url_for("login"))
+
+        else:
+            # username doesn't exist
+            flash("Incorrect email and/or Password")
+            return redirect(url_for("login"))
+
+    return render_template("login.html")
+
 
 
 #debug=false before submission

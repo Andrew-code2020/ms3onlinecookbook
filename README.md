@@ -218,6 +218,7 @@ outline of Testing
 -outcomes
   - Fixed a visual bug
 
+
 Testing Browsers and screens you tested it on
 
 - I tested the website by copying and pasting the Github pages link https://andrew-code2020.github.io/MS2/ into Chrome and Edge Browsers
@@ -377,6 +378,9 @@ I also used following website to help me correct any formatting anomalies in my 
 - https://codebeautify.org/ 
 
 #### Bugs
+
+Gitpod 
+-Code beautifer stopped working
 
 Container class in materialise (Be careful !!!)
 -If included in base html and code extended to other html then if class container present appears to wrap content twice and shrink size noticeably. Removed container from register html to solve this. 

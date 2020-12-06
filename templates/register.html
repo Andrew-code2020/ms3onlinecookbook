@@ -37,12 +37,6 @@
         <label name="recipe_type">Select the recipes you're interested in</label>
             </div>
             </div>
-          <div class="row">
-          <div class="input-field col s12">
-          <textarea id="recipe_interest" name="recipe_interest" class="materialize-textarea"></textarea>
-          <label for="recipe_interest"><i class="far fa-question-circle"></i> Recipes you are interested in</label>
-          </div>
-          </div>
           <!--email-->
           <div class="row">
           <div class="input-field col s12">
@@ -66,6 +60,12 @@
   </button>
     </div>
   </div>
+  <div class="row">
+           <div class="col s12">
+            <div class="card-action">
+          Registered already? Login <a href="{{ url_for('login')}}">here</a>
+        </div>
+    </div>
   </form>
 </div>
 </div>
