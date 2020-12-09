@@ -53,7 +53,7 @@ def register():
     # put the new user into 'session' cookie
         session["user"] = request.form.get("first_name").lower()
         flash("Registration with Temple Lean Recipes Successful!")
-
+        render_template(url_for("profile", email=session["user"]))
     return render_template("register.html")
 
 
@@ -72,6 +72,7 @@ def login():
                 existing_user["password"], request.form.get("password")):
                     session["user"] = request.form.get("email").lower()
                     flash(f"Welcome, {username.capitalize()}")
+                    render_template(url_for("profile", email=session["user"]))
             else:
                 # invalid password match
                 flash("Incorrect email and/or Password")
@@ -84,6 +85,13 @@ def login():
 
     return render_template("login.html")
 
+
+@app.route("/profile/<email>", methods=["GET", "POST"])
+def profile(email):
+    # grab the session user's username from db
+    email = mongo.db.users.find_one(
+        {"email": session["user"]})["email"]
+    return render_template("profile.html", email=email)
 
 
 #debug=false before submission
