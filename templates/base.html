@@ -36,17 +36,17 @@
           <ul id="nav-mobile" class="right hide-on-med-and-down text-shadow">
             <li><a href="{{ url_for('login')}}">Log In</a></li>
             <li><a href="{{ url_for('register')}}">Register</a></li>
-            <li><a href="{{ url_for('profile',email=session['user'])}}">Profile</a></li>
+            <li><a href="{{ url_for('profile', first_name=session['user']) }}">Profile</a></li>
             <li><a href="">Search</a></li>
             <!--Need to add search functionality here-->
           </ul>
         </div>
         <div class="nav-content">
           <ul class="tabs tabs-transparent text-shadow">
-            <li class="tab"><a href="">Breakfast</a></li>
-            <li class="tab"><a href="">Lunch</a></li>
-            <li class="tab"><a href="">Dinner</a></li>
-            <li class="tab"><a href="">Snack</a></li>
+            <li class="tab"><a href="{{ url_for('breakfast')}}">Breakfast</a></li>
+            <li class="tab"><a href="{{ url_for('lunch')}}">Lunch</a></li>
+            <li class="tab"><a href="{{ url_for('dinner')}}">Dinner</a></li>
+            <li class="tab"><a href="{{ url_for('snacks')}}">Snacks</a></li>
           </ul>
         </div>
       </nav>

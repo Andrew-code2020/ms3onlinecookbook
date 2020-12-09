@@ -53,7 +53,8 @@ def register():
     # put the new user into 'session' cookie
         session["user"] = request.form.get("first_name").lower()
         flash("Registration with Temple Lean Recipes Successful!")
-        render_template(url_for("profile", email=session["user"]))
+        return redirect(url_for(
+            "profile", first_name=session["user"]))
     return render_template("register.html")
 
 
@@ -63,16 +64,17 @@ def login():
     if request.method == "POST":
         # check if username exists in db
         existing_user = mongo.db.users.find_one(
-            {"email": request.form.get("email").lower()})
+            {"first_name": request.form.get("first_name").lower()})
 
         if existing_user:
             username = existing_user["first_name"]
             # ensure hashed password matches user input
             if check_password_hash(
                 existing_user["password"], request.form.get("password")):
-                    session["user"] = request.form.get("email").lower()
+                    session["user"] = request.form.get("first_name").lower()
                     flash(f"Welcome, {username.capitalize()}")
-                    render_template(url_for("profile", email=session["user"]))
+                    return redirect(url_for(
+                        "profile", first_name=session["user"]))
             else:
                 # invalid password match
                 flash("Incorrect email and/or Password")
@@ -86,12 +88,31 @@ def login():
     return render_template("login.html")
 
 
-@app.route("/profile/<email>", methods=["GET", "POST"])
-def profile(email):
-    # grab the session user's username from db
-    email = mongo.db.users.find_one(
-        {"email": session["user"]})["email"]
-    return render_template("profile.html", email=email)
+@app.route("/profile/<first_name>", methods=["GET", "POST"])
+def profile(first_name):
+    # grab the user information from mongo db and show in the user profile
+    first_name = mongo.db.users.find_one(
+        {"first_name": session["user"]})["first_name"]
+    return render_template("profile.html", first_name=first_name)
+
+
+@app.route("/breakfast", methods=["GET", "POST"])
+def breakfast():
+    return render_template("breakfast.html")
+
+
+@app.route("/lunch", methods=["GET", "POST"])
+def lunch():
+    return render_template("lunch.html")
+
+@app.route("/dinner", methods=["GET", "POST"])
+def dinner():
+    return render_template("dinner.html")
+
+@app.route("/snacks", methods=["GET", "POST"])
+def snacks():
+    return render_template("snacks.html")
+
 
 
 #debug=false before submission

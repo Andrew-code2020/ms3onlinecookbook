@@ -379,6 +379,9 @@ I also used following website to help me correct any formatting anomalies in my 
 
 #### Bugs
 
+Profile page
+-Email for profile directory @ symbol caused a root error
+
 Gitpod 
 -Code beautifer stopped working
 
