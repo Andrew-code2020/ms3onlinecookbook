@@ -1,191 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-      crossorigin="anonymous"
-      type="text/css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-      type="text/css"
-    />
-    <link
-      rel="stylesheet"
-      href="{{ url_for('static', filename='css/style.css') }}"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+        type="text/css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
     <!--custom css block tags for other pages-->
     {% block styles %} {% endblock %}
     <title>Temple Lean Recipes</title>
-  </head>
+</head>
 
-  <body>
+<body>
     <header>
-      <!--Extended Navbar with Tabs from Materialise-->
-      <nav class="nav-extended light-green">
-        <div class="nav-wrapper text-shadow">
-          <a href="{{ url_for('home_page')}}" class="brand-logo">Temple Lean Recipes</a>
-          <a href="#" data-target="mobile-demo" class="right sidenav-trigger"
-            ><i class="fas fa-apple-alt"></i
-          ></a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down text-shadow">
-            <li><a href="{{ url_for('login')}}">Log In</a></li>
-            <li><a href="{{ url_for('register')}}">Register</a></li>
-            <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
-            <li><a href="">Search</a></li>
-            <!--Need to add search functionality here-->
-          </ul>
-        </div>
-        <div class="nav-content">
-          <ul class="tabs tabs-transparent text-shadow">
-            <li class="tab"><a href="{{ url_for('breakfast')}}">Breakfast</a></li>
-            <li class="tab"><a href="{{ url_for('lunch')}}">Lunch</a></li>
-            <li class="tab"><a href="{{ url_for('dinner')}}">Dinner</a></li>
-            <li class="tab"><a href="{{ url_for('snacks')}}">Snacks</a></li>
-          </ul>
-        </div>
-      </nav>
+        <!--Extended Navbar with Tabs from Materialise-->
+        <nav class="nav-extended light-green">
+            <div class="nav-wrapper text-shadow">
+                <a href="{{ url_for('home_page')}}" class="brand-logo">Temple Lean Recipes</a>
+                <a href="#" data-target="mobile-demo" class="right sidenav-trigger"><i class="fas fa-apple-alt"></i></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down text-shadow">
+                    {% if session.user %}
+                    <li><a href="{{ url_for('profile', username=session['user']) }}">Profile <i
+                                class="far fa-id-card"></i> </a></li>
+                    <li><a href="{{ url_for('logout') }}">Logout <i class="fas fa-sign-out-alt"></i> </a></li>
+                    <!--Need to add search functionality here-->
+                    <li><a href="">Search <i class="fab fa-searchengin"></i> </a></li>
+                    {% else %}
+                    <li><a href="{{ url_for('login')}}">Log In <i class="fas fa-sign-in-alt"></i></a></li>
+                    <li><a href="{{ url_for('register')}}">Register <i class="far fa-registered"></i></a></li>
+                    {% endif %}
+                </ul>
+            </div>
+            <div class="nav-content">
+                <ul class="tabs tabs-transparent text-shadow">
+                    <li class="tab1"><a href="{{ url_for('breakfast')}}">Breakfast</a></li>
+                    <li class="tab1"><a href="{{ url_for('lunch')}}">Lunch</a></li>
+                    <li class="tab1"><a href="{{ url_for('dinner')}}">Dinner</a></li>
+                    <li class="tab1"><a href="{{ url_for('snacks')}}">Snacks</a></li>
+                </ul>
+            </div>
+        </nav>
 
-      <ul class="sidenav" id="mobile-demo">
-        <li><a href="{{ url_for('login')}}">Log In</a></li>
-        <li><a href="{{ url_for('register')}}">Register</a></li>
-        <li><a href="">Search</a></li>
-      </ul>
+        <ul class="sidenav" id="mobile-demo">
+            {% if session.user %}
+            <li><a href="{{ url_for('profile', username=session['user']) }}">Profile <i class="far fa-id-card"></i> </a>
+            </li>
+            <li><a href="{{ url_for('logout') }}">Logout <i class="fas fa-sign-out-alt"></i> </a></li>
+            <!--Need to add search functionality here-->
+            <li><a href="">Search <i class="fab fa-searchengin"></i> </a></li>
+            {% else %}
+            <li><a href="{{ url_for('login')}}">Log In <i class="fas fa-sign-in-alt"></i></a></li>
+            <li><a href="{{ url_for('register')}}">Register <i class="far fa-registered"></i></a></li>
+            {% endif %}
+        </ul>
     </header>
     <section>
         <!-- flash messages -->
         {% with messages = get_flashed_messages() %}
-            {% if messages %}
-                {% for message in messages %}
-                    <div class="row flashes">
-                        <h4 class="light-green center-align"><i class="fas fa-exclamation-triangle"></i>{{ message }}<i class="fas fa-exclamation-triangle"></i></h4>
-                    </div>
-                {% endfor %}
-            {% endif %}
+        {% if messages %}
+        {% for message in messages %}
+        <div class="row flashes">
+            <h4 class="light-green center-align"><i class="fas fa-exclamation-triangle"></i>{{ message }}<i
+                    class="fas fa-exclamation-triangle"></i></h4>
+        </div>
+        {% endfor %}
+        {% endif %}
         {% endwith %}
     </section>
 
-   <main class="container">
+    <main class="container">
         {% block content %}
         {% endblock %}
     </main>
 
     <footer class="page-footer light-green">
-      <div class="container">
-        <div class="row">
-          <div class="col l6 s12">
-            <h5 class="white-text">Monthly Blog</h5>
-            <h7 class="white-text">Theme | Running</h7>
-            <ul>
-              <li>
-                <a
-                  class="white-text"
-                  href="https://www.crogacoaching.com/running/glen-river-park-run"
-                  target="_blank"
-                  >Glen River parkrun</a
-                >
-              </li>
-              <li>
-                <a
-                  class="white-text"
-                  href="https://www.crogacoaching.com/running/dublin-marathon-2018-fifth-and-final"
-                  target="_blank"
-                  >Dublin Marathon 2018</a
-                >
-              </li>
-              <li>
-                <a
-                  class="white-text"
-                  href="https://www.crogacoaching.com/running/2018/8/12/east-cork-harbour-half-marathon-2018"
-                  target="_blank"
-                  >East Cork Harbour Marathon 2018</a
-                >
-              </li>
-              <li>
-                <a
-                  class="white-text"
-                  href="https://www.crogacoaching.com/running/a-cork-city-half-marathon-2020"
-                  target="_blank"
-                  >Cork City Half Marathon 2020</a
-                >
-              </li>
-              <li>
-                <a
-                  class="white-text"
-                  href="https://www.crogacoaching.com/running/kilkee-half-marathon-and-10km-race-2019"
-                  target="_blank"
-                >Kilkee Half Marathon 2019</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col l4 offset-l2 s12">
-            <h5 class="white-text">Social Media</h5>
-            <ul>
-              <li>
-                <a
-                  class="social-media"
-                  href="https://www.instagram.com/andrew_burns_moves/"
-                  target="_blank"
-                  ><i class="fab fa-instagram-square"></i
-                ></a>
-              </li>
-              <li>
-                <a
-                  class="social-media"
-                  href="https://www.facebook.com/andrewburnsmoves"
-                  target="_blank"
-                  ><i class="fab fa-facebook-square"></i
-                ></a>
-              </li>
-              <li>
-                <a
-                  class="social-media"
-                  href="https://twitter.com/aburnsmoves"
-                  target="_blank"
-                  ><i class="fab fa-twitter"></i
-                ></a>
-              </li>
-              <li>
-                <a
-                  class="social-media"
-                  href="https://www.youtube.com/channel/UCRAIA8-iy_A7460Ix0PjTYg?view_as=subscriber"
-                  target="_blank"
-                  ><i class="fab fa-youtube"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="footer-copyright">
         <div class="container">
-          © 2020 Copyright Text
-          <a class="grey-text text-lighten-4 right" href="#!"
-            >Link to Temple Lean Gym</a
-          >
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Monthly Blog</h5>
+                    <h7 class="white-text">Theme | Running</h7>
+                    <ul>
+                        <li>
+                            <a class="white-text" href="https://www.crogacoaching.com/running/glen-river-park-run"
+                                target="_blank">Glen River parkrun</a>
+                        </li>
+                        <li>
+                            <a class="white-text"
+                                href="https://www.crogacoaching.com/running/dublin-marathon-2018-fifth-and-final"
+                                target="_blank">Dublin Marathon 2018</a>
+                        </li>
+                        <li>
+                            <a class="white-text"
+                                href="https://www.crogacoaching.com/running/2018/8/12/east-cork-harbour-half-marathon-2018"
+                                target="_blank">East Cork Harbour Marathon 2018</a>
+                        </li>
+                        <li>
+                            <a class="white-text"
+                                href="https://www.crogacoaching.com/running/a-cork-city-half-marathon-2020"
+                                target="_blank">Cork City Half Marathon 2020</a>
+                        </li>
+                        <li>
+                            <a class="white-text"
+                                href="https://www.crogacoaching.com/running/kilkee-half-marathon-and-10km-race-2019"
+                                target="_blank">Kilkee Half Marathon 2019</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Social Media</h5>
+                    <ul>
+                        <li>
+                            <a class="social-media" href="https://www.instagram.com/andrew_burns_moves/"
+                                target="_blank"><i class="fab fa-instagram-square"></i></a>
+                        </li>
+                        <li>
+                            <a class="social-media" href="https://www.facebook.com/andrewburnsmoves" target="_blank"><i
+                                    class="fab fa-facebook-square"></i></a>
+                        </li>
+                        <li>
+                            <a class="social-media" href="https://twitter.com/aburnsmoves" target="_blank"><i
+                                    class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a class="social-media"
+                                href="https://www.youtube.com/channel/UCRAIA8-iy_A7460Ix0PjTYg?view_as=subscriber"
+                                target="_blank"><i class="fab fa-youtube"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2020 Copyright Text
+                <a class="grey-text text-lighten-4 right" href="#!">Link to Temple Lean Gym</a>
+            </div>
+        </div>
     </footer>
 
 
     <!--script tags-->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"
-      integrity="sha512-WNLxfP/8cVYL9sj8Jnp6et0BkubLP31jhTG9vhL/F5uEZmg5wEzKoXp1kJslzPQWwPT1eyMiSxlKCgzHLOTOTQ=="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"
-      integrity="sha512-m2PhLxj2N91eYrIGU2cmIu2d0SkaE4A14bCjVb9zykvp6WtsdriFCiXQ/8Hdj0kssUB/Nz0dMBcoLsJkSCto0Q=="
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"
+        integrity="sha512-WNLxfP/8cVYL9sj8Jnp6et0BkubLP31jhTG9vhL/F5uEZmg5wEzKoXp1kJslzPQWwPT1eyMiSxlKCgzHLOTOTQ=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"
+        integrity="sha512-m2PhLxj2N91eYrIGU2cmIu2d0SkaE4A14bCjVb9zykvp6WtsdriFCiXQ/8Hdj0kssUB/Nz0dMBcoLsJkSCto0Q=="
+        crossorigin="anonymous"></script>
     <script src="{{ url_for('static', filename='js/recipe.js') }}"></script>
     <!--custom script block tags for other pages-->
     {% block scripts %} {% endblock %}
-  </body>
+</body>
+
 </html>

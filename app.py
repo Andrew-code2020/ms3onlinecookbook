@@ -92,9 +92,19 @@ def profile(username):
     username = mongo.db.users.find_one(
         {"username": session["user"]})
     user = mongo.db.users.find_one({"username": session["user"]})
-    return render_template("profile.html", username=username, user=user)
+    if session["user"]:
+        return render_template("profile.html", username=username, user=user)
+
+    return redirect(url_for("login"))
 
 
+
+@app.route("/logout")
+def logout():
+    # remove user from session cookie
+    flash("You have been logged out")
+    session.pop("user")
+    return redirect(url_for("login"))
 
 @app.route("/breakfast", methods=["GET", "POST"])
 def breakfast():
