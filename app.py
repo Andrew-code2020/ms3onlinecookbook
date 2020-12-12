@@ -41,20 +41,20 @@ def register():
             flash("email address already in use")
             return redirect(url_for("register"))
         register = {
+            "username": request.form.get("username").lower(),
             "first_name": request.form.get("first_name").lower(),
             "last_name": request.form.get("last_name").lower(),
-            "recipe_type":request.form.get("recipe_type").lower(),
-            "recipe_interest": request.form.get("recipe_interest").lower(),
+            "recipe_type": request.form.get("recipe_type").lower(),
             "email": request.form.get("email").lower(),
             "password": generate_password_hash(request.form.get("password"))
         }
         mongo.db.users.insert_one(register)
 
     # put the new user into 'session' cookie
-        session["user"] = request.form.get("first_name").lower()
+        session["user"] = request.form.get("username").lower()
         flash("Registration with Temple Lean Recipes Successful!")
         return redirect(url_for(
-            "profile", first_name=session["user"]))
+            "profile", username=session["user"]))
     return render_template("register.html")
 
 
@@ -64,36 +64,36 @@ def login():
     if request.method == "POST":
         # check if username exists in db
         existing_user = mongo.db.users.find_one(
-            {"first_name": request.form.get("first_name").lower()})
+            {"username": request.form.get("username").lower()})
 
         if existing_user:
-            username = existing_user["first_name"]
             # ensure hashed password matches user input
             if check_password_hash(
                 existing_user["password"], request.form.get("password")):
-                    session["user"] = request.form.get("first_name").lower()
-                    flash(f"Welcome, {username.capitalize()}")
-                    return redirect(url_for(
-                        "profile", first_name=session["user"]))
+                    session["user"] = request.form.get("username").lower()
+                    flash("Welcome, {}".format(request.form.get("username")))
+                    return redirect(url_for("profile", username=session["user"]))
             else:
                 # invalid password match
-                flash("Incorrect email and/or Password")
+                flash("Incorrect Username and/or Password")
                 return redirect(url_for("login"))
 
         else:
             # username doesn't exist
-            flash("Incorrect email and/or Password")
+            flash("Incorrect Username and/or Password")
             return redirect(url_for("login"))
 
     return render_template("login.html")
 
 
-@app.route("/profile/<first_name>", methods=["GET", "POST"])
-def profile(first_name):
-    # grab the user information from mongo db and show in the user profile
-    first_name = mongo.db.users.find_one(
-        {"first_name": session["user"]})["first_name"]
-    return render_template("profile.html", first_name=first_name)
+@app.route("/profile/<username>", methods=["GET", "POST"])
+def profile(username):
+    # grab the session user's username from db
+    username = mongo.db.users.find_one(
+        {"username": session["user"]})
+    user = mongo.db.users.find_one({"username": session["user"]})
+    return render_template("profile.html", username=username, user=user)
+
 
 
 @app.route("/breakfast", methods=["GET", "POST"])

@@ -10,6 +10,15 @@
     <!--First Name removed validate class to check if form fade was removed-->
     <div class="card-stacked">
       <form class="card-content" method="POST" action="{{ url_for('register')}}">
+        <!--Username-->
+        <div class="row">
+        <div class="input-field col s12">
+          <input placeholder="username" id="username"
+            name="username" pattern="^[a-zA-Z0-9]{5,20}$" type="text"/>
+          <label for="username"><i class="fas fa-user"></i>Username</label>
+        </div>
+        </div>
+        <!--First Name-->
         <div class="row">
         <div class="input-field col s12">
           <input placeholder="First Name" id="first_name"

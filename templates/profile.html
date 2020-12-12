@@ -4,13 +4,13 @@
     <div class="col s12 m10">
       <div class="card blue-grey darken-1">
         <div class="card-content white-text">
-          <h3 class="card-title">{{ first_name }}'s Profile Page</h3>
-          <p>Well Done Andrew You figured this out </p>
+          <h3 class="card-title">{{ user.first_name.capitalize() }}'s Profile Page</h3>
+          <p>Thanks IGOR </p>
           
-          <p>First Name: {{ first_name }} </p>
-          <p>Last Name: {{ last_name }} </p>
-          <p>Recipes you're interested in: {{ recipe_type }} </p>
-          <p>Email: {{ email }} </p>
+          <p>First Name: {{ user.first_name.capitalize() }} </p>
+          <p>Last Name: {{ user.last_name.capitalize() }} </p>
+          <p>Recipes you're interested in: {{ user.recipe_type.capitalize() }} </p>
+          <p>Email: {{ user.email.lower() }} </p>
         </div>
         <div class="card-action">
           <a href="#">Go to Breakfast Recipes</a>

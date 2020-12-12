@@ -10,16 +10,11 @@
     <!--First Name removed validate class to check if form fade was removed-->
     <div class="card-stacked">
       <form class="card-content" method="POST" action="{{ url_for('login')}}">
-        <!--email-->
+        <!--username-->
           <div class="row">
           <div class="input-field col s12">
-            <input placeholder="First Name" id="first_name" name="first_name" type="text" class="validate" required/>
-            <label for="first_name"><i class="fas fa-envelope-square"></i>First Name</label>
-          </div>
-          <div class="input-field col s12">
-            <input placeholder="Email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Please enter a valid email address" type="text" class="validate" required/>
-            <label for="email"><i class="fas fa-envelope-square"></i> Email</label>
-          </div>
+            <input placeholder="username" id="username" name="username" type="text" class="validate" required/>
+            <label for="username"><i class="fas fa-user"></i> Username</label>
           </div>
           <!--password-->
           <div class="row">
