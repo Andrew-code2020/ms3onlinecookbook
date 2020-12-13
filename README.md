@@ -379,6 +379,13 @@ I also used following website to help me correct any formatting anomalies in my 
 
 #### Bugs
 
+Breakfast page
+
+-JS Tabs overflow on right handside light blue
+-Tried div tab overflow hidden in custom css didn't work
+-Tried container in French Toast
+-solved with css display property
+
 Profile page
 -Email for profile directory @ symbol caused a root error
 
