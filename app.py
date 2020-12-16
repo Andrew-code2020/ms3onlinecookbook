@@ -115,14 +115,22 @@ def breakfast():
 def lunch():
     return render_template("lunch.html")
 
+
 @app.route("/dinner", methods=["GET", "POST"])
 def dinner():
     return render_template("dinner.html")
+
 
 @app.route("/snacks", methods=["GET", "POST"])
 def snacks():
     return render_template("snacks.html")
 
+
+@app.route("/edit_profile/<user_id>", methods=["GET", "POST"])
+def edit_profile(user_id):
+    user = mongo.db.users.find_one({"_id": ObjectId(user_id)})
+    categories = mongo.db.categories.find().sort("username", 1)
+    return render_template("edit_profile.html", user=user, categories=categories)
 
 
 #debug=false before submission
