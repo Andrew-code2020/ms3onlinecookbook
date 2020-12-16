@@ -1,82 +1,85 @@
 {% extends "base.html" %} {% block content %}
 
 <div class="s12 m7">
-  <h3 class="header">Register for Temple Lean Recipes</h3>
-  <div class="card horizontal">
-    <!--Image-->
-    <div class="card-image">
-      <img src="static/images/orangesregformpic.jpg" />
+    <h3 class="header">Register for Temple Lean Recipes</h3>
+    <div class="card horizontal">
+        <!--Image-->
+        <div class="card-image">
+            <img src="static/images/orangesregformpic.jpg" />
+        </div>
+        <!--First Name removed validate class to check if form fade was removed-->
+        <div class="card-stacked">
+            <form class="card-content" method="POST" action="{{ url_for('register')}}">
+                <!--Username-->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input placeholder="username" id="username" name="username" pattern="^[a-zA-Z0-9]{5,20}$"
+                            type="text" />
+                        <label for="username"><i class="fas fa-user"></i>Username</label>
+                    </div>
+                </div>
+                <!--First Name-->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input placeholder="First Name" id="first_name" name="first_name" type="text" />
+                        <label for="first_name"><i class="fas fa-pen"></i> First Name</label>
+                    </div>
+                </div>
+                <!--Last Name-->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input placeholder="Last Name" id="last_name" name="last_name" type="text" class="validate" />
+                        <label for="last_name"><i class="fas fa-pen"></i> Last Name</label>
+                    </div>
+                </div>
+                <!--Recipe selection-->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <select name="recipe_type" id="recipe_type">
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="Breakfast">Breakfast</option>
+                            <option value="Lunch">Lunch</option>
+                            <option value="Dinner">Dinner</option>
+                            <option value="Snacks">Snacks</option>
+                        </select>
+                        <label name="recipe_type">Select the recipes you're interested in</label>
+                    </div>
+                </div>
+                <!--email-->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input placeholder="Email" id="email" name="email"
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Please enter a valid email address"
+                            type="text" class="validate" required />
+                        <label for="email"><i class="fas fa-envelope-square"></i> Email</label>
+                    </div>
+                </div>
+                <!--password-->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input placeholder="Password" id="password" name="password" minlength="5" maxlength="15"
+                            pattern="^[a-zA-Z0-9]{5,20}$" title="Password must be between 5 and 15 characters long"
+                            type="text" class="validate" required />
+                        <label for="password"><i class="fas fa-unlock-alt"></i> Password</label>
+                    </div>
+                </div>
+                <!--Button-->
+                <div class="row">
+                    <div class="col s12">
+                        <button class="btn waves-effect waves-light light-green" type="submit" name="action">Register
+                            with Temple Lean Recipes
+                            <i class="fas fa-sign-in-alt"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        <div class="card-action">
+                            Registered already? Login <a href="{{ url_for('login')}}">here</a>
+                        </div>
+                    </div>
+            </form>
+        </div>
     </div>
-    <!--First Name removed validate class to check if form fade was removed-->
-    <div class="card-stacked">
-      <form class="card-content" method="POST" action="{{ url_for('register')}}">
-        <!--Username-->
-        <div class="row">
-        <div class="input-field col s12">
-          <input placeholder="username" id="username"
-            name="username" pattern="^[a-zA-Z0-9]{5,20}$" type="text"/>
-          <label for="username"><i class="fas fa-user"></i>Username</label>
-        </div>
-        </div>
-        <!--First Name-->
-        <div class="row">
-        <div class="input-field col s12">
-          <input placeholder="First Name" id="first_name"
-            name="first_name" type="text"/>
-          <label for="first_name"><i class="fas fa-pen"></i> First Name</label>
-        </div>
-        </div>
-        <!--Last Name-->
-          <div class="row">
-          <div class="input-field col s12">
-            <input placeholder="Last Name" id="last_name" name="last_name" type="text" class="validate"/>
-            <label for="last_name"><i class="fas fa-pen"></i> Last Name</label>
-          </div>
-          </div>
-          <!--Recipe selection-->
-          <div class="row">
-          <div class="input-field col s12">
-            <select name="recipe_type" id="recipe_type">
-                <option value="" disabled selected>Choose your option</option>
-                <option value="Breakfast">Breakfast</option>
-                <option value="Lunch">Lunch</option>
-                <option value="Dinner">Dinner</option>
-                <option value="Snacks">Snacks</option>
-        </select>
-        <label name="recipe_type">Select the recipes you're interested in</label>
-            </div>
-            </div>
-          <!--email-->
-          <div class="row">
-          <div class="input-field col s12">
-            <input placeholder="Email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Please enter a valid email address" type="text" class="validate" required/>
-            <label for="email"><i class="fas fa-envelope-square"></i> Email</label>
-          </div>
-          </div>
-          <!--password-->
-          <div class="row">
-          <div class="input-field col s12">
-            <input placeholder="Password" id="password" name="password" minlength="5"
-                            maxlength="15" pattern="^[a-zA-Z0-9]{5,20}$" title="Password must be between 5 and 15 characters long" type="text" class="validate" required/>
-            <label for="password"><i class="fas fa-unlock-alt"></i> Password</label>
-          </div>
-          </div>
-          <!--Button-->
-           <div class="row">
-           <div class="col s12">
-           <button class="btn waves-effect waves-light light-green" type="submit" name="action">Register with Temple Lean Recipes
-    <i class="fas fa-sign-in-alt"></i>
-  </button>
-    </div>
-  </div>
-  <div class="row">
-           <div class="col s12">
-            <div class="card-action">
-          Registered already? Login <a href="{{ url_for('login')}}">here</a>
-        </div>
-    </div>
-  </form>
-</div>
-</div>
 </div>
 {% endblock %}
