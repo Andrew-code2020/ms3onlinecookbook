@@ -128,6 +128,17 @@ def snacks():
 
 @app.route("/edit_profile/<user_id>", methods=["GET", "POST"])
 def edit_profile(user_id):
+    if request.method == "POST":
+        submit = {
+            "username": request.form.get("username"),
+            "first_name": request.form.get("first_name"),
+            "last_name": request.form.get("last_name"),
+            "email": request.form.get("email"),
+            "created_by": session["user"]
+        }
+        mongo.db.users.update({"_id": ObjectId(user_id)}, submit)
+        flash("Profile updated successfully")
+    
     user = mongo.db.users.find_one({"_id": ObjectId(user_id)})
     categories = mongo.db.categories.find().sort("username", 1)
     return render_template("edit_profile.html", user=user, categories=categories)
