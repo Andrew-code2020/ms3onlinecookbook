@@ -8,7 +8,7 @@
                 <!--Edit Username-->
                 <div class="row">
                     <div class="input-field col s12">
-                        <input placeholder="username" id="username" name="username" pattern="^[a-zA-Z0-9]{5,20}$"
+                        <input placeholder="username" id="username" name="username"  pattern="^[a-zA-Z0-9]{5,20}$"
                             type="text" />
                         <label for="username"><i class="fas fa-user"></i>Username</label>
                     </div>
@@ -66,7 +66,7 @@
                 <a class="profile btn waves-effect waves-light light-green"
                     href="{{ url_for('edit_profile', user_id=user._id) }}"> Update profile <i
                         class="fas fa-user-edit"></i></a>
-                <a class ="profile btn waves-effect waves-light light-green" href="#">Cancel <i class="fas fa-window-close"></i></a>
+                <a class ="profile btn waves-effect waves-light light-green" href="{{ url_for('profile', username=session['user']) }}">Cancel <i class="fas fa-window-close"></i></a>
             </div>
         </div>
     </form>
