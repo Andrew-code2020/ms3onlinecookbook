@@ -148,7 +148,7 @@ def edit_profile(user_id):
 def delete_profile(user_id):
     mongo.db.users.remove({"_id": ObjectId(user_id)})
     flash("Profile Deleted")
-    return redirect(url_for("register.html"))
+    return redirect(url_for('register')
 
 
 #debug=false before submission
