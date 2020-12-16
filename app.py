@@ -144,6 +144,13 @@ def edit_profile(user_id):
     return render_template("edit_profile.html", user=user, categories=categories)
 
 
+@app.route("/delete_profile/<user_id>")
+def delete_profile(user_id):
+    mongo.db.users.remove({"_id": ObjectId(user_id)})
+    flash("Profile Deleted")
+    return redirect(url_for("register.html"))
+
+
 #debug=false before submission
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),

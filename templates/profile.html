@@ -19,7 +19,7 @@
         </div>
         <div class="card-action">
           <a class ="profile btn waves-effect waves-light light-green" href="{{ url_for('edit_profile', user_id=user._id) }}">Edit profile <i class="fas fa-user-edit"></i></a>
-          <a class ="profile btn waves-effect waves-light light-green" href="#">Delete profile <i class="fas fa-trash-alt"></i></a>
+          <a class ="profile btn waves-effect waves-light light-green" href="{{url_for ('delete_profile, user_id=user._id')}">Delete profile <i class="fas fa-trash-alt"></i></a>
         </div>
       </div>
     </div>
