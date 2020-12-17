@@ -30,6 +30,14 @@
                 <!--Edit Recipe selection-->
                 <div class="row">
                     <div class="input-field col s12">
+                      {% for recipe in recipe_type  %}
+                            {% if recipe.recipe_type == user.recipe_type %}
+                                <option value="" selected>A</option>
+                            {% else %}
+                                <option value="">B</option>
+                            {% endif %}
+                      {% endfor %}
+
                         <select name="recipe_type" id="recipe_type">
                             <option value="" disabled selected>Choose your option</option>
                             <option value="Breakfast">Breakfast</option>
@@ -60,9 +68,8 @@
                 <a href="#">Go to Dessert Recipes</a>
             </div>
             <div class="card-action">
-                <a class="profile btn waves-effect waves-light light-green"
-                    href="{{ url_for('edit_profile', user_id=user._id) }}"> Update profile <i
-                        class="fas fa-user-edit"></i></a>
+                <button class="profile btn waves-effect waves-light light-green" type="submit"> Update profile <i
+                        class="fas fa-user-edit"></i></button>
                 <a class ="profile btn waves-effect waves-light light-green" href="{{ url_for('profile', username=session['user']) }}">Cancel <i class="fas fa-window-close"></i></a>
             </div>
         </div>

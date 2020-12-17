@@ -129,26 +129,27 @@ def snacks():
 @app.route("/edit_profile/<user_id>", methods=["GET", "POST"])
 def edit_profile(user_id):
     if request.method == "POST":
-        submit = {
+        print(f"USER: {user_id}")
+        submit = {"$set": {
             "username": request.form.get("username"),
             "first_name": request.form.get("first_name"),
             "last_name": request.form.get("last_name"),
             "email": request.form.get("email"),
             "created_by": session["user"]
-        }
-        mongo.db.users.update({"_id": ObjectId(user_id)}, submit)
+        }}
+        mongo.db.users.update_one({"_id": ObjectId(user_id)}, submit)
         flash("Profile updated successfully")
     
     user = mongo.db.users.find_one({"_id": ObjectId(user_id)})
-    categories = mongo.db.categories.find().sort("username", 1)
-    return render_template("edit_profile.html", user=user, categories=categories)
+    return render_template("edit_profile.html", user=user)
 
 
 @app.route("/delete_profile/<user_id>")
 def delete_profile(user_id):
     mongo.db.users.remove({"_id": ObjectId(user_id)})
+    session.pop("user")
     flash("Profile Deleted")
-    return redirect(url_for('register')
+    return redirect(url_for('register'))
 
 
 #debug=false before submission
