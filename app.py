@@ -28,7 +28,7 @@ def get_recipes():
 @app.route("/home_page")
 def home_page():
     lean_recipes = mongo.db.lean_recipes.find()
-    return render_template("index.html", lean_recipes=lean_recipes)
+    return render_template("homepage.html", lean_recipes=lean_recipes)
 
 
 @app.route("/register", methods=["GET", "POST"])
@@ -134,6 +134,7 @@ def edit_profile(user_id):
             "username": request.form.get("username"),
             "first_name": request.form.get("first_name"),
             "last_name": request.form.get("last_name"),
+            "recipe_type": request.form.get("recipe_type"),
             "email": request.form.get("email"),
             "created_by": session["user"]
         }}
