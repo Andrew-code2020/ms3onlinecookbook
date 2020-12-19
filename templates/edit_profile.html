@@ -30,22 +30,17 @@
                 <!--Edit Recipe selection-->
                 <div class="row">
                     <div class="input-field col s12">
-                      {% for recipe in recipe_type  %}
-                            {% if recipe.recipe_type == user.recipe_type %}
-                                <option value="" selected>A</option>
+                        <label name="recipe_type">Select the recipes you're interested in</label>
+                        <br>
+                      <select name="recipe_type" id="recipe_type">
+                        {% for recipe in recipe_type  %}
+                            {% if recipe.recipe_types == user.recipe_type %}
+                                <option value="{{recipe.recipe_types}}" selected>{{recipe.recipe_types}}</option>
                             {% else %}
-                                <option value="">B</option>
+                                <option value="{{recipe.recipe_types}}"> {{recipe.recipe_types}}</option>
                             {% endif %}
                       {% endfor %}
-
-                        <select name="recipe_type" id="recipe_type">
-                            <option value="" disabled >Choose your option</option>
-                            <option value="Breakfast">Breakfast</option>
-                            <option value="Lunch">Lunch</option>
-                            <option value="Dinner">Dinner</option>
-                            <option value="Snacks">Snacks</option>
-                        </select>
-                        <label name="recipe_type">Select the recipes you're interested in</label>
+                     </select>
                     </div>
                 </div>
                 <!--Edit email-->
@@ -57,15 +52,12 @@
                         <label for="email"><i class="fas fa-envelope-square"></i> Email</label>
                     </div>
                 </div>
-                <!--Recipe integration
-                <p>Recipes you're interested in: {{ user.recipe_type.capitalize() }} </p>
-                -->  
             </div>
             <div class="card-action">
-                <a href="#">Go to Breakfast Recipes</a>
-                <a href="#">Go to Lunch Recipes</a>
-                <a href="#">Go to Dinner Recipes</a>
-                <a href="#">Go to Dessert Recipes</a>
+                <a href="{{ url_for('breakfast')}}">Go to Breakfast Recipes</a>
+                <a href="{{ url_for('lunch')}}">Go to Lunch Recipes</a>
+                <a href="{{ url_for('dinner')}}">Go to Dinner Recipes</a>
+                <a href="{{ url_for('snacks')}}">Go to Snack Recipes</a>
             </div>
             <div class="card-action">
                 <button class="profile btn waves-effect waves-light light-green" type="submit"> Update profile <i

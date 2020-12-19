@@ -142,13 +142,14 @@ def edit_profile(user_id):
         flash("Profile updated successfully")
     
     user = mongo.db.users.find_one({"_id": ObjectId(user_id)})
-    return render_template("edit_profile.html", user=user)
+    types = mongo.db.types.find()
+    return render_template("edit_profile.html", user=user, recipe_type=types)
 
 
 @app.route("/delete_profile/<user_id>")
 def delete_profile(user_id):
     mongo.db.users.remove({"_id": ObjectId(user_id)})
-    session.pop("user")
+    session.pop("user")#note in read me as bug solved
     flash("Profile Deleted")
     return redirect(url_for('register'))
 

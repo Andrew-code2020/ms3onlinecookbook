@@ -379,6 +379,14 @@ I also used following website to help me correct any formatting anomalies in my 
 
 #### Bugs
 
+
+Delete profile (Not logging out)
+-During the development of the delete functionality a bug was recognised whereby a profile could be deleted but the user was not logged out
+-The user could then click the profile button and then get a jinja error message
+-to eradicate this bug we input the pop method into the delete function and redirected the usier back to register page
+-this solved the bug and kept the user away from unwanted error screens  
+
+
 Breakfast page
 
 -JS Tabs overflow on right handside light blue
