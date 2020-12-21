@@ -1,12 +1,8 @@
 {% extends "base.html" %} {% block content %}
 
 <div class="s12 m7">
-  <h3 class="header"> Login Temple Lean Recipes</h3>
+  <h3 class="header"> Login to Temple Lean Recipes</h3>
   <div class="card horizontal">
-    <!--Image-->
-    <div class="card-image login">
-      <img src="static/images/greenfruitveglogin.jpg" />
-    </div>
     <!--First Name removed validate class to check if form fade was removed-->
     <div class="card-stacked">
       <form class="card-content" method="POST" action="{{ url_for('login')}}">
