@@ -4,8 +4,8 @@
 <div class="row">
     <div class="col s12 m4">
         <div class="card">
-            <div class="card-image breakfast">
-                <img src="static/images/frenchtoastwithberries.jpg">
+            <div class="card-image">
+                <img class="breakfast" src="static/images/frenchtoastwithberries.jpg">
                 <span class="card-title">French Toast with Berries</span>
             </div>
             <div class="card-content">
@@ -14,6 +14,7 @@
                     <button class="tablinks light-green" onclick="openCity(event, 'Ingredientsfrench')">Ingredients</button>
                     <button class="tablinks light-green" onclick="openCity(event, 'Methodfrench')">Method</button>
                     <button class="tablinks light-green" onclick="openCity(event, 'Toolsfrench')">Tools</button>
+                    <button class="tablinks light-green" onclick="openCity(event, 'Toolsfrench')">Nutrition Info</button>
                 </div>
                 <!--Tab content-->
                 <!--Ingredients-->
@@ -31,6 +32,16 @@
                     <h3>Tools</h3>
                     <p>Tools are essential making a good dish</p>
                 </div>
+                <!--Nutritional Information-->
+                <div id="Nutrientsfrench" class="tabcontent">
+                    <h3>Nutritional Information</h3>
+                    <ul>
+                        <li>Carbohydrates</li>
+                        <li>Fat</li>
+                        <li>Proteins</li>
+                        <li>kcals </li>
+                    </ul>
+                </div>
             </div>
             <div class="card-action">
                 <a href="{{ url_for('lunch')}}">Go to Lunch Recipes</a>
@@ -45,7 +56,7 @@
     <div class="col s12 m4">
         <div class="card">
             <div class="card-image">
-                <img src="static/images/blueberryyoghurt.jpg">
+                <img class="breakfast" src="static/images/blueberryyoghurt.jpg">
                 <span class="card-title">Crunchy blueberry yoghurt</span>
             </div>
             <div class="card-content">
@@ -85,7 +96,7 @@
     <div class="col s12 m4">
         <div class="card">
             <div class="card-image">
-                <img src="static/images/mueslibreakfastpage.jpg">
+                <img class="breakfast" src="static/images/mueslibreakfastpage.jpg">
                 <span class="card-title">Muesli</span>
             </div>
             <div class="card-content">

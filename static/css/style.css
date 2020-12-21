@@ -77,14 +77,25 @@ i {
 
 /*-----------------------------------Register page-------------------------------------------------------------*/
 
+.card.horizontal, .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+
 
 
 
 /*-----------------------------------Breakfast page-------------------------------------------------------------*/
 
-.breakfast, .lunch, .dinner, .snacks {
+.card-image{
+    height:175px;
+}
+
+.card.horizontal, .card-image img .breakfast {
+ width: 100%;
+ height: 100%;
  object-fit:cover;
- height: 175px;
 }
 
 

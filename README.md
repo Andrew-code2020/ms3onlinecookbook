@@ -379,6 +379,8 @@ I also used following website to help me correct any formatting anomalies in my 
 
 #### Bugs
 
+Pictures 
+-height in form that led to height styling versus height in recipes that need to be added to make pictures look uniform
 
 Delete profile (Not logging out)
 -During the development of the delete functionality a bug was recognised whereby a profile could be deleted but the user was not logged out
