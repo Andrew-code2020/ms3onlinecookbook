@@ -1,8 +1,7 @@
 {% extends "base.html" %} {% block content %}
 
-<!--Breakfast Recipe 1-->
 <div class="row" method="POST">
-    <div class="col s12 m4">
+    <div class="col s12 m6">
         <div class="card">
             <div class="card-image">
                 <img class="breakfast" src="static/images/frenchtoastwithberries.jpg">
@@ -10,78 +9,17 @@
             </div>
             <div class="card-content">
                 <!--Tab Buttons-->
-                <div class="tab">
-                    <button class="tablinks light-green" onclick="openCity(event, 'Ingredientsfrench')">Ingredients</button>
-                    <button class="tablinks light-green" onclick="openCity(event, 'Methodfrench')">Method</button>
-                    <button class="tablinks light-green" onclick="openCity(event, 'Toolsfrench')">Tools</button>
-                    <button class="tablinks light-green" onclick="openCity(event, 'Toolsfrench')">Nutrition Info</button>
-                </div>
-                <!--Tab content-->
-                <!--Ingredients-->
-                <div id="Ingredientsfrench" class="tabcontent">
-                    <h3>Ingredients</h3>
-                    <p>Ingredients are key to a good recipe</p>
-                </div>
-                <!--Method-->
-                <div id="Methodfrench" class="tabcontent">
-                    <h3>Method</h3>
-                    <p>The Method of making this dish is very important</p>
-                </div>
-                <!--Tools-->
-                <div id="Toolsfrench" class="tabcontent">
-                    <h3>Tools</h3>
-                    <p>Tools are essential making a good dish</p>
-                </div>
-                <!--Nutritional Information-->
-                <div id="Nutrientsfrench" class="tabcontent">
-                    <h3>Nutritional Information</h3>
-                    <ul>
-                        <li>Carbohydrates</li>
-                        <li>Fat</li>
-                        <li>Proteins</li>
-                        <li>kcals </li>
+                <div class="card-tabs">
+                    <ul class="tabs tabs-fixed-width">
+                        <li class="tab"><a href="#test4">Hello</a></li>
+                        <li class="tab"><a class="active" href="#test5">Test 2</a></li>
+                        <li class="tab"><a href="#test6">Test 3</a></li>
                     </ul>
                 </div>
-            </div>
-            <div class="card-action">
-                <a href="{{ url_for('lunch')}}">Go to Lunch Recipes</a>
-                <br>
-                <a href="{{ url_for('dinner')}}">Go to Dinner Recipes</a>
-                <br>
-                <a href="{{ url_for('snacks')}}">Go to Snack Recipes</a>
-            </div>
-        </div>
-        
-    </div>
-    <!--Breakfast Recipe 2-->
-    <div class="col s12 m4">
-        <div class="card">
-            <div class="card-image">
-                <img class="breakfast" src="static/images/blueberryyoghurt.jpg">
-                <span class="card-title">Crunchy blueberry yoghurt</span>
-            </div>
-            <div class="card-content">
-               <!--Tab Buttons-->
-                <div class="tab">
-                    <button class="tablinks light-green" onclick="openCity(event, 'Ingredientsblueberry')">Ingredients</button>
-                    <button class="tablinks light-green" onclick="openCity(event, 'Methodblueberry')">Method</button>
-                    <button class="tablinks light-green" onclick="openCity(event, 'Toolsblueberry')">Tools</button>
-                </div>
-                <!--Tab content-->
-                <!--Ingredients-->
-                <div id="Ingredientsblueberry" class="tabcontent">
-                    <h3>Ingredients</h3>
-                    <p>Ingredients are key to a good recipe</p>
-                </div>
-                <!--Method-->
-                <div id="Methodblueberry" class="tabcontent">
-                    <h3>Method</h3>
-                    <p>The Method of making this dish is very important</p>
-                </div>
-                <!--Tools-->
-                <div id="Toolsblueberry" class="tabcontent">
-                    <h3>Tools</h3>
-                    <p>Tools are essential making a good dish</p>
+                <div class="card-content  light-green">
+                    <div id="test4">Test 1</div>
+                    <div id="test5">Test 2</div>
+                    <div id="test6">Test 3</div>
                 </div>
             </div>
             <div class="card-action">
@@ -92,48 +30,147 @@
                 <a href="{{ url_for('snacks')}}">Go to Snack Recipes</a>
             </div>
         </div>
-    </div>
-    <!--Breakfast Recipe 3-->
-    <div class="col s12 m4">
-        <div class="card">
-            <div class="card-image">
-                <img class="breakfast" src="static/images/mueslibreakfastpage.jpg">
-                <span class="card-title">Muesli</span>
-            </div>
-            <div class="card-content">
-                <!--Tab Buttons-->
-                <div class="tab">
-                    <button class="tablinks light-green" onclick="openCity(event, 'Ingredientsmuesli')">Ingredients</button>
-                    <button class="tablinks light-green" onclick="openCity(event, 'Methodmuesli')">Method</button>
-                    <button class="tablinks light-green" onclick="openCity(event, 'Toolsmuesli')">Tools</button>
-                </div>
-                <!--Tab content-->
-                <!--Ingredients-->
-                <div id="Ingredientsmuesli" class="tabcontent">
-                    <h3>Ingredients</h3>
-                    <p>Ingredients are key to a good recipe</p>
-                </div>
-                <!--Method-->
-                <div id="Methodmuesli" class="tabcontent">
-                    <h3>Method</h3>
-                    <p>The Method of making this dish is very important</p>
-                </div>
-                <!--Tools-->
-                <div id="Toolsmuesli" class="tabcontent">
-                    <h3>Tools</h3>
-                    <p>Tools are essential making a good dish</p>
-                </div>
-            </div>
-            <!-- Recipe Action Buttons-->
-            <div class="card-action">
-                <a href="{{ url_for('lunch')}}">Go to Lunch Recipes</a>
-                <br>
-                <a href="{{ url_for('dinner')}}">Go to Dinner Recipes</a>
-                <br>
-                <a href="{{ url_for('snacks')}}">Go to Snack Recipes</a>
-            </div>
-        </div>
-    </div>
-</div>
 
-{% endblock %}
+    </div>
+    <!--Breakfast Recipe 1-->
+    <div class="row" method="POST">
+        <div class="col s12 m6">
+            <div class="card">
+                <div class="card-image">
+                    <img class="breakfast" src="static/images/frenchtoastwithberries.jpg">
+                </div>
+                <div class="card-content">
+                    <span class="card-title">French Toast with Berries</span>
+                    <!--Tab Buttons-->
+                    <div class="tab">
+                        <button class="tablinks light-green"
+                            onclick="openCity(event, 'Ingredientsfrench')">Ingredients</button>
+                        <button class="tablinks light-green" onclick="openCity(event, 'Methodfrench')">Method</button>
+                        <button class="tablinks light-green" onclick="openCity(event, 'Toolsfrench')">Tools</button>
+                        <button class="tablinks light-green" onclick="openCity(event, 'Toolsfrench')">Nutrition
+                            Info</button>
+                    </div>
+                    <!--Tab content-->
+                    <!--Ingredients-->
+                    <div id="Ingredientsfrench" class="tabcontent">
+                        <h3>Ingredients</h3>
+                        <p>Ingredients are key to a good recipe</p>
+                    </div>
+                    <!--Method-->
+                    <div id="Methodfrench" class="tabcontent">
+                        <h3>Method</h3>
+                        <p>The Method of making this dish is very important</p>
+                    </div>
+                    <!--Tools-->
+                    <div id="Toolsfrench" class="tabcontent">
+                        <h3>Tools</h3>
+                        <p>Tools are essential making a good dish</p>
+                    </div>
+                    <!--Nutritional Information-->
+                    <div id="Nutrientsfrench" class="tabcontent">
+                        <h3>Nutritional Information</h3>
+                        <ul>
+                            <li>Carbohydrates</li>
+                            <li>Fat</li>
+                            <li>Proteins</li>
+                            <li>kcals </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card-action">
+                    <a href="{{ url_for('lunch')}}">Go to Lunch Recipes</a>
+                    <br>
+                    <a href="{{ url_for('dinner')}}">Go to Dinner Recipes</a>
+                    <br>
+                    <a href="{{ url_for('snacks')}}">Go to Snack Recipes</a>
+                </div>
+            </div>
+
+        </div>
+        <!--Breakfast Recipe 2-->
+        <div class="col s12 m6">
+            <div class="card">
+                <div class="card-image">
+                    <img class="breakfast" src="static/images/blueberryyoghurt.jpg">
+                </div>
+                <div class="card-content">
+                    <span class="card-title">Crunchy blueberry yoghurt</span>
+                    <!--Tab Buttons-->
+                    <div class="tab">
+                        <button class="tablinks light-green"
+                            onclick="openCity(event, 'Ingredientsblueberry')">Ingredients</button>
+                        <button class="tablinks light-green"
+                            onclick="openCity(event, 'Methodblueberry')">Method</button>
+                        <button class="tablinks light-green" onclick="openCity(event, 'Toolsblueberry')">Tools</button>
+                    </div>
+                    <!--Tab content-->
+                    <!--Ingredients-->
+                    <div id="Ingredientsblueberry" class="tabcontent">
+                        <h3>Ingredients</h3>
+                        <p>Ingredients are key to a good recipe</p>
+                    </div>
+                    <!--Method-->
+                    <div id="Methodblueberry" class="tabcontent">
+                        <h3>Method</h3>
+                        <p>The Method of making this dish is very important</p>
+                    </div>
+                    <!--Tools-->
+                    <div id="Toolsblueberry" class="tabcontent">
+                        <h3>Tools</h3>
+                        <p>Tools are essential making a good dish</p>
+                    </div>
+                </div>
+                <div class="card-action">
+                    <a href="{{ url_for('lunch')}}">Go to Lunch Recipes</a>
+                    <br>
+                    <a href="{{ url_for('dinner')}}">Go to Dinner Recipes</a>
+                    <br>
+                    <a href="{{ url_for('snacks')}}">Go to Snack Recipes</a>
+                </div>
+            </div>
+        </div>
+        <!--Breakfast Recipe 3-->
+        <div class="col s12 m6">
+            <div class="card">
+                <div class="card-image">
+                    <img class="breakfast" src="static/images/mueslibreakfastpage.jpg">
+                </div>
+                <div class="card-content">
+                    <span class="card-title">Muesli</span>
+                    <!--Tab Buttons-->
+                    <div class="tab">
+                        <button class="tablinks light-green"
+                            onclick="openCity(event, 'Ingredientsmuesli')">Ingredients</button>
+                        <button class="tablinks light-green" onclick="openCity(event, 'Methodmuesli')">Method</button>
+                        <button class="tablinks light-green" onclick="openCity(event, 'Toolsmuesli')">Tools</button>
+                    </div>
+                    <!--Tab content-->
+                    <!--Ingredients-->
+                    <div id="Ingredientsmuesli" class="tabcontent">
+                        <h3>Ingredients</h3>
+                        <p>Ingredients are key to a good recipe</p>
+                    </div>
+                    <!--Method-->
+                    <div id="Methodmuesli" class="tabcontent">
+                        <h3>Method</h3>
+                        <p>The Method of making this dish is very important</p>
+                    </div>
+                    <!--Tools-->
+                    <div id="Toolsmuesli" class="tabcontent">
+                        <h3>Tools</h3>
+                        <p>Tools are essential making a good dish</p>
+                    </div>
+                </div>
+                <!-- Recipe Action Buttons-->
+                <div class="card-action">
+                    <a href="{{ url_for('lunch')}}">Go to Lunch Recipes</a>
+                    <br>
+                    <a href="{{ url_for('dinner')}}">Go to Dinner Recipes</a>
+                    <br>
+                    <a href="{{ url_for('snacks')}}">Go to Snack Recipes</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% endblock %}

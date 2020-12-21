@@ -568,6 +568,7 @@ Deploying the project to Heroku
     These photos are placed in the website on the following pages;
     -index page
     -Registeration page
+    -Lunch page
 
 
 ##### Acknowledgements
