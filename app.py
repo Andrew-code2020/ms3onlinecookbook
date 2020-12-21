@@ -109,7 +109,7 @@ def logout():
 @app.route("/breakfast", methods=["GET", "POST"])
 def breakfast():
     lean_recipes = mongo.db.lean_recipes.find()
-    return render_template("breakfast.html")
+    return render_template("breakfast.html", lean_recipes=lean_recipes)
 
 
 @app.route("/lunch", methods=["GET", "POST"])
