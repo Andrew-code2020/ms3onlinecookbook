@@ -6,7 +6,7 @@ The Recipe website is designed such that people at home in Ireland and abroad ma
 2. Lunch 
 3. Dinner
 4. Snacks
-5. Desserts
+
 
 The problem that we are trying to solve is that current holiday websites in Ireland offer too many different types of holiday. We want to slim down the offerings and focus
 on the above named four strategically valuable markets. We have designed the website to offer bitesize information on the best quality holidays in these four areas. The success
@@ -378,6 +378,9 @@ I also used following website to help me correct any formatting anomalies in my 
 - https://codebeautify.org/ 
 
 #### Bugs
+
+JS Tabs converted to materialize collapsible due to JS tabs rendering same information on each loop and because it cut down the amount of code we need.
+
 
 Pictures 
 -height in form that led to height styling versus height in recipes that need to be added to make pictures look uniform

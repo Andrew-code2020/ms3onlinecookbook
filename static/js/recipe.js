@@ -4,7 +4,7 @@ $(document).ready(function(){
      /*--register page dropdown menu--*/
      $('select').formSelect();
      /*--toggle in recipes--*/
-     $( "." ).toggle();
+    $('.collapsible').collapsible();
   });
        
 
