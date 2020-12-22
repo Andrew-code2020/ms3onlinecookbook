@@ -37,10 +37,12 @@
             </div>
             <div class="nav-content">
                 <ul class="tabs tabs-transparent text-shadow">
+                    {% if session.user %}
                     <li class="tab1"><a href="{{ url_for('breakfast')}}">Breakfast</a></li>
                     <li class="tab1"><a href="{{ url_for('lunch')}}">Lunch</a></li>
                     <li class="tab1"><a href="{{ url_for('dinner')}}">Dinner</a></li>
                     <li class="tab1"><a href="{{ url_for('snacks')}}">Snacks</a></li>
+                     {% endif %}
                 </ul>
             </div>
         </nav>
