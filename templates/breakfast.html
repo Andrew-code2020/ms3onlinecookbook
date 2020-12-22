@@ -1,13 +1,13 @@
 {% extends "base.html" %} {% block content %}
 
-<div class="row" method="POST">
+<div class="row" method="GET" action="{{ url_for('breakfast')}}">
     <div class="col s12 m6">
         <div class="card">
             <div class="card-image">
                 <img class="breakfast" src="static/images/frenchtoastwithberries.jpg">
             </div>
             <div class="card-content">
-                <span class="card-title">{{ lean_recipes.meal_name }}</span>
+                <span class="card-title">French Toast</span>
                 <!--Tab Buttons-->
                 <div class="card-tabs">
                     <ul class="tabs tabs-fixed-width">
@@ -40,7 +40,9 @@
                     <img class="breakfast" src="static/images/frenchtoastwithberries.jpg">
                 </div>
                 <div class="card-content">
-                    <span class="card-title">French Toast with Berries</span>
+                    {% for recipe in breakfast_meals %}
+                        {% if recipe.recipe_types == "Breakfast" %}
+                    <span class="card-title"> {{ recipe.meal_name }}</span>
                     <!--Tab Buttons-->
                     <div class="tab">
                         <button class="tablinks light-green"
@@ -54,28 +56,31 @@
                     <!--Ingredients-->
                     <div id="Ingredientsfrench" class="tabcontent">
                         <h3>Ingredients</h3>
-                        <p>Ingredients are key to a good recipe</p>
+                        <p>{{ recipe.meal_ingredients }}</p>
                     </div>
                     <!--Method-->
                     <div id="Methodfrench" class="tabcontent">
                         <h3>Method</h3>
-                        <p>The Method of making this dish is very important</p>
+                        <p>{{ recipe.meal_method }}</p>
+                        <p>{{ recipe.meal_time }}</p>
                     </div>
                     <!--Tools-->
                     <div id="Toolsfrench" class="tabcontent">
                         <h3>Tools</h3>
-                        <p>Tools are essential making a good dish</p>
+                        <p>{{ recipe.meal_tools }}</p>
                     </div>
                     <!--Nutritional Information-->
                     <div id="Nutrientsfrench" class="tabcontent">
                         <h3>Nutritional Information</h3>
                         <ul>
-                            <li>Carbohydrates</li>
-                            <li>Fat</li>
-                            <li>Proteins</li>
-                            <li>kcals </li>
+                            <li>Carbohydrates {{recipe.meal_nutracarbs}}</li>
+                            <li>Fat {{recipe.meal_nutrafat}}</li>
+                            <li>Proteins {{recipe.meal_nutraproteins}}</li>
+                            <li>kcals {{recipe.meal_nutrakcals}} </li>
                         </ul>
                     </div>
+                        {% endif %}
+                    {% endfor %}
                 </div>
                 <div class="card-action">
                     <a href="{{ url_for('lunch')}}">Go to Lunch Recipes</a>

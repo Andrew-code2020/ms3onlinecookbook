@@ -105,8 +105,9 @@ def logout():
 
 @app.route("/breakfast", methods=["GET", "POST"])
 def breakfast():
-    lean_recipes = mongo.db.lean_recipes.find()
-    return render_template("breakfast.html", lean_recipes=lean_recipes)
+    breakfast_meals = mongo.db.recipes.find({"recipe_types": "Breakfast"})
+    print(breakfast_meals)
+    return render_template("breakfast.html", breakfast_meals=breakfast_meals)
 
 
 @app.route("/lunch", methods=["GET", "POST"])
@@ -147,7 +148,8 @@ def edit_profile(user_id):
 @app.route("/delete_profile/<user_id>")
 def delete_profile(user_id):
     mongo.db.users.remove({"_id": ObjectId(user_id)})
-    session.pop("user")#note in read me as bug solved
+    #log out user as well
+    session.pop("user")
     flash("Profile Deleted")
     return redirect(url_for('register'))
 
