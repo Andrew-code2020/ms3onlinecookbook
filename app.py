@@ -105,7 +105,7 @@ def logout():
 
 @app.route("/breakfast", methods=["GET", "POST"])
 def breakfast():
-    breakfast_meals = mongo.db.recipes.find({"recipe_types": "Breakfast"})
+    breakfast_meals = mongo.db.lean_recipes.find({"recipe_types": "Breakfast"})
     print(breakfast_meals)
     return render_template("breakfast.html", breakfast_meals=breakfast_meals)
 

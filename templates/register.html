@@ -3,7 +3,6 @@
 <div class="s12 m7">
     <h3 class="header">Register for Temple Lean Recipes</h3>
     <div class="card horizontal">
-        <!--First Name removed validate class to check if form fade was removed-->
         <div class="card-stacked">
             <form class="card-content" method="POST" action="{{ url_for('register')}}">
                 <!--Username-->
@@ -17,7 +16,7 @@
                 <!--First Name-->
                 <div class="row">
                     <div class="input-field col s12">
-                        <input placeholder="First Name" id="first_name" name="first_name" type="text" />
+                        <input placeholder="First Name" id="first_name" name="first_name" type="text" class="validate" />
                         <label for="first_name"><i class="fas fa-pen"></i> First Name</label>
                     </div>
                 </div>
