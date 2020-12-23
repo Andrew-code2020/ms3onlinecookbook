@@ -112,12 +112,16 @@ def breakfast():
 
 @app.route("/lunch", methods=["GET", "POST"])
 def lunch():
-    return render_template("lunch.html")
+    lunch_meals = mongo.db.lean_recipes.find({"recipe_types": "Lunch"})
+    print(lunch_meals)
+    return render_template("lunch.html", lunch_meals=lunch_meals)
 
 
 @app.route("/dinner", methods=["GET", "POST"])
 def dinner():
-    return render_template("dinner.html")
+    dinner_meals = mongo.db.lean_recipes.find({"recipe_types": "Dinner"})
+    print(dinner_meals)
+    return render_template("dinner.html", dinner_meals=dinner_meals)
 
 
 @app.route("/snacks", methods=["GET", "POST"])
