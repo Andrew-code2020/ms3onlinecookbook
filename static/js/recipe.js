@@ -3,7 +3,7 @@ $(document).ready(function(){
      $(".sidenav").sidenav({edge: "right"});
      /*--register page dropdown menu--*/
      $('select').formSelect();
-     /*--toggle in recipes--*/
+     /*--collapsible in recipes--*/
     $('.collapsible').collapsible();
   });
        
