@@ -41,13 +41,15 @@ nav ul a{
     color:#222222;
 }
 
+
+
+
 /* ----------Register page ------------ */
 
 .input-field>label {
     font-family: 'Recursive', sans-serif;
     font-size: 16px;
-    color:#ffffff;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    color:#222222;
 }
 
 i {
@@ -71,10 +73,12 @@ i {
     background-color:#bfcfff;
     font-family: 'Recursive', sans-serif;
     font-size: 12px;
-    color:#ffffff;
+    color:#222222;
 }
 
 /*----Profile Page-----*/
+
+/*----Buttons style and space throughout the page-----*/
 .profile{
     margin: 5px;
     color:#222222;
@@ -109,7 +113,7 @@ i {
 }
 
 .card-title {
-   text-shadow:1px 1px 1px rgba(0, 0, 0, 0.5); 
+    color:#222222;
 }
 
 

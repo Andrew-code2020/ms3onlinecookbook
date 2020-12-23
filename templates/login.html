@@ -1,42 +1,45 @@
 {% extends "base.html" %} {% block content %}
 
 <div class="s12 m7">
-  <h3 class="header"> Login to Temple Lean Recipes</h3>
-  <div class="card horizontal">
-    <!--First Name removed validate class to check if form fade was removed-->
-    <div class="card-stacked">
-      <form class="card-content" method="POST" action="{{ url_for('login')}}">
-        <!--username-->
-          <div class="row">
-          <div class="input-field col s12">
-            <input placeholder="username" id="username" name="username" type="text" class="validate" required/>
-            <label for="username"><i class="fas fa-user"></i> Username</label>
-          </div>
-          <!--password-->
-          <div class="row">
-          <div class="input-field col s12">
-            <input placeholder="Password" id="password" name="password" minlength="5"
-                            maxlength="15" pattern="^[a-zA-Z0-9]{5,20}$" title="Password must be between 5 and 15 characters long" type="text" class="validate" required/>
-            <label for="password"><i class="fas fa-unlock-alt"></i> Password</label>
-          </div>
-          </div>
-          <!--Button-->
-           <div class="row">
-           <div class="col s12">
-           <button class="btn waves-effect waves-light light-green" type="submit" name="action">Login to your Temple Lean Recipes profile
-    <i class="fas fa-sign-in-alt"></i>
-  </button>
-  </div>
-  </div>
-    <div class="row">
-           <div class="col s12">
-            <div class="card-action">
-          If not registered please register <a href="{{ url_for('register')}}">here</a>
+    <h3 class="header"> Login to Temple Lean Recipes</h3>
+    <div class="card horizontal">
+        <!--First Name removed validate class to check if form fade was removed-->
+        <div class="card-stacked">
+            <form class="card-content" method="POST" action="{{ url_for('login')}}">
+                <!--username-->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input placeholder="username" id="username" name="username" type="text" class="validate"
+                            required />
+                        <label for="username"> Username <i class="fas fa-user"></i></label>
+                    </div>
+                    <!--password-->
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input placeholder="Password" id="password" name="password" minlength="5" maxlength="15"
+                                pattern="^[a-zA-Z0-9]{5,20}$" title="Password must be between 5 and 15 characters long"
+                                type="text" class="validate" required />
+                            <label for="password">Password <i class="fas fa-unlock-alt"></i></label>
+                        </div>
+                    </div>
+                    <!--Button-->
+                    <div class="row">
+                        <div class="col s12">
+                            <button class="profile btn waves-effect waves-light light-green" type="submit" name="action">Login
+                                to your Temple Lean Recipes profile
+                                <i class="fas fa-sign-in-alt"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12">
+                            <div class="card-action">
+                                Not registered? please register <a href="{{ url_for('register')}}">here</a>
+                            </div>
+                        </div>
+                    </div>
+            </form>
         </div>
     </div>
-  </div>
-  </form>
-</div>
-</div>
 </div>
 {% endblock %}
