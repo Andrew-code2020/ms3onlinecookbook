@@ -1,7 +1,7 @@
 /*-----Fonts-----*/
 @import url("https://fonts.googleapis.com/css2?family=Recursive&display=swap");
 
-/*-----Colors background body #bfcfff---Hover choice #1236A3 or #bfcfff--*/
+/*-----Colors background body #bfcfff---Hover choice #1236A3 or #bfcfff-- dark text #222222;*/
 
 body {
   background-color: #bfcfff;
@@ -31,7 +31,7 @@ nav ul a{
 
 /*-------------------------------------Body-----------------------------------------------------*/
 
-/* ----------Register page ------------ */
+/* ----------Card styles------------ */
 
 
 .card-content {
@@ -40,6 +40,8 @@ nav ul a{
     font-size: 14px;
     color:#222222;
 }
+
+/* ----------Register page ------------ */
 
 .input-field>label {
     font-family: 'Recursive', sans-serif;
@@ -75,6 +77,7 @@ i {
 /*----Profile Page-----*/
 .profile{
     margin: 5px;
+    color:#222222;
 }
 
 
@@ -160,13 +163,25 @@ i {
 
 /*--------------Footer--------------------------------------------------------------*/
 
+.page-footer{
+ color:#222222;   
+}
+
+.page-footer a{
+ color:#222222;   
+}
+
+.page-footer .footer-copyright{
+   color:#222222; 
+}
+
 .social-media i {
   font-size: 36px;
   padding-right: 5px;
-  color: #ffffff;
+  color:#222222;
 }
 
 .social-media i:hover{
-   color: #bfcfff;
+   color: #ffffff;
    text-decoration: none; 
 }
