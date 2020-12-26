@@ -2,7 +2,7 @@
 
 The Temple Lean Recipe website is designed for people who are members of the Temple Lean Gym who are looking to eat the right type of food to back up there work in the Temple Leane gym
 
-The recipe categories on offer  are below ;
+The recipe categories on offer are below ;
 
 1. Breakfast 
 2. Lunch 
@@ -10,7 +10,9 @@ The recipe categories on offer  are below ;
 4. Snacks
 
 
-The problem that we are trying to solve is that current holiday websites in Ireland offer too many different types of holiday. We want to slim down the offerings and focus
+The problem that we are trying to solve is that current Temple Lean members are trying to eat the right food and drink to back up their work in the gym but they get conflicting advice on when they do research online.
+They also lack a social support network to encourage them to eat the best quality food. 
+We set out to bring Temple Lean gym members into a community of their peers that contained the best advice on food and drink to help them get the most of their gym membership at Temple Lean gym. 
 on the above named four strategically valuable markets. We have designed the website to offer bitesize information on the best quality holidays in these four areas. The success
 of this website is that the user is able to locate the type of holiday they want quickly and easily without having to sift through the large amount of offers on other sites. 
 Further success will be measured by the number of emails we receive asking the Holiday in Ireland team to make a holiday booking.   
