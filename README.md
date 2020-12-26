@@ -1,6 +1,7 @@
 # Temple Lean Recipes
 
-The Temple Lean Recipe website is designed for people who are members of the Temple Lean Gym who are looking to eat the right type of food to back up there work in the Temple Leane gym
+## Executive Summary 
+The Temple Lean Recipe website is designed for people who are members of the Temple Lean Gym who are looking to eat the right type of food to back up there work in the Temple Lean gym
 
 The recipe categories on offer are below ;
 
@@ -12,22 +13,25 @@ The recipe categories on offer are below ;
 
 The problem that we are trying to solve is that current Temple Lean members are trying to eat the right food and drink to back up their work in the gym but they get conflicting advice on when they do research online.
 They also lack a social support network to encourage them to eat the best quality food. 
-We set out to bring Temple Lean gym members into a community of their peers that contained the best advice on food and drink to help them get the most of their gym membership at Temple Lean gym. 
-on the above named four strategically valuable markets. We have designed the website to offer bitesize information on the best quality holidays in these four areas. The success
-of this website is that the user is able to locate the type of holiday they want quickly and easily without having to sift through the large amount of offers on other sites. 
-Further success will be measured by the number of emails we receive asking the Holiday in Ireland team to make a holiday booking.   
+We set out to bring Temple Lean gym members into a community of their peers that contained the best advice on food and drink to help them get the most quality from of their gym membership at Temple Lean gym. 
+The above named meal types are four strategically valuable markets. They are how people understand food at a glance. We have designed the website to offer bitesize information on the best quality recipes in these four categories. 
+The success of this website is that the user is able to locate the type of recipe they want quickly and easily without having to sift through the large amount conflicting information on other sites. 
+
+Further success will be measured by the number of Temple Lean members who sign up to the Temple Lean Recipes website.   
 
 ### UX
 
 The key reasons for producing the website were to;
 
-- help potential visitors learn about Ireland as a holiday destination
-- help new potential visitors learn easily about 4 specific types of holiday that are available in Ireland
-- help new potential users connect and communicate easily with someone who will help them make a holiday booking in Ireland at a preferential rate.
-- help new potential users easily follow Ireland on various Social Media accounts
-- help Ireland attract tourists
+- help current gym members get the best quality recipe advice from their trusted Health professionals at Temple Lean Gym
+- help members easily access 4 specific categories of recipe
+- help integrate new and current members into a community where they
+  - support each other on their nutritional journey
+  - add recipes they have used themselves
+- help 
+- In the future help Temple Lean attract and retain online subscription members 
 
-At the outset the minimum viable product was determined to be a communication platform between the operator(s) of the Holiday in Ireland website and a source of basic information about holidays in Ireland at the best tourist destinations in the holiday type areas above.
+At the outset the minimum viable product was determined to be a community platform between the operator(s) of the Temple Lean and Temple Lean Recipe website and a source of basic information about holidays in Ireland at the best tourist destinations in the holiday type areas above.
 It was an objective of this project to include an intuitive design which would allow new potential clients to navigate and enagage with the website without any prior experience of Ireland as a tourist destination. 
 Current and potential client surveys were conducted to assess the minumim effective information required to illicit a positive emotional response from users.
 This information was incredibly valuable during the construction of wireframes for the website. 
