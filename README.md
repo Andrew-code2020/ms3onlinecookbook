@@ -1,6 +1,8 @@
-# Online Cookbook project
+# Temple Lean Recipes
 
-The Recipe website is designed such that people at home in Ireland and abroad may search for four different types of holiday as indicated below;
+The Temple Lean Recipe website is designed for people who are members of the Temple Lean Gym who are looking to eat the right type of food to back up there work in the Temple Leane gym
+
+The recipe categories on offer  are below ;
 
 1. Breakfast 
 2. Lunch 
