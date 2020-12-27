@@ -1,0 +1,119 @@
+{% extends "base.html" %} {% block content %}
+
+<div class="s12 m7">
+    <h3 class="header">Add Recipe to Temple Lean Community</h3>
+    <div class="card horizontal">
+        <div class="card-stacked">
+            <form class="card-content" method="POST" action="{{ url_for('add_recipe')}}">
+                <!-- Add Form Select Recipe type-->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <select name="recipe_type" id="recipe_type">
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="Breakfast">Breakfast</option>
+                            <option value="Lunch">Lunch</option>
+                            <option value="Dinner">Dinner</option>
+                            <option value="Snacks">Snacks</option>
+                        </select>
+                        <label name="recipe_type">Select category of recipe you wish to add <i
+                                class="fas fa-hand-pointer"></i></label>
+                    </div>
+                </div>
+                <!--Meal Name-->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input placeholder="First Name" id="meal_name" name="meal_name" type="text" class="validate" />
+                        <label for="meal_name">Enter Meal Name of your recipe <i class="fas fa-signature"></i></label>
+                    </div>
+                </div>
+                <!--Meal ingredients-->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input placeholder="Last Name" id="last_name" name="last_name" type="text" class="validate" />
+                        <label for="last_name">Enter Meal Ingredients of your recipe <i
+                                class="fas fa-mortar-pestle"></i></label>
+                    </div>
+                </div>
+                <!--Meal Method-->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input placeholder="Last Name" id="meal_method" name="meal_method" type="text"
+                            class="validate" />
+                        <label for="meal_method">Enter the Method of cooking or making your recipe <i
+                                class="fas fa-clipboard"></i></label>
+                    </div>
+                </div>
+                <!--Time to Cook Meal-->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input placeholder="Meal Time" id="meal_time" name="meal_method" type="text" class="validate" />
+                        <label for="meal_time">Enter the time it takes to cook your recipe <i
+                                class="fas fa-stopwatch"></i></label>
+                    </div>
+                </div>
+
+                <!--Meal Tools-->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input placeholder="Meal Time" id="meal_tools" name="meal_tools" type="text" class="validate" />
+                        <label for="meal_tools">Enter the tools needed to cook your recipe <i
+                                class="fas fa-utensils"></i></label>
+                    </div>
+                </div>
+                <!--Meal Carbs-->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input placeholder="Carbohydrates" id="meal_nutracarbs" name="meal_nutracarbs" type="text"
+                            class="validate" />
+                        <label for="meal_nutracarbs">Enter the amount of Carbohydrate (eg 10g) in your recipe <i
+                                class="fas fa-apple-alt"></i></label>
+                    </div>
+                </div>
+                <!--Meal Fats-->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input placeholder="Fats" id="meal_nutrafats" name="meal_nutrafats" type="text"
+                            class="validate" />
+                        <label for="meal_nutrafats">Enter the amount of Fat (eg 10g) in your recipe <i
+                                class="fas fa-fill-drip"></i></label>
+                    </div>
+                </div>
+
+                <!--Meal Proteins-->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input placeholder="Proteins" id="meal_nutraproteins" name="meal_nutraproteins" type="text"
+                            class="validate" />
+                        <label for="meal_nutraproteins">Enter the amount of Protein (eg 10g) in your recipe <i
+                                class="fas fa-dna"></i></label>
+                    </div>
+                </div>
+
+                <!--Meal Kcals-->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input placeholder="Meal Time" id="meal_nutrakcals" name="meal_nutrakcals" type="text"
+                            class="validate" />
+                        <label for="meal_nutrakcals">Enter the amount of calories (eg 225 kcals) in your recipe <i
+                                class="fas fa-burn"></i></label>
+                    </div>
+                </div>
+
+                <!--Buttons Add Recipe and Cancel-->
+                <div class="row">
+                    <div class="col s12">
+                        <button class="profile btn waves-effect waves-light light-green" type="submit" name="action">Add
+                            Recipe Temple Lean Community
+                            <i class="fas fa-sign-in-alt"></i>
+                        </button>
+                        <a class="profile btn waves-effect waves-light light-green"
+                            href="{{ url_for('profile', username=session['user']) }}">Cancel <i
+                                class="fas fa-window-close"></i></a>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

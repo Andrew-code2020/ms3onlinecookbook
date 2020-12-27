@@ -128,6 +128,45 @@ def snacks():
     print(snack_meals)
     return render_template("snacks.html", snack_meals=snack_meals)
 
+@app.route("/addrecipe", methods=["GET", "POST"])
+def addrecipe():
+    return render_template("add_recipe.html")
+
+
+# add recipes to breakfast page
+@app.route("/add_recipe", methods=["GET", "POST"])
+def add_recipe():
+    if request.method == "POST":
+        # check if username already exists in db
+        existing_recipe = mongo.db.lean_recipes.find_one(
+            {"meal_name": request.form.get("meal_name").lower()})
+        if existing_user:
+            flash("Recipe Name already exists")
+            return redirect(url_for("breakfast"))
+        add_recipe = {
+            "recipe_types": request.form.get("recipe_types").lower(),
+            "recipe_image": request.form.get("recipe_image").lower(),
+            "meal_name": request.form.get("meal_name").lower(),
+            "meal_ingredients": request.form.get("meal_ingredients").lower(),
+            "meal_method": request.form.get("meal_method").lower(),
+            "meal_time": request.form.get("meal_time").lower(),
+            "meal_tools": request.form.get("meal_tools").lower(),
+            "meal_nutracarbs": request.form.get("meal_nutracarbs").lower(),
+            "meal_nutrafats": request.form.get("meal_nutrafats").lower(),
+            "meal_nutraproteins": request.form.get("meal_nutraproteins").lower(),
+            "meal_nutrakcals": request.form.get("meal_nutrakcals").lower(),
+        }
+        mongo.db.lean_recipes.insert_one(add_recipe)
+
+    # put the new user into 'session' cookie
+        session["user"] = request.form.get("username").lower()
+        flash("Recipe added to Temple Lean Recipes Successful!")
+        return redirect(url_for(
+            "profile", username=session["user"]))
+    return render_template("breakfast.html")
+
+
+
 # allows the user to edit their profile 
 @app.route("/edit_profile/<user_id>", methods=["GET", "POST"])
 def edit_profile(user_id):

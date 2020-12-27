@@ -22,7 +22,9 @@
                     </li>
                     <!--Method-->
                     <li>
-                        <div class="collapsible-header light-green"><h5>Method <i class="far fa-map"></i></h5> </div>
+                        <div class="collapsible-header light-green">
+                            <h5>Method <i class="far fa-map"></i></h5>
+                        </div>
                         <div class="collapsible-body"><span>
                                 <p>{{ recipe.meal_method }}</p>
                                 <p>{{ recipe.meal_time }}</p>
@@ -31,7 +33,9 @@
                     </li>
                     <!--Tools-->
                     <li>
-                        <div class="collapsible-header light-green"><h5>Tools <i class="fas fa-utensils"></i></h5></div>
+                        <div class="collapsible-header light-green">
+                            <h5>Tools <i class="fas fa-utensils"></i></h5>
+                        </div>
                         <div class="collapsible-body"><span>
                                 <p>{{ recipe.meal_tools }}</p>
                             </span>
@@ -39,7 +43,9 @@
                     </li>
                     <!--Nutritional Information-->
                     <li>
-                        <div class="collapsible-header light-green"><h5>Nutritional Information <i class="fab fa-nutritionix"></i></h5></div>
+                        <div class="collapsible-header light-green">
+                            <h5>Nutritional Information <i class="fab fa-nutritionix"></i></h5>
+                        </div>
                         <div class="collapsible-body">
                             <span>
                                 <ul>
@@ -55,10 +61,11 @@
             </div>
             <div class="card-action">
                 <a href="{{ url_for('lunch')}}">Go to Lunch Recipes</a>
-                <br>
                 <a href="{{ url_for('dinner')}}">Go to Dinner Recipes</a>
-                <br>
                 <a href="{{ url_for('snacks')}}">Go to Snack Recipes</a>
+                <a href="{{ url_for('addrecipe')}}" class="profile btn waves-effect waves-light light-green" >Add Recipe
+                    <i class="fas fa-plus-square"></i>
+                </a>
             </div>
         </div>
         {% endfor %}
