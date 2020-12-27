@@ -157,12 +157,8 @@ def add_recipe():
             "meal_nutrakcals": request.form.get("meal_nutrakcals"),
         }
         mongo.db.lean_recipes.insert_one(add_recipe)
-
-    # put the new user into 'session' cookie
-        session["user"] = request.form.get("username")
         flash("Recipe added to Temple Lean Recipes Successful!")
-        return redirect(url_for(
-            "profile", username=session["user"]))
+
     return render_template("breakfast.html")
 
 
