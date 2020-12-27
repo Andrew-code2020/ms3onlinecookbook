@@ -140,26 +140,26 @@ def add_recipe():
         # check if username already exists in db
         existing_recipe = mongo.db.lean_recipes.find_one(
             {"meal_name": request.form.get("meal_name").lower()})
-        if existing_user:
+        if existing_recipe:
             flash("Recipe Name already exists")
             return redirect(url_for("breakfast"))
         add_recipe = {
-            "recipe_types": request.form.get("recipe_types").lower(),
-            "recipe_image": request.form.get("recipe_image").lower(),
-            "meal_name": request.form.get("meal_name").lower(),
-            "meal_ingredients": request.form.get("meal_ingredients").lower(),
-            "meal_method": request.form.get("meal_method").lower(),
-            "meal_time": request.form.get("meal_time").lower(),
-            "meal_tools": request.form.get("meal_tools").lower(),
-            "meal_nutracarbs": request.form.get("meal_nutracarbs").lower(),
-            "meal_nutrafats": request.form.get("meal_nutrafats").lower(),
-            "meal_nutraproteins": request.form.get("meal_nutraproteins").lower(),
-            "meal_nutrakcals": request.form.get("meal_nutrakcals").lower(),
+            "recipe_types": request.form.get("recipe_types"),
+            "recipe_image": request.form.get("recipe_image"),
+            "meal_name": request.form.get("meal_name"),
+            "meal_ingredients": request.form.get("meal_ingredients"),
+            "meal_method": request.form.get("meal_method"),
+            "meal_time": request.form.get("meal_time"),
+            "meal_tools": request.form.get("meal_tools"),
+            "meal_nutracarbs": request.form.get("meal_nutracarbs"),
+            "meal_nutrafats": request.form.get("meal_nutrafats"),
+            "meal_nutraproteins": request.form.get("meal_nutraproteins"),
+            "meal_nutrakcals": request.form.get("meal_nutrakcals"),
         }
         mongo.db.lean_recipes.insert_one(add_recipe)
 
     # put the new user into 'session' cookie
-        session["user"] = request.form.get("username").lower()
+        session["user"] = request.form.get("username")
         flash("Recipe added to Temple Lean Recipes Successful!")
         return redirect(url_for(
             "profile", username=session["user"]))
