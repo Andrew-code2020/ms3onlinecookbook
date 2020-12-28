@@ -19,10 +19,13 @@ mongo = PyMongo(app)
 
 # Renders Home page to user or person browsing the web
 @app.route("/")
+
+
 @app.route("/home_page")
 def home_page():
     lean_recipes = mongo.db.lean_recipes.find()
     return render_template("homepage.html", lean_recipes=lean_recipes)
+
 
 # Allow the user to create a profile and register
 @app.route("/register", methods=["GET", "POST"])
@@ -185,13 +188,14 @@ def edit_recipe(lean_recipes_id):
             "meal_nutrafats": request.form.get("meal_nutrafats"),
             "meal_nutraproteins": request.form.get("meal_nutraproteins"),
             "meal_nutrakcals": request.form.get("meal_nutrakcals"),
+            "created_by": session["user"],
         }}
         mongo.db.lean_recipes.update_one({"_id": ObjectId(lean_recipes_id)}, editrec)
         flash("Recipe updated successfully")
     
-    lean = mongo.db.lean_recipes.find_one({"_id": ObjectId(lean_recipes_id)})
+    lean_recipes = mongo.db.lean_recipes.find_one({"_id": ObjectId(lean_recipes_id)})
     types = mongo.db.types.find()
-    return render_template("profile.html", lean=lean, recipe_types=types)
+    return render_template("profile.html", lean_recipes=lean_recipes, recipe_types=types)
 
 
 # allows the user to edit their profile 
@@ -223,6 +227,14 @@ def delete_profile(user_id):
     session.pop("user")
     flash("Profile Deleted")
     return redirect(url_for('register'))
+
+
+
+@app.route("/delete_recipe/<lean_recipes_id>")
+def delete_recipe(lean_recipes_id):
+    mongo.db.lean_recipes.remove({"_id": ObjectId(lean_recipes_id)})
+    flash("Recipe Deleted")
+    return redirect(url_for('home_page'))
 
 
 #debug=false before submission
