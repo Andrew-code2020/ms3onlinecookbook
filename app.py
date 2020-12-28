@@ -128,6 +128,7 @@ def snacks():
     print(snack_meals)
     return render_template("snacks.html", snack_meals=snack_meals)
 
+
 @app.route("/addrecipe", methods=["GET", "POST"])
 def addrecipe():
     return render_template("add_recipe.html")
@@ -162,6 +163,36 @@ def add_recipe():
     return render_template("breakfast.html")
 
 
+@app.route("/editrecipe", methods=["GET", "POST"])
+def editrecipe():
+    return render_template("edit_recipe.html")
+
+
+# allows the user to edit their profile 
+@app.route("/edit_recipe/<lean_recipes_id>", methods=["GET", "POST"])
+def edit_recipe(lean_recipes_id):
+    if request.method == "POST":
+        print(f"USER: {lean_recipes_id}")
+        editrec = {"$set": {
+            "recipe_types": request.form.get("recipe_types"),
+            "recipe_image": request.form.get("recipe_image"),
+            "meal_name": request.form.get("meal_name"),
+            "meal_ingredients": request.form.get("meal_ingredients"),
+            "meal_method": request.form.get("meal_method"),
+            "meal_time": request.form.get("meal_time"),
+            "meal_tools": request.form.get("meal_tools"),
+            "meal_nutracarbs": request.form.get("meal_nutracarbs"),
+            "meal_nutrafats": request.form.get("meal_nutrafats"),
+            "meal_nutraproteins": request.form.get("meal_nutraproteins"),
+            "meal_nutrakcals": request.form.get("meal_nutrakcals"),
+        }}
+        mongo.db.lean_recipes.update_one({"_id": ObjectId(lean_recipes_id)}, editrec)
+        flash("Recipe updated successfully")
+    
+    lean = mongo.db.lean_recipes.find_one({"_id": ObjectId(lean_recipes_id)})
+    types = mongo.db.types.find()
+    return render_template("profile.html", lean=lean, recipe_types=types)
+
 
 # allows the user to edit their profile 
 @app.route("/edit_profile/<user_id>", methods=["GET", "POST"])
@@ -182,6 +213,7 @@ def edit_profile(user_id):
     user = mongo.db.users.find_one({"_id": ObjectId(user_id)})
     types = mongo.db.types.find()
     return render_template("edit_profile.html", user=user, recipe_type=types)
+
 
 # Allows the user to delete their profile and automatically logs them out as well
 @app.route("/delete_profile/<user_id>")
