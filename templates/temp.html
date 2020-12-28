@@ -3,6 +3,18 @@
 {% if session.user|lower == task.created_by|lower}
 {% endif %}
 
+
+# Allows the user to delete their profile and automatically logs them out as well
+@app.route("/delete_profile/<user_id>")
+def delete_profile(user_id):
+    mongo.db.users.remove({"_id": ObjectId(user_id)})
+    #log out user as well
+    session.pop("user")
+    flash("Profile Deleted")
+    return redirect(url_for('register'))
+
+
+
 <div class="row" method="GET" action="{{ url_for('breakfast')}}">
     <div class="col s12 m6">
         <div class="card">
