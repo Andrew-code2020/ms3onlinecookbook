@@ -5,16 +5,16 @@
     <div class="card horizontal">
         <div class="card-stacked">
             <form class="card-content" method="POST"
-                action="{{ url_for('edit_recipe', lean_recipes_id=lean_recipes._id)}}">
+                action="{{ url_for('edit_recipe', lean_recipes_id=lean_recipes._id) }}">
                 <!-- Add Form Select Recipe type-->
                 <div class="row">
                     <div class="input-field col s12">
                         {% for recipe in recipe_type  %}
-                        {% if recipe.recipe_types == user.recipe_type %}
-                        <option value="{{recipe.recipe_types}}" selected>{{recipe.recipe_types}}</option>
-                        {% else %}
-                        <option value="{{recipe.recipe_types}}"> {{recipe.recipe_types}}</option>
-                        {% endif %}
+                            {% if recipe.recipe_types == lean_recipes.recipe_types %}
+                                <option value="{{recipe.recipe_types}}" selected>{{recipe.recipe_types}}</option>
+                            {% else %}
+                                <option value="{{recipe.recipe_types}}"> {{recipe.recipe_types}}</option>
+                            {% endif %}
                         {% endfor %}
                         <label name="recipe_type">Select category of recipe you wish to add <i
                                 class="fas fa-hand-pointer"></i></label>
@@ -69,7 +69,7 @@
                 <div class="row">
                     <div class="input-field col s12">
                         <input placeholder="Carbohydrates" id="meal_nutracarbs" name="meal_nutracarbs" type="text"
-                            class="validate" value="{{ lean_recipes.meal_nutrcarbs }}"/>
+                            class="validate" value="{{ lean_recipes.meal_nutrcarbs }}" />
                         <label for="meal_nutracarbs">Enter the amount of Carbohydrate (eg 10g) in your recipe <i
                                 class="fas fa-apple-alt"></i></label>
                     </div>
@@ -77,8 +77,8 @@
                 <!--Meal Fats-->
                 <div class="row">
                     <div class="input-field col s12">
-                        <input placeholder="Fats" id="meal_nutrafats" name="meal_nutrafats" type="text"
-                            class="validate" value="{{ lean_recipes.meal_nutrafats }}" />
+                        <input placeholder="Fats" id="meal_nutrafats" name="meal_nutrafats" type="text" class="validate"
+                            value="{{ lean_recipes.meal_nutrafats }}" />
                         <label for="meal_nutrafats">Enter the amount of Fat (eg 10g) in your recipe <i
                                 class="fas fa-fill-drip"></i></label>
                     </div>

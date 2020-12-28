@@ -168,7 +168,9 @@ def add_recipe():
 
 @app.route("/editrecipe", methods=["GET", "POST"])
 def editrecipe():
-    return render_template("edit_recipe.html")
+    lean_recipes = mongo.db.lean_recipes.find()
+    types = mongo.db.types.find()
+    return render_template("edit_recipe.html", lean_recipes=lean_recipes, recipe_types=types)
 
 
 # allows the user to edit their recipes 
@@ -229,12 +231,6 @@ def delete_profile(user_id):
     return redirect(url_for('register'))
 
 
-
-@app.route("/delete_recipe/<lean_recipes_id>")
-def delete_recipe(lean_recipes_id):
-    mongo.db.lean_recipes.remove({"_id": ObjectId(lean_recipes_id)})
-    flash("Recipe Deleted")
-    return redirect(url_for('home_page'))
 
 
 #debug=false before submission

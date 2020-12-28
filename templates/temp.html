@@ -1,5 +1,8 @@
 <!--Scratch pad html-->
 
+{% if session.user|lower == task.created_by|lower}
+{% endif %}
+
 <div class="row" method="GET" action="{{ url_for('breakfast')}}">
     <div class="col s12 m6">
         <div class="card">
