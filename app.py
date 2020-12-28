@@ -171,7 +171,7 @@ def editrecipe():
     return render_template("edit_recipe.html")
 
 
-# allows the user to edit their profile 
+# allows the user to edit their recipes 
 @app.route("/edit_recipe/<lean_recipes_id>", methods=["GET", "POST"])
 def edit_recipe(lean_recipes_id):
     if request.method == "POST":
