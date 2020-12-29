@@ -141,7 +141,7 @@ def addrecipe():
 @app.route("/add_recipe", methods=["GET", "POST"])
 def add_recipe():
     if request.method == "POST":
-        # check if username already exists in db
+        # check if recipe name already exists in db
         existing_recipe = mongo.db.lean_recipes.find_one(
             {"meal_name": request.form.get("meal_name").lower()})
         if existing_recipe:

@@ -55,11 +55,15 @@
             </div>
             <div class="card-action">
                 <a href="{{ url_for('breakfast')}}">Go to Breakfast Recipes</a>
-                <br>
                 <a href="{{ url_for('lunch')}}">Go to Lunch Recipes</a>
-                <br>
                 <a href="{{ url_for('dinner')}}">Go to Dinner Recipes</a>
                 <br>
+                <a href="{{ url_for('addrecipe')}}" class="profile btn waves-effect waves-light light-green" >Add Recipe
+                    <i class="fas fa-plus-square"></i>
+                <a href="#" class="profile btn waves-effect waves-light light-green" >Edit Recipe
+                    <i class="fas fa-user-edit"></i>
+                <a href="#" class="profile btn waves-effect waves-light light-green" > Delete Recipe
+                    <i class="fas fa-trash-alt"></i>
             </div>
         </div>
         {% endfor %}

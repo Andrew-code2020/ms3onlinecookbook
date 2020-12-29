@@ -4,28 +4,29 @@
     <h3 class="header">Edit Recipe in Temple Lean Community</h3>
     <div class="card horizontal">
         <div class="card-stacked">
-            <form class="card-content" method="POST"
-                action="{{ url_for('editrecipe', recipe_id=lean_recipes.id) }}">
+            <form class="card-content" method="POST" action="url_for('editrecipe', recipe_id=recipe._id)}}">
                 <!-- Add Form Select Recipe type-->
                 <div class="row">
                     <div class="input-field col s12">
+                        <label name="recipe_type">Select the recipes you're interested in <i
+                                class="fas fa-hand-pointer"></i> </label>
+                        <br>    
                         <select name="recipe_type" id="recipe_type">
                         {% for recipe in recipe_type  %}
                             {% if recipe.recipe_types == lean_recipes.recipe_type %}
-                                <option value="{{lean_recipes.recipe_types}}" selected>{{recipe.recipe_types}}</option>
+                                <option value="{{lean_recipes.recipe_types}}" selected required>{{recipe.recipe_types}}</option>
                             {% else %}
                                 <option value="{{recipe.recipe_types}}"> {{recipe.recipe_types}}</option>
                             {% endif %}
                         {% endfor %}
-                        <label name="recipe_type">Select category of recipe you wish to add <i
-                                class="fas fa-hand-pointer"></i></label>
+                        </select>
                     </div>
                 </div>
                 <!--Meal Name-->
                 <div class="row">
                     <div class="input-field col s12">
                         <input placeholder="Meal Name" id="meal_name" name="meal_name" type="text" class="validate"
-                            value="{{ lean_recipes.meal_name }}" />
+                            value="{{ lean_recipes.meal_name }}" required/>
                         <label for="meal_name">Enter Meal Name of your recipe <i class="fas fa-signature"></i></label>
                     </div>
                 </div>
@@ -34,7 +35,7 @@
                     <div class="input-field col s12">
                         <input placeholder="Meal ingredients" id="meal_ingredients" name="meal_ingredients" type="text"
                             class="validate" value="{{ lean_recipes.meal_ingredients }}" />
-                        <label for="last_name">Enter Meal Ingredients of your recipe <i
+                        <label for="meal_ingredients">Enter Meal Ingredients of your recipe <i
                                 class="fas fa-mortar-pestle"></i></label>
                     </div>
                 </div>
@@ -56,12 +57,11 @@
                                 class="fas fa-stopwatch"></i></label>
                     </div>
                 </div>
-
                 <!--Meal Tools-->
                 <div class="row">
                     <div class="input-field col s12">
                         <input placeholder="Meal Tools" id="meal_tools" name="meal_tools" type="text"
-                            class="validate" value="{{ lean_recipes.meal_time }}" />
+                            class="validate" value="{{ lean_recipes.meal_tools }}" />
                         <label for="meal_tools">Enter the tools needed to cook your recipe <i
                                 class="fas fa-utensils"></i></label>
                     </div>
