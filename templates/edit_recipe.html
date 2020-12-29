@@ -5,13 +5,14 @@
     <div class="card horizontal">
         <div class="card-stacked">
             <form class="card-content" method="POST"
-                action="{{ url_for('edit_recipe', lean_recipes_id=lean_recipes._id) }}">
+                action="{{ url_for('editrecipe', recipe_id=lean_recipes.id) }}">
                 <!-- Add Form Select Recipe type-->
                 <div class="row">
                     <div class="input-field col s12">
+                        <select name="recipe_type" id="recipe_type">
                         {% for recipe in recipe_type  %}
-                            {% if recipe.recipe_types == lean_recipes.recipe_types %}
-                                <option value="{{recipe.recipe_types}}" selected>{{recipe.recipe_types}}</option>
+                            {% if recipe.recipe_types == lean_recipes.recipe_type %}
+                                <option value="{{lean_recipes.recipe_types}}" selected>{{recipe.recipe_types}}</option>
                             {% else %}
                                 <option value="{{recipe.recipe_types}}"> {{recipe.recipe_types}}</option>
                             {% endif %}
@@ -25,7 +26,7 @@
                     <div class="input-field col s12">
                         <input placeholder="Meal Name" id="meal_name" name="meal_name" type="text" class="validate"
                             value="{{ lean_recipes.meal_name }}" />
-                        <label for=" meal_name">Enter Meal Name of your recipe <i class="fas fa-signature"></i></label>
+                        <label for="meal_name">Enter Meal Name of your recipe <i class="fas fa-signature"></i></label>
                     </div>
                 </div>
                 <!--Meal ingredients-->
@@ -60,7 +61,7 @@
                 <div class="row">
                     <div class="input-field col s12">
                         <input placeholder="Meal Tools" id="meal_tools" name="meal_tools" type="text"
-                            class="validate" />
+                            class="validate" value="{{ lean_recipes.meal_time }}" />
                         <label for="meal_tools">Enter the tools needed to cook your recipe <i
                                 class="fas fa-utensils"></i></label>
                     </div>

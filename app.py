@@ -166,18 +166,11 @@ def add_recipe():
     return render_template("breakfast.html")
 
 
-@app.route("/editrecipe", methods=["GET", "POST"])
-def editrecipe():
-    lean_recipes = mongo.db.lean_recipes.find()
-    types = mongo.db.types.find()
-    return render_template("edit_recipe.html", lean_recipes=lean_recipes, recipe_types=types)
-
-
-# allows the user to edit their recipes 
-@app.route("/edit_recipe/<lean_recipes_id>", methods=["GET", "POST"])
-def edit_recipe(lean_recipes_id):
+# allows the user to edit their recipes
+@app.route("/editrecipe/<recipe_id>", methods=["GET", "POST"])
+def editrecipe(recipe_id):
     if request.method == "POST":
-        print(f"USER: {lean_recipes_id}")
+        print(f"USER: {recipe_id}")
         editrec = {"$set": {
             "recipe_types": request.form.get("recipe_types"),
             "recipe_image": request.form.get("recipe_image"),
@@ -192,12 +185,13 @@ def edit_recipe(lean_recipes_id):
             "meal_nutrakcals": request.form.get("meal_nutrakcals"),
             "created_by": session["user"],
         }}
-        mongo.db.lean_recipes.update_one({"_id": ObjectId(lean_recipes_id)}, editrec)
+        mongo.db.lean_recipes.update_one({"_id": ObjectId(recipe_id)}, editrec)
         flash("Recipe updated successfully")
-    
-    lean_recipes = mongo.db.lean_recipes.find_one({"_id": ObjectId(lean_recipes_id)})
+
+    lean_recipes = mongo.db.lean_recipes.find({"_id": ObjectId(recipe_id)})
     types = mongo.db.types.find()
-    return render_template("profile.html", lean_recipes=lean_recipes, recipe_types=types)
+    return render_template("edit_recipe.html", lean_recipes=lean_recipes, recipe_types=types)
+
 
 
 # allows the user to edit their profile 
