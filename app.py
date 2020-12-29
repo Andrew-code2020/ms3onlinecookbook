@@ -141,7 +141,7 @@ def addrecipe():
 @app.route("/add_recipe", methods=["GET", "POST"])
 def add_recipe():
     if request.method == "POST":
-        # check if recipe name already exists in db
+        # check if recipe already exists in db
         existing_recipe = mongo.db.lean_recipes.find_one(
             {"meal_name": request.form.get("meal_name").lower()})
         if existing_recipe:
@@ -188,7 +188,7 @@ def editrecipe(recipe_id):
         mongo.db.lean_recipes.update_one({"_id": ObjectId(recipe_id)}, editrec)
         flash("Recipe updated successfully")
 
-    lean_recipes = mongo.db.lean_recipes.find({"_id": ObjectId(recipe_id)})
+    lean_recipes = mongo.db.lean_recipes.find_one({"_id": ObjectId(recipe_id)})
     types = mongo.db.types.find()
     return render_template("edit_recipe.html", lean_recipes=lean_recipes, recipe_types=types)
 

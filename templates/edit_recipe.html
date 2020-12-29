@@ -13,12 +13,12 @@
                         <br>    
                         <select name="recipe_type" id="recipe_type">
                         {% for recipe in recipe_type  %}
-                            {% if recipe.recipe_types == lean_recipes.recipe_type %}
-                                <option value="{{lean_recipes.recipe_types}}" selected required>{{recipe.recipe_types}}</option>
+                            {% if recipe.recipe_types == lean_recipes.recipe_types %}
+                                <option value="{{recipe.recipe_types}}" selected>{{recipe.recipe_types}}</option>
                             {% else %}
                                 <option value="{{recipe.recipe_types}}"> {{recipe.recipe_types}}</option>
                             {% endif %}
-                        {% endfor %}
+                         {% endfor %}
                         </select>
                     </div>
                 </div>
@@ -98,7 +98,7 @@
                 <!--Meal Kcals-->
                 <div class="row">
                     <div class="input-field col s12">
-                        <input placeholder="Meal Time" id="meal_nutrakcals" name="meal_nutrakcals" type="text"
+                        <input placeholder="kcals" id="meal_nutrakcals" name="meal_nutrakcals" type="text"
                             class="validate" value="{{ lean_recipes.meal_nutrakcals}}" />
                         <label for="meal_nutrakcals">Enter the amount of calories (eg 225 kcals) in your recipe <i
                                 class="fas fa-burn"></i></label>

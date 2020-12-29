@@ -10,27 +10,28 @@
                     <div class="input-field col s12">
                         <input placeholder="username" id="username" name="username"  pattern="^[a-zA-Z0-9]{5,20}$"
                             type="text" value="{{ user.username }}" />
-                        <label for="username"><i class="fas fa-user"></i>Username</label>
+                        <label for="username"> Username <i class="fas fa-user"></i></label>
                     </div>
                 </div>
                 <!--Edit First Name-->
                 <div class="row">
                     <div class="input-field col s12">
                         <input placeholder="First Name" id="first_name" name="first_name" type="text" value="{{ user.first_name.capitalize() }}" />
-                        <label for="first_name"><i class="fas fa-pen"></i> First Name</label>
+                        <label for="first_name">First Name <i class="fas fa-pen"></i></label>
                     </div>
                 </div>
                 <!--Edit Last Name-->
                 <div class="row">
                     <div class="input-field col s12">
                         <input placeholder="Last Name" id="last_name" name="last_name" type="text" class="validate" value="{{ user.last_name.capitalize() }}" />
-                        <label for="last_name"><i class="fas fa-pen"></i> Last Name</label>
+                        <label for="last_name"> Last Name <i class="fas fa-pen"></i></label>
                     </div>
                 </div>
                 <!--Edit Recipe selection-->
                 <div class="row">
                     <div class="input-field col s12">
-                        <label name="recipe_type">Select the recipes you're interested in</label>
+                        <label name="recipe_type">Select the recipes you're interested in <i
+                                class="fas fa-hand-pointer"></i> </label>
                         <br>
                       <select name="recipe_type" id="recipe_type">
                         {% for recipe in recipe_type  %}
@@ -49,7 +50,7 @@
                         <input placeholder="Email" id="email" name="email"
                             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Please enter a valid email address"
                             type="text" class="validate" required value="{{ user.email.lower() }}" />
-                        <label for="email"><i class="fas fa-envelope-square"></i> Email</label>
+                        <label for="email"> Email <i class="fas fa-envelope-square"></i></label>
                     </div>
                 </div>
             </div>
