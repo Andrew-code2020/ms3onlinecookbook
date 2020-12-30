@@ -394,7 +394,10 @@ I also used following website to help me correct any formatting anomalies in my 
 
 #### Bugs
 
-JS Tabs converted to materialize collapsible due to JS tabs rendering same information on each loop and because it cut down the amount of code we need.
+- hide-on-small-only class to avoid heading Temple Lean Recipes rendering above and below the recipe navigation bar.  
+
+JS Tabs
+- converted to materialize collapsible due to JS tabs rendering same information on each loop and because it cut down the amount of code we need.
 
 
 Pictures 
