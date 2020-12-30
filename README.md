@@ -41,21 +41,20 @@ The vision for the project was to have a website that;
 
 - create basic information that the user could read about healthy food recipes 
 - Allow users to add recipes they feel have benefitted them for others to use
-- Allow users to modify recipes they feel have benefitted them for others in case they discover new information about a recipe
+- Allow users to modify the recipes they created they feel have benefitted them for others in case they discover new information about a recipe
 - Allow users to delete recipes they created should they feel that they are no longer useful
-- Offered a route to Temple Lean the fitness facility destinations with quick options to open a communication channel with the Holiday in Ireland team to help the user make a booking. 
+- Offer a route to finding out more about Temple Lean the fitness facility
 
 Further objectives included;
-- implementing interactive features on the web site to help the user feel in touch with Ireland
-- allow the user to locate the holiday areas easily on a map of Ireland
-- allow the user to learn some basic information about Ireland
-- allow the user to reach out and make contact with the Holiday in Ireland team
+- implementing interactive features on the Temple Lean Recipes website to help the user feel they were unlocking short manageable amounts of information about healthy food recipes.
+
 
 
 ###### User Story 1
 
-I am a currently researching holiday destinations. A friend recommends that I check out a website named "Holiday in Ireland". I search the web find the Holiday in Ireland website. In particular I click on Learn about Ireland. I hover my mouse over the pictures on the page and card flip features reveal buttons 
-that allow me to toggle through information on different pieces of content about Ireland and discover some basic information.
+I am a currently a member of Temple Lean Gym. Following a conversation with a friend about diet and exercise my friend recommends that I check out a new website named "Temple Lean Recipes". I search the web find the Temple Lean Recipes website. 
+I register and I click on the option 'Dinner' because I have always had trouble cooking healthy dinner recipes. I click on a recipe I am interested in through the collapsible buttons on the page and the collapsible feature reveals information in a
+step wise manner that allows me to learn what I need to know about how to make the recipe as well as other information.
 
 ###### User Story 2
 
