@@ -159,6 +159,7 @@ def add_recipe():
             "meal_nutrafats": request.form.get("meal_nutrafats"),
             "meal_nutraproteins": request.form.get("meal_nutraproteins"),
             "meal_nutrakcals": request.form.get("meal_nutrakcals"),
+            "created_by": session["user"],
         }
         mongo.db.lean_recipes.insert_one(add_recipe)
         flash("Recipe added to Temple Lean Recipes Successful!")

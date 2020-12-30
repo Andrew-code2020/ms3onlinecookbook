@@ -31,12 +31,20 @@ The key reasons for producing the website were to;
 - help 
 - In the future help Temple Lean attract and retain online subscription members 
 
-At the outset the minimum viable product was determined to be a community platform between the operator(s) of the Temple Lean and Temple Lean Recipe website and a source of basic information about holidays in Ireland at the best tourist destinations in the holiday type areas above.
-It was an objective of this project to include an intuitive design which would allow new potential clients to navigate and enagage with the website without any prior experience of Ireland as a tourist destination. 
+At the outset the minimum viable product was determined to be a community platform whereby the operator(s) of the Temple Lean and Temple Lean Recipe website add a source of basic information about healthy food recipes and social support in a health and fitness setting.
+It was an objective of this project to include an intuitive design which would allow new and current clients to navigate and enagage with the website without any prior experience of Temple Lean the gym facility or even a high level of knowledge about healthy food recipes. 
 Current and potential client surveys were conducted to assess the minumim effective information required to illicit a positive emotional response from users.
 This information was incredibly valuable during the construction of wireframes for the website. 
+
 At the outset conventional web design features were favoured because we wanted everyone from the novice to the accompolished web user to feel like they were still in a familiar place on the web. 
-The vision for the project was to have a website that displayed basic information on Irelands top tourist destinations with quick options to open a communication channel with the Holiday in Ireland team to help the user make a booking. 
+The vision for the project was to have a website that;
+
+- create basic information that the user could read about healthy food recipes 
+- Allow users to add recipes they feel have benefitted them for others to use
+- Allow users to modify recipes they feel have benefitted them for others in case they discover new information about a recipe
+- Allow users to delete recipes they created should they feel that they are no longer useful
+- Offered a route to Temple Lean the fitness facility destinations with quick options to open a communication channel with the Holiday in Ireland team to help the user make a booking. 
+
 Further objectives included;
 - implementing interactive features on the web site to help the user feel in touch with Ireland
 - allow the user to locate the holiday areas easily on a map of Ireland
