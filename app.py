@@ -163,7 +163,8 @@ def add_recipe():
         mongo.db.lean_recipes.insert_one(add_recipe)
         flash("Recipe added to Temple Lean Recipes Successful!")
 
-    return render_template("breakfast.html")
+    return redirect(url_for(
+            "profile", username=session["user"]))
 
 
 # allows the user to edit their recipes
@@ -225,6 +226,13 @@ def delete_profile(user_id):
     return redirect(url_for('register'))
 
 
+# Allows the user to delete their recipes 
+@app.route("/delete_recipe/<recipe_id>")
+def delete_recipe(recipe_id):
+    mongo.db.lean_recipes.remove({"_id": ObjectId(recipe_id)})
+    flash("Recipe Deleted")
+    return redirect(url_for(
+            "profile", username=session["user"]))
 
 
 #debug=false before submission

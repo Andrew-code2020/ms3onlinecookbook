@@ -12,7 +12,7 @@
                                 class="fas fa-hand-pointer"></i> </label>
                         <br>    
                         <select name="recipe_type" id="recipe_type">
-                        {% for recipe in recipe_type  %}
+                        {% for recipe in recipe_types  %}
                             {% if recipe.recipe_types == lean_recipes.recipe_types %}
                                 <option value="{{recipe.recipe_types}}" selected>{{recipe.recipe_types}}</option>
                             {% else %}

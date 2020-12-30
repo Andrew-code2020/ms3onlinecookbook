@@ -60,9 +60,9 @@
                 <br>
                 <a href="{{ url_for('addrecipe')}}" class="profile btn waves-effect waves-light light-green" >Add Recipe
                     <i class="fas fa-plus-square"></i> </a>
-                <a href="#" class="profile btn waves-effect waves-light light-green" >Edit Recipe
+                <a href="{{ url_for('editrecipe', recipe_id=recipe._id)}}" class="profile btn waves-effect waves-light light-green" >Edit Recipe
                     <i class="fas fa-user-edit"></i> </a>
-                <a href="#" class="profile btn waves-effect waves-light light-green" > Delete Recipe
+                <a href="{{ url_for('delete_recipe', recipe_id=recipe._id)}}" class="profile btn waves-effect waves-light light-green" > Delete Recipe
                     <i class="fas fa-trash-alt"></i> </a>
             </div>
         </div>
