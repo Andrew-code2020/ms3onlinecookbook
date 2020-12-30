@@ -394,6 +394,7 @@ I also used following website to help me correct any formatting anomalies in my 
 
 #### Bugs
 
+Heading Bugs in Navbar
 - hide-on-small-only class to avoid heading Temple Lean Recipes rendering above and below the recipe navigation bar.  
 
 JS Tabs
