@@ -21,7 +21,7 @@
         <nav class="nav-extended light-green">
             <div class="nav-wrapper text-shadow">
                 <a href="{{ url_for('home_page')}}" class="brand-logo hide-on-small-only">Temple Lean Recipes</a>
-                <a href="#" data-target="mobile-demo" class="right sidenav-trigger"><i class="fas fa-apple-alt"></i></a>
+                <a href="{{ url_for('home_page')}}" data-target="mobile-demo" class="right sidenav-trigger"><i class="fas fa-apple-alt"></i></a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down text-shadow">
                     {% if session.user %}
                     <li><a href="{{ url_for('profile', username=session['user']) }}">Profile <i

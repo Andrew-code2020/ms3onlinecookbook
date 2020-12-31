@@ -133,10 +133,10 @@ Mobile Device wireframe
 
 ##### Existing Features
 
-- Internal links to different parts of the Holiday in Ireland website
-- External links that open a new to different platforms such as social media, the Government of Ireland website. The social media accounts are linked to the developers social media accounts to demonstrate the skill of adding external links
-- Header - Contains our Alert Bar (where appropriate) and Navbar
-- Easy navigation - The Navbar at the top of each page is similar to conventional navbars allowing the user an intuitive experience on a perhaps unfamiliar website. We maintained this navbar across each page for ease of navigation. The navbar collapses on mobile devices to a single cog wheel. The navbar also includes a current class in golden rod yellow so the user knows what page they are on with one look.
+- Internal links to different parts of the Temple Lean Recipe website
+- External links that open a new to different platforms such as social media, the developers Milestone 1 project website and the developers private blog. The social media accounts the developers Milestone 1 project website and the developers private blog are linked to the developers social media accounts to demonstrate the skill of adding external links.
+- Header - Contains the Navbar design for desktop and mobile devices 
+- Easy navigation - The Navbar at the top of each page is similar to conventional navbars allowing the user an intuitive experience on a perhaps unfamiliar website. We maintained this navbar across each page for ease of navigation. The top part of the navbar log in and registeration collapse on mobile devices to a single apple icon. The navbar items Breakfast, Lunch, Dinner and Snacks appear after you register or log in. This was done to avoid overhwleming the user when they land on the page and guide them to log in or regsiter and then more content will be revealed.
 - Alert Bar - Appears only in the FAQ section and gives a direct link to the government of Ireland COVID-19 travel advice page for the benefit of users as they may need this information when planning a holiday in Ireland. 
 - Footer - Linked to some pages we used to develop the website and conatins direct links to the developers Social Media platforms. Holiday in Ireland Social Media specific to this site does not exist but is in future plans
 - Section - The middle section content changes on each page and gives basic information on aspect of the Holiday in Ireland site.
@@ -395,7 +395,9 @@ I also used following website to help me correct any formatting anomalies in my 
 #### Bugs
 
 Heading Bugs in Navbar
-- hide-on-small-only class to avoid heading Temple Lean Recipes rendering above and below the recipe navigation bar.  
+- On the base.html page on a medium size screen you will see Temple Lean Recipes in the top left of the screen. During development I noticed on a small screen that 
+this text would wrap around the other navigation list items Breakfast, Lunch, Dinner and Snacks. The words 'Temple Lean' part would sit on top of the list items and Recipes would sit below the 
+the list items. I input the class of hide-on-small-only class to avoid heading Temple Lean Recipes rendering above and below the recipe navigation list items. In future development I would like to contain the words Temple Lean Recipes adjust them to the mobie device rather than remove them for small devices and bring them back on larger ones.   
 
 JS Tabs
 - converted to materialize collapsible due to JS tabs rendering same information on each loop and because it cut down the amount of code we need.
