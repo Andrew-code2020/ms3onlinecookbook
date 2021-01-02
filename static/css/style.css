@@ -12,9 +12,7 @@
 
 /*------------------------------------Navbar---------------------------------------------------------------------*/
 
-nav ul a .active {
-  color:#f0f8ff;  
-}
+
 
 .tabs {
     color: #ffffff;
@@ -27,6 +25,11 @@ nav .brand-logo{
 
 nav ul a{
   color:#222222;  
+}
+
+/*--trying to target the active navbar page--*/
+nav ul li.active {
+    background-color:#f0f8ff;
 }
 
 

@@ -200,8 +200,11 @@ I am researching culture holiday locations in Ireland. I log onto the Holiday in
 
 ##### Structure Plane
 In development we set out to make sure that our site would be consistent. We used the categories below to describe our efforts
- - predictable 
- - learnable 
+ - Predictable
+   - To make the website predictable we used the same materialize cards for Breakfast, Lunch, Dinner and Snacks
+   - We used similar forms to register,, to log in, create profile information, create recipe information, update profile information and update recipe information.  
+ - Learnable
+   - We used collapsible 
  - visible 
  - Clear and intuitive feedback
 
