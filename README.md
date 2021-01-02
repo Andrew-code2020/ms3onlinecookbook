@@ -1,7 +1,7 @@
 # Temple Lean Recipes
 
 ## Executive Summary 
-The Temple Lean Recipe website is designed for people who are members of the Temple Lean Gym who are looking to eat the right type of food to back up there work in the Temple Lean gym
+The Temple Lean Recipe website is designed for people who are members of the Temple Lean Gym who are looking to eat the right type of food to back up their fitness routine in the Temple Lean gym
 
 The recipe categories on offer are below ;
 
@@ -11,11 +11,11 @@ The recipe categories on offer are below ;
 4. Snacks
 
 
-The problem that we are trying to solve is that current Temple Lean members are trying to eat the right food and drink to back up their work in the gym but they get conflicting advice on when they do research online.
+The problem that we are trying to solve is that current Temple Lean members are trying to eat the right food and drink to back up their work in the gym but they get conflicting advice on when they do research onlinen or when chatting with friends.
 They also lack a social support network to encourage them to eat the best quality food. 
 We set out to bring Temple Lean gym members into a community of their peers that contained the best advice on food and drink to help them get the most quality from of their gym membership at Temple Lean gym. 
 The above named meal types are four strategically valuable markets. They are how people understand food at a glance. We have designed the website to offer bitesize information on the best quality recipes in these four categories. 
-The success of this website is that the user is able to locate the type of recipe they want quickly and easily without having to sift through the large amount conflicting information on other sites. 
+The success of this website is that the user is able to locate the type of recipe they want quickly and easily without having to sift through the large amount conflicting information in other areas fo the web. 
 
 Further success will be measured by the number of Temple Lean members who sign up to the Temple Lean Recipes website.   
 
@@ -23,15 +23,15 @@ Further success will be measured by the number of Temple Lean members who sign u
 
 The key reasons for producing the website were to;
 
-- help current gym members get the best quality recipe advice from their trusted Health professionals at Temple Lean Gym
-- help members easily access 4 specific categories of recipe
+- help current gym members get the best quality recipes from their trusted Health professionals at Temple Lean Gym
+- help members easily access 4 common recipe categories
 - help integrate new and current members into a community where they
   - support each other on their nutritional journey
   - add recipes they have used themselves
-- help 
+- help members share recipes they find useful and over time let them build an environment that they feel they have all the nutitional information they need in one place. 
 - In the future help Temple Lean attract and retain online subscription members 
 
-At the outset the minimum viable product was determined to be a community platform whereby the operator(s) of the Temple Lean and Temple Lean Recipe website add a source of basic information about healthy food recipes and social support in a health and fitness setting.
+At the outset the minimum viable product was determined to be a community platform whereby the operator(s) of the Temple Lean and Temple Lean Recipe website add a source of basic information about healthy food recipes and begin to build a social support amongst members in a nutritional setting.
 It was an objective of this project to include an intuitive design which would allow new and current clients to navigate and enagage with the website without any prior experience of Temple Lean the gym facility or even a high level of knowledge about healthy food recipes. 
 Current and potential client surveys were conducted to assess the minumim effective information required to illicit a positive emotional response from users.
 This information was incredibly valuable during the construction of wireframes for the website. 
@@ -170,11 +170,11 @@ Mobile Device wireframe
 - jQuery 
     - Used to deliver interactive features such as toggle and show and hide 
     - Website https://jquery.com/
-- Bootstrap
-  - Website https://getbootstrap.com/
+- Materialize
+  - Website https://materializecss.com/
   - Used to import generic styling
 - Github and Gitpod
-  - Website of Github repository https://andrew-code2020.github.io/MS2/
+  - Website of Github repository https://github.com/Andrew-code2020/ms3onlinecookbook
   - Used to construct host and deploy the website
 - Font Awesome
   - Website https://fontawesome.com/
@@ -185,7 +185,23 @@ Mobile Device wireframe
 - Code Validators
  - HTML - https://validator.w3.org/
  - CSS Validator - https://jigsaw.w3.org/css-validator/#validate_by_input
- - JavaScript and JQuery valiadtor https://jshint.com/
+ - JavaScript and JQuery validator https://jshint.com/
+-Flask
+-Python
+-MongoDB
+ -Cluster
+ -Collections
+-Heroku for deployment
+  - Website link to Heroku app https://lean-temple-recipes.herokuapp.com/ 
+  - Used to deploy the website
+-Dependencies (Also listed in requirements.txt file)
+  -click==7.1.2
+  -dnspython==2.0.0
+  -Flask==1.1.2
+  -Flask-PyMongo==2.3.0
+  -itsdangerous==1.1.0
+  -pymongo==3.11.1
+  -Werkzeug==1.0.1
 
 
 ### Testing
@@ -483,28 +499,13 @@ Deploying the project to Heroku
 
 ### Credits
 
-- I consulted the folowing websites to learn about taking a holiday in Ireland and to help construct meaningful content for this web page
-   - 
-   - Activity
-     - https://www.waterfordgreenwaybikehire.com/ 
-     - https://www.delphiadventureresort.com/
-     - https://www.centerparcs.ie/
-     - https://www.donegaladventurecentre.com/
-   - Culture
-     - https://www.newgrange.com/
-     - https://crokepark.ie/
-     - https://www.jamesonwhiskey.com/en-EN/
-     - http://debarra.ie/
-    - Wellness
-      - https://powerscourt.com/
-      - https://www.inchydoneyisland.com/
-      - https://www.theeurope.com/
-      - https://www.thecourtyardyogaretreats.ie/
-    - City Break
-      - Dublin Temple Bar https://www.tripsavvy.com/dublins-temple-bar-district-1542340
-      - Cork https://purecork.ie/
-      - Limerick https://www.limerick.ie/
-      - Kilkenny https://visitkilkenny.ie/    
+- I consulted the folowing websites to learn about Recipe Websites and to help construct meaningful content for this web page
+   - Recipe Websites
+     - http://www.eatingwell.com/
+     - https://www.safefood.net/recipes
+     - https://thehappypear.ie/recipes/#gs.Wsw8FZU
+     - https://littlegreenspoon.ie/
+     - https://minimalistbaker.com/  
 
 - I consulted the following websites for inspiration and to learn how to implement certain features into my project;
     - https://stackoverflow.com/
