@@ -95,6 +95,70 @@ User interviews (What a user thinks they need may not be exactly what they need?
 Would you use this and why? 
 - I would use the recipe website because I like the idea of my Health and Wellness resources being in one place provided by people I trust.
 
+Who is our target audience? 
+- This project is primarily a consumer business to customer servcie (B2C) 
+- We noted the potential for business to business B2B partnerships later but accepted that this was not within the current scope of the business strategy plan because we need a viable product before opening discussions with another business.
+- Our aim was to access easier clients we already have but leave the door open for other clients to join us 
+- Out thoughts were that our currents wouldn't need much justifcation to purchase a new offering from us given our existing relationship and the trust we have built up over many years.
+
+What makes a good recipe website experience?
+Following reserach we settled on the points below as a good recipe website experience
+- Intuitive design (Simple Navigation)
+- Clean, attractive layout with point and clicks revealing information slowly in an easy to understand readable format
+- Blog (Users liked to read about recipe experiences or other health and fitness related experiences)
+- Users can create, read, update and delete their own recipes and interact with other members(future development) 
+- Pictures
+- Videos (This was placed in future development plans)
+- Pricing transparent (3 step purchase - This was placed in future development plans) 
+
+
+##### Scope Plane 
+Features you want to include in your design
+Colour light background generally white then strong
+Basic Observations
+Alert bar - Social Media Icons (Fontawesome) left | Search on Right 
+Navbar 
+Breakfast (L)
+Lunch (L)
+Dinner (L)
+Snacks (L)
+Dessert (L)
+Niche High Protein
+FAQ (Opportunity to show on click js)
+Register/Login (R) then reveals log out and CRUD Functionality
+Landing Page Body 
+3 - 5 pages
+1 Landing Page
+Navigation Bar - 
+Home(Landing page - Hero image photo options) 
+Testimonials
+Photo Gallery 
+Social Media Facebook. Instagram, Twitter(my ones) (Footer)
+Mobile friendly
+Light color picture background
+Footer
+Testimonials 
+Database Mongo DB
+you're committing to solving a smaller part of the larger problem, rather than committing to the entire problem at one time.
+User information
+Email/username 
+Password
+Notes
+Scope creep is the addition of features that weren't agreed on at the starting point.
+Scope creep is notorious in software development.
+Be aware of it, recognize it, and always try to minimize it.
+Here's a quote to bear in mind: trade-offs are essential to strategy.
+They create the need for choice, and they purposefully limit what a company offers.
+Consistently surprise and delight your users with small incremental releases that have perceived value.
+What users and stakeholders say they need? 
+What they actually need? 
+What they don't know they need?
+People don't want to buy a quarter-inch drill, they want a quarter-inch hole
+Requirement Types
+So is what we're building useful to a customer?
+Is it useful to us?
+Is it sellable?
+A User story is a helpful way to map out  interactions your user has with our software
 
 
 
@@ -494,6 +558,10 @@ Container class in materialise (Be careful !!!)
 -If included in base html and code extended to other html then if class container present appears to wrap content twice and shrink size noticeably. Removed container from register html to solve this. 
 
 Future Development
+- Recipe Videos
+- E-Commerce subscription Business Model 
+- Comments so users can interact with other users
+
 - reset your password function
 
 - Fixed Top overlaying my alert bar. During develpment I played around with a fixed top for the Navbar. At first the Alert Bar would disappear behind the Navbar. Then as I corrected the code the alert bar came in on top of the navbar but this would then overlay onto the section of each page. I used padding and height settings to solve this problem but I also used the sticky-top class in the navbar. I am unsure whether the sticky-top class changed things very much. I did a lot of refining with heights and padding to get the website to render the way it looks now.
