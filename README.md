@@ -234,23 +234,27 @@ In development we set out to make sure that our site would be consistent. We use
   - The blue hover feature is also designed to indicate to the user that they can click on this icon/button/word in the navbar and access further content.
   - On the home page the cards (under the main hero image) when you hover the cursor over the grid panels the panel will turn green indicating that you may click here to reveal content. When the content is revealed the current panel which the content refers to is in golden rod yellow to help the user easily identify where they are on the page and which destination the infomration they are looking at is referring back too.
 
-* Original Wireframe link - 
+###### Skeleton Plane
+
+Wireframe Pictures 
 
 Route to wireframe pics in github repository https://marvelapp.com/67bec93
 
-Desktop wireframe
-- assets/readmedocs/desktop/landingpagedesktop.png
-- assets/readmedocs/desktop/learnaboutirelanddesktop.png
-- assets/readmedocs/desktop/exploreirelanddesktop.png
-- assets/readmedocs/desktop/faqdesktop.png
-- assets/readmedocs/desktop/contactusdesktop.png
+Desktop wireframes
+
+- readmedocs/desktopwireframe/basetemplate.jpg
+- readmedocs/desktopwireframe/landingpage.jpg
+- readmedocs/desktopwireframe/loginpage.jpg
+- readmedocs/desktopwireframe/paintlandingpage.jpg
+- readmedocs/desktopwireframe/recipelooppage.jpg
+- readmedocs/desktopwireframe/registerpage.jpg
 
 Mobile Device wireframe
-- assets/readmedocs/mobile/landingpagemobile.png
-- assets/readmedocs/mobile/learnaboutirelandmobile.png
-- assets/readmedocs/mobile/exploreirelandmobile.png
-- assets/readmedocs/mobile/faqmobile.png
-- assets/readmedocs/mobile/contactusmobile.png
+- assets/readmedocs/mobile/
+- assets/readmedocs/mobile/
+- assets/readmedocs/mobile/
+- assets/readmedocs/mobile/
+- assets/readmedocs/mobile/
 
 ### Features
 
