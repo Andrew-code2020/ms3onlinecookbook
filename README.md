@@ -49,6 +49,54 @@ Further objectives included;
 - implementing interactive features on the Temple Lean Recipes website to help the user feel they were unlocking short manageable amounts of information about healthy food recipes.
 
 
+##### Strategy Plane - Business Strategy
+
+What are you aiming to achieve? 
+Users are looking for; 
+- A place to find guidance on the Nutrition programme they received at the gym
+- A clear set of instructions to make the recipes
+- A place for users to create, read, update and delete their recipes they have found useful and want to share with others. This based on research will help the user/client feel at home in the Temple Lean community.
+
+Business wants the client to;
+- Find recipes that support their Health, Lifestyle and Fitness Goals so they stay within the Health and Fitness community
+
+Review the competition - Is someone else already doing it?
+- a review of the market suggested that this was a new or under developed idea offering Gym members a place to go to for Nutrition Advice and recipes. A review of the businesses below showed little or no area for members to find the correct recipe advice from their trusted health and fitness provider
+ Businesses reviewed
+ - https://www.mardykearena.com/
+ - https://www.dennehys.ie/
+ - https://www.energiefitness.com/midleton
+ - https://onelifefitness.ie/
+
+Stakeholder interviews
+- conversations with Health and Fitness Club owners and Health and Fitness clients suggested that joining the exercise and nutrition component in an easy to use platform was the correct approach to take.
+
+Who else is doing this?
+- Very few providers are known to be providing an area that
+
+What are the pros of what they're doing
+- Client benefit  
+
+What are the cons?
+- Unkown how to monetize this area of the business. What do we charge for this service? Market research suggested that we should build this into membership in some way.
+
+What are the competition missing?
+- The connection this area offers
+
+What are they doing, but they could be doing better?
+- they providing the facility and knowledge to  particpate in regular exercise
+
+User interviews (What a user thinks they need may not be exactly what they need?)
+- User interviews suggested they wanted a lot more focused recipe suggestions like muscle building recipes or endurance programme recipes
+- In tihe same interviews the user would often sight struggling with what they should eat for breakfast or dinner.
+- Also the first time user was very unlikely to join the Temple Lean community if the recipes weren't accessible on a basic level. The user understood that recipes were for breakfast in the breakfast section but when presented with a Muscle Building recipe section most users were unsure if they could use these recipes or they felt this was too advanced for them.
+- The conclusion the developer drew from these interviews was that we should start basic and progress to more advanced recipe recommendations if a clearer market emerged. 
+
+Would you use this and why? 
+- I would use the recipe website because I like the idea of my Health and Wellness resources being in one place provided by people I trust.
+
+
+
 
 ###### User Story 1
 
