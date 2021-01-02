@@ -108,28 +108,28 @@ def logout():
 def breakfast():
     breakfast_meals = mongo.db.lean_recipes.find({"recipe_types": "Breakfast"})
     print(breakfast_meals)
-    return render_template("breakfast.html", breakfast_meals=breakfast_meals)
+    return render_template("breakfast.html", breakfast_meals=breakfast_meals, page='breakfast')
 
 # Finds recipes types named Lunch and returns the data in their contents to the lunch html
 @app.route("/lunch", methods=["GET", "POST"])
 def lunch():
     lunch_meals = mongo.db.lean_recipes.find({"recipe_types": "Lunch"})
     print(lunch_meals)
-    return render_template("lunch.html", lunch_meals=lunch_meals)
+    return render_template("lunch.html", lunch_meals=lunch_meals, page='lunch')
 
 # Finds recipes types named Dinner and returns the data in their contents to the Dinner html
 @app.route("/dinner", methods=["GET", "POST"])
 def dinner():
     dinner_meals = mongo.db.lean_recipes.find({"recipe_types": "Dinner"})
     print(dinner_meals)
-    return render_template("dinner.html", dinner_meals=dinner_meals)
+    return render_template("dinner.html", dinner_meals=dinner_meals, page='dinner')
 
 # Finds recipes types named Snacks and returns the data in their contents to the Snacks html
 @app.route("/snacks", methods=["GET", "POST"])
 def snacks():
     snack_meals = mongo.db.lean_recipes.find({"recipe_types": "Snacks"})
     print(snack_meals)
-    return render_template("snacks.html", snack_meals=snack_meals)
+    return render_template("snacks.html", snack_meals=snack_meals, page='snacks')
 
 
 @app.route("/addrecipe", methods=["GET", "POST"])

@@ -113,53 +113,74 @@ Following reserach we settled on the points below as a good recipe website exper
 
 
 ##### Scope Plane 
-Features you want to include in your design
-Colour light background generally white then strong
-Basic Observations
-Alert bar - Social Media Icons (Fontawesome) left | Search on Right 
-Navbar 
-Breakfast (L)
-Lunch (L)
-Dinner (L)
-Snacks (L)
-Dessert (L)
-Niche High Protein
-FAQ (Opportunity to show on click js)
-Register/Login (R) then reveals log out and CRUD Functionality
-Landing Page Body 
-3 - 5 pages
-1 Landing Page
-Navigation Bar - 
-Home(Landing page - Hero image photo options) 
-Testimonials
-Photo Gallery 
-Social Media Facebook. Instagram, Twitter(my ones) (Footer)
-Mobile friendly
-Light color picture background
-Footer
-Testimonials 
-Database Mongo DB
-you're committing to solving a smaller part of the larger problem, rather than committing to the entire problem at one time.
-User information
-Email/username 
-Password
-Notes
-Scope creep is the addition of features that weren't agreed on at the starting point.
-Scope creep is notorious in software development.
-Be aware of it, recognize it, and always try to minimize it.
-Here's a quote to bear in mind: trade-offs are essential to strategy.
-They create the need for choice, and they purposefully limit what a company offers.
-Consistently surprise and delight your users with small incremental releases that have perceived value.
-What users and stakeholders say they need? 
-What they actually need? 
-What they don't know they need?
-People don't want to buy a quarter-inch drill, they want a quarter-inch hole
-Requirement Types
-So is what we're building useful to a customer?
-Is it useful to us?
-Is it sellable?
-A User story is a helpful way to map out  interactions your user has with our software
+Features we wanted to include in our design
 
+- Colour light background generally white then strong font and color
+Basic Observations
+ - Navbar 
+   - Two tiers
+   - Includes Navigation for following items
+   - Breakfast (Left revealed after log in)
+   - Lunch (Left revealed after log in)
+   - Dinner (Left revealed after log in)
+   - Snacks (Left revealed after log in)
+   - Search (Right revealed after log in)
+   - Testimonials (Opportunity to Card Flip js)
+   - Register/Login (Right and collapsible) then reveals, profile and log out and recipe navbar
+
+Section
+
+- Home/Landing Page Body (Hero image photo options))
+- CRUD Functionality to be available in 
+  - Profile
+  - Breakfast 
+  - Lunch 
+  - Dinner 
+  - Snacks
+
+Cards with Photo Gallery
+  - Breakfast 
+  - Lunch 
+  - Dinner 
+  - Snacks
+
+Card flip - Testimonials
+
+Footer    
+ - Social Media Icons wired up Facebook. Instagram, Twitter(my ones) (Left) 
+ - Gap in Center
+ - Blog entries (Right)
+
+Data Schema - Database Mongo DB
+
+User information
+- Object Id
+- Username
+- Name
+- Email 
+- Password Werkzeug 
+
+Lean Recipes
+- Object Id
+- Meal Type
+- Meal Name
+- Meal Image
+- Instructions 
+- Ingredients
+- Method
+- Required Tools
+- Nutritional information (Format opportunity to display creativity - Traffic light healthy range of macronutrients)
+  - Kcals
+  - Carbs
+  - Protein
+  - Fats
+
+Recipe types
+- Object Id
+- Breakfast 
+- Lunch 
+- Dinner 
+- Snacks
 
 
 ###### User Story 1
@@ -176,6 +197,13 @@ I receive an email notification which has a copy of my form and the email addres
 ###### User Story 3
 
 I am researching culture holiday locations in Ireland. I log onto the Holiday in Ireland website and click explore Ireland. As I hover over the Violin flip card the google map markers that are relevant to culture appear. I know the where on the map of Ireland each culture holiday is located.
+
+##### Structure Plane
+In development we set out to make sure that our site would be consistent. We used the categories below to describe our efforts
+ - predictable 
+ - learnable 
+ - visible 
+ - Clear and intuitive feedback
 
 ###### User Questions
 
@@ -520,6 +548,9 @@ I also used following website to help me correct any formatting anomalies in my 
 - https://codebeautify.org/ 
 
 #### Bugs
+
+Active Class in Navbar
+- color
 
 Heading Bugs in Navbar
 - On the base.html page on a medium size screen you will see Temple Lean Recipes in the top left of the screen. During development I noticed on a small screen that 

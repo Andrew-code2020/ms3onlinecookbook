@@ -38,12 +38,10 @@
             <div class="nav-content">
                 <ul class="tabs tabs-transparent text-shadow">
                     {% if session.user %}
-                    {% block breakfast_nav %}active
-                    <li class="tab1"><a href="{{ url_for('breakfast')}}"> Breakfast</a></li>
-                    {% endblock %}
-                    <li class="tab1"><a href="{{ url_for('lunch')}}">Lunch</a></li>
-                    <li class="tab1"><a href="{{ url_for('dinner')}}">Dinner</a></li>
-                    <li class="tab1"><a href="{{ url_for('snacks')}}">Snacks</a></li>
+                    <li class="{{ 'tab1 active' if page == 'breakfast' else 'tab1' }}"><a href="{{ url_for('breakfast')}}"> Breakfast</a></li>
+                    <li class="{{ 'tab1 active' if page == 'lunch' else 'tab1' }}"><a href="{{ url_for('lunch')}}">Lunch</a></li>
+                    <li class="{{ 'tab1 active' if page == 'dinner' else 'tab1' }}"><a href="{{ url_for('dinner')}}">Dinner</a></li>
+                    <li class="{{ 'tab1 active' if page == 'snacks' else 'tab1' }}"><a href="{{ url_for('snacks')}}">Snacks</a></li>
                     {% endif %}
                 </ul>
             </div>

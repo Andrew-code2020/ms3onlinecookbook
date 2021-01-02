@@ -3,9 +3,6 @@
 
 /*-----Colors background body #bfcfff---Hover choice #1236A3 or #bfcfff-- dark text #222222;*/
 
-body {
-  background-color: #bfcfff;
-}
 
 /*-----Style choice background #f0f8ff (light blue) stronger blue #80C4FF  Writing #1a1a1a old color text color: #a8afb3 Alert #fff7f0---/*
 
@@ -14,6 +11,10 @@ body {
 /*--------------------------------------------Alert Bar-------------------------------------------------------*/
 
 /*------------------------------------Navbar---------------------------------------------------------------------*/
+
+nav ul a .active {
+  color:#f0f8ff;  
+}
 
 .tabs {
     color: #ffffff;
@@ -30,6 +31,11 @@ nav ul a{
 
 
 /*-------------------------------------Body-----------------------------------------------------*/
+
+body {
+  background-color: #bfcfff;
+}
+
 
 /* ----------Card styles------------ */
 
