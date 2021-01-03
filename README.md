@@ -250,11 +250,11 @@ Desktop wireframes
 - readmedocs/desktopwireframe/registerpage.jpg
 
 Mobile Device wireframe
-- assets/readmedocs/mobile/
-- assets/readmedocs/mobile/
-- assets/readmedocs/mobile/
-- assets/readmedocs/mobile/
-- assets/readmedocs/mobile/
+- readmedocs/mobilewireframe/recipeloopmobile.jpg
+- readmedocs/mobilewireframe/loginmobile.jpg
+- readmedocs/mobilewireframe/profilemobile.jpg
+- readmedocs/mobilewireframe/registertemplatemobile.jpg
+- readmedocs/mobilewireframe/editrecipemobile.jpg
 
 ### Features
 

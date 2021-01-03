@@ -113,12 +113,15 @@ def breakfast():
     print(breakfast_meals)
     return render_template("breakfast.html", breakfast_meals=breakfast_meals, page='breakfast')
 
+
+
 # Finds recipes types named Lunch and returns the data in their contents to the lunch html
 @app.route("/lunch", methods=["GET", "POST"])
 def lunch():
     lunch_meals = mongo.db.lean_recipes.find({"recipe_types": "Lunch"})
     print(lunch_meals)
     return render_template("lunch.html", lunch_meals=lunch_meals, page='lunch')
+
 
 # Finds recipes types named Dinner and returns the data in their contents to the Dinner html
 @app.route("/dinner", methods=["GET", "POST"])
@@ -194,6 +197,8 @@ def editrecipe(recipe_id):
         }}
         mongo.db.lean_recipes.update_one({"_id": ObjectId(recipe_id)}, editrec)
         flash("Recipe updated successfully")
+        return redirect(url_for(
+            "profile", username=session["user"]))
 
     lean_recipes = mongo.db.lean_recipes.find_one({"_id": ObjectId(recipe_id)})
     types = mongo.db.types.find()
