@@ -52,7 +52,7 @@ def register():
         flash("Registration with Temple Lean Recipes Successful!")
         return redirect(url_for(
             "profile", username=session["user"]))
-    return render_template("register.html")
+    return render_template("register.html", page='register')
 
 
 # Allows a registered user to log in
@@ -80,7 +80,9 @@ def login():
             flash("Incorrect Username and/or Password")
             return redirect(url_for("login"))
 
-    return render_template("login.html")
+    return render_template("login.html", page = 'login')
+
+
 
 # Allows a logged in user to access there profile and have there profile information returned to the screen
 @app.route("/profile/<username>", methods=["GET", "POST"])
@@ -90,7 +92,7 @@ def profile(username):
         {"username": session["user"]})
     user = mongo.db.users.find_one({"username": session["user"]})
     if session["user"]:
-        return render_template("profile.html", username=username, user=user)
+        return render_template("profile.html", username=username, user=user, page='profile')
 
     return redirect(url_for("login"))
 
@@ -102,6 +104,7 @@ def logout():
     flash("You have been logged out")
     session.pop("user")
     return redirect(url_for("login"))
+
 
 # Finds recipes types named Breakfast and returns the data in their contents to the breakfast html
 @app.route("/breakfast", methods=["GET", "POST"])
@@ -124,6 +127,7 @@ def dinner():
     print(dinner_meals)
     return render_template("dinner.html", dinner_meals=dinner_meals, page='dinner')
 
+
 # Finds recipes types named Snacks and returns the data in their contents to the Snacks html
 @app.route("/snacks", methods=["GET", "POST"])
 def snacks():
@@ -132,6 +136,7 @@ def snacks():
     return render_template("snacks.html", snack_meals=snack_meals, page='snacks')
 
 
+# Allows user to recipe to Temple Lean site
 @app.route("/addrecipe", methods=["GET", "POST"])
 def addrecipe():
     return render_template("add_recipe.html")
