@@ -78,7 +78,7 @@ What are the pros of what they're doing
 - Client benefit  
 
 What are the cons?
-- Unkown how to monetize this area of the business. What do we charge for this service? Market research suggested that we should build this into membership in some way.
+- Unknown how to monetize this area of the business. What do we charge for this service? Market research suggested that we should build this into membership in some way.
 
 What are the competition missing?
 - The connection this area offers
@@ -183,18 +183,18 @@ Recipe types
 - Snacks
 
 
-###### User Story 1
+###### User Story 1 (Registeration)
 
 I am a currently a member of Temple Lean Gym. Following a conversation with a friend about diet and exercise my friend recommends that I check out a new website named "Temple Lean Recipes". I search the web find the Temple Lean Recipes website. 
 I register and I click on the option 'Dinner' because I have always had trouble cooking healthy dinner recipes. I click on a recipe I am interested in through the collapsible buttons on the page and the collapsible feature reveals information in a
 step wise manner that allows me to learn what I need to know about how to make the recipe as well as other information.
 
-###### User Story 2
+###### User Story 2 (Editing my profile)
 
-I want to book an activity holiday in Ireland. I browse the web and find the Holiday in Ireland website. I click on the contact us page fill out the form specifying the the parameters of my activity holiday and click Submit your Holiday in Ireland form.
-I receive an email notification which has a copy of my form and the email address that the Holiday in Ireland use is also visible. 
+I have regsitered for Temple Lean Recipes. My email provider has decided to charge me a monthly fee to continue using my email address. I have gone ahead and changed to a new email provider. I want to update my email on the Temple Lean Website. I log in to the Temple Lean Website. I am brought directly to my profile page. I click on the update profile section. I make my updates to the email section and then click update profile. The screen flashes a message updated successfully. I can also see the updates rendered on the form in front of me. I then click profile on the top left of the screen to bring me back to my profile page where I can also review the update I have put in place.
+ 
 
-###### User Story 3
+###### User Story 3 (Creating Recipes - Flash message please send recipe image suggestion to email address)
 
 I am researching culture holiday locations in Ireland. I log onto the Holiday in Ireland website and click explore Ireland. As I hover over the Violin flip card the google map markers that are relevant to culture appear. I know the where on the map of Ireland each culture holiday is located.
 
@@ -264,26 +264,24 @@ Mobile Device wireframe
 - External links
 - Header
 - Navbar
-- Alert Bar
 - Footer
 - Section
 - Dropdown Menu
-- Flip card
+- Collapsible
 - Hover
+- Flask
+- Integrated with MongoDB
 - Icons
-- Contact Us Form wired up with Email JS
-- Email JS
-- Google Maps API
-- JS Tabs 
 - Jquery Toggle
-- Jquery mouse enter mouse leave
+- 
+
 
 ##### Existing Features
 
 - Internal links to different parts of the Temple Lean Recipe website
 - External links that open a new to different platforms such as social media, the developers Milestone 1 project website and the developers private blog. The social media accounts the developers Milestone 1 project website and the developers private blog are linked to the developers social media accounts to demonstrate the skill of adding external links.
 - Header - Contains the Navbar design for desktop and mobile devices 
-- Easy navigation - The Navbar at the top of each page is similar to conventional navbars allowing the user an intuitive experience on a perhaps unfamiliar website. We maintained this navbar across each page for ease of navigation. The top part of the navbar log in and registeration collapse on mobile devices to a single apple icon. The navbar items Breakfast, Lunch, Dinner and Snacks appear after you register or log in. This was done to avoid overhwleming the user when they land on the page and guide them to log in or regsiter and then more content will be revealed. 
+- Easy navigation - The Navbar at the top of each page is similar to conventional navbars of other recipe pages allowing the user an intuitive experience on a perhaps unfamiliar website. We maintained this navbar across each page using a base template for ease of navigation. The top part of the navbar including log in and registeration collapse on a mobile devices to a single apple icon which the user can click on. The navbar items Breakfast, Lunch, Dinner and Snacks appear after you register or log in. This was done to avoid overhwleming the user when they land on the page and guide them to log in or regsiter and then more content will be revealed. 
 - Footer - Linked to some pages we used to develop the website and contains direct links to the developers Social Media platforms, Milestone 1 project and private blog. Temple Lean recipes social media specific to this site does not exist but is in future plans.
 - Section - The middle section content changes on each page and gives basic information on aspect of the Holiday in Ireland site.
 - Hero Image - The eye catching landing page designed to convey that the user has arrived on a virtual piece of Ireland. 
