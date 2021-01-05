@@ -196,7 +196,9 @@ I have regsitered for Temple Lean Recipes. My email provider has decided to char
 
 ###### User Story 3 (Creating Recipes - Flash message please send recipe image suggestion to email address)
 
-I am researching culture holiday locations in Ireland. I log onto the Holiday in Ireland website and click explore Ireland. As I hover over the Violin flip card the google map markers that are relevant to culture appear. I know the where on the map of Ireland each culture holiday is located.
+I am registered and logged in at Temple Lean Recipes. I have found a recipe that I wish to to the community. I select the category (Breakfast, Lunch, Dinner or Snacks) I click the add recipe button and enter the form details siting Breakfast as my recipe category. When I click the add recipe button I see a flash message stating "Recipe added to Temple Lean Recipes Successful!". I am redirected to my profile where I click on Breakfast and scroll down to see my recipe and the information I put input on the form earlier. I spot and error so click edit recipe. I notice that I can edit this recipe but not any other recipes. I make my edits hit update and then review my updates as before on the breakfast page.
+
+###### User Story 4 (Log out)
 
 ##### Structure Plane
 In development we set out to make sure that our site would be consistent. We used the categories below to describe our efforts
