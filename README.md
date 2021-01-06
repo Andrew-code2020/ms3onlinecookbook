@@ -353,6 +353,16 @@ Mobile Device wireframe
 
 ### Testing
 
+outline of Testing
+Name of Test - Testing Base html 
+-test planning
+  -remove landing page code from base template
+  -ensure Temple Lean site opens on homepage and base template is not rendered directly anywhere on the site  
+-implementation
+-fix (if applicable)
+-results
+-outcomes
+
 outline of Testing 
 -test planning 
 -implementation
@@ -558,6 +568,10 @@ I also used following website to help me correct any formatting anomalies in my 
 
 Active Class in Navbar
 - color
+
+Base template code
+- Homepage was base.html whiched to create a home page then removed base.html code
+- was confused about base template. Thought it has to be the homepage
 
 Heading Bugs in Navbar
 - On the base.html page on a medium size screen you will see Temple Lean Recipes in the top left of the screen. During development I noticed on a small screen that 
