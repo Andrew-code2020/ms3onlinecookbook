@@ -2,12 +2,13 @@
 
 {% block content %}
 
-
+<!--homepage doubles as landing page-->
 <section>
     <div class="container">
         <div class="row">
             <div class="col s12 m12">
                 <div class="card">
+                    <!--Hero Image-->
                     <div class="card-image">
                         <img src="static/images/saladheroimage.jpg" alt="Salad Image" />
                     </div>
@@ -17,14 +18,11 @@
                             Welcome to Temple Lean Recipes. All the recipes you need to
                             get the most out of your gym membership at Temple Lean
                         </p>
+                        <!--Register and log in internal links-->
                         <a class="profile btn waves-effect waves-light light-green" href="{{ url_for('login')}}">Log in
                             <i class="fas fa-sign-in-alt"></i></a>
                         <a class="profile btn waves-effect waves-light light-green"
                             href="{{ url_for('register')}}">Register <i class="far fa-registered"></i></a>
-                    </div>
-                    <div class="card-action">
-                        <a href="{{ url_for('login')}}">Log in </a>
-                        <a href="{{ url_for('register')}}">Register</a>
                     </div>
                 </div>
             </div>
