@@ -5,6 +5,7 @@
     <div class="col s12 m12">
         {% for recipe in breakfast_meals %}
         <div class="card">
+            <!--Breakfast Recipe Image-->
             <div class="card-image">
                 <img class="breakfast" src="{{ recipe.recipe_image }}" alt="Breakfast Image">
             </div>
@@ -12,7 +13,7 @@
                 <span class="card-title"> {{ recipe.meal_name }}</span>
                 <!--Collapsible Buttons-->
                 <ul class="collapsible">
-                    <!--Ingredients-->
+                    <!--Ingredients Button and collapsible content from MongoDB-->
                     <li>
                         <div class="collapsible-header light-green">
                             <h5>Ingredients <i class="fas fa-utensils"></i></h5>
@@ -20,7 +21,7 @@
                         <div class="collapsible-body"><span>{{recipe.meal_ingredients}}</span>
                         </div>
                     </li>
-                    <!--Method-->
+                    <!--Method Button and collapsible content from MongoDB-->
                     <li>
                         <div class="collapsible-header light-green">
                             <h5>Method <i class="far fa-map"></i></h5>
@@ -31,7 +32,7 @@
                             </span>
                         </div>
                     </li>
-                    <!--Tools-->
+                    <!--Tools Button and collapsible content-->
                     <li>
                         <div class="collapsible-header light-green">
                             <h5>Tools <i class="fas fa-utensils"></i></h5>
@@ -41,7 +42,7 @@
                             </span>
                         </div>
                     </li>
-                    <!--Nutritional Information-->
+                    <!--Nutritional Information Button and collapsible content from MongoDB-->
                     <li>
                         <div class="collapsible-header light-green">
                             <h5>Nutritional Information <i class="fab fa-nutritionix"></i></h5>
@@ -60,12 +61,14 @@
                 </ul>
             </div>
             <div class="card-action">
+                <!--Buttons to move between recipe pages-->
                 <a href="{{ url_for('lunch')}}">Go to Lunch Recipes</a>
                 <a href="{{ url_for('dinner')}}">Go to Dinner Recipes</a>
                 <a href="{{ url_for('snacks')}}">Go to Snack Recipes</a>
                 <br>
                 <a href="{{ url_for('addrecipe')}}" class="profile btn waves-effect waves-light light-green" > Create Recipe
                     <i class="fas fa-plus-square"></i> </a>
+                <!--Buttons appear only when the user has created the recipe others they are not visible-->
                 {% if session.user|lower == recipe.created_by|lower %}
                 <a href="{{ url_for('editrecipe', recipe_id=recipe._id)}}" class="profile btn waves-effect waves-light light-green" >Update Recipe
                     <i class="fas fa-user-edit"></i> </a>
