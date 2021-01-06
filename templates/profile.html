@@ -8,10 +8,10 @@
           <p>Username: {{ user.username }} </p>
           <p>First Name: {{ user.first_name.capitalize() }} </p>
           <p>Last Name: {{ user.last_name.capitalize() }} </p>
-          <p>Recipes you're interested in: {{ user.recipe_type }} </p>
+          <p>Prefered Recipe Category: {{ user.recipe_type }} </p>
           <p>Email: {{ user.email.lower() }} </p>
         </div>
-        <div class="card-action">
+        <div class="card-action s12">
           <a href="{{ url_for('breakfast')}}">Go to Breakfast Recipes</a>
           <a href="{{ url_for('lunch')}}">Go to Lunch Recipes</a>
           <a href="{{ url_for('dinner')}}">Go to Dinner Recipes</a>

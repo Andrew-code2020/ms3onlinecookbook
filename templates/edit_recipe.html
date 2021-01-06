@@ -1,14 +1,14 @@
 {% extends "base.html" %} {% block content %}
-
+<!-- Update Recipe type-->
 <div class="s12 m7">
-    <h3 class="header">Edit Recipe in Temple Lean Community</h3>
+    <h3 class="header">Update Recipe in Temple Lean Community</h3>
     <div class="card horizontal">
         <div class="card-stacked">
             <form class="card-content" method="POST" action="{{ url_for('editrecipe', recipe_id=lean_recipes._id)}}">
                 <!-- Add Form Select Recipe type-->
                 <div class="row">
                     <div class="input-field col s12">
-                        <label name="recipe_types">Select the recipes you're interested in <i
+                        <label name="recipe_types">Recipes you're interested in <i
                                 class="fas fa-hand-pointer"></i> </label>
                         <br>    
                         <select name="recipe_types" id="recipe_types">
@@ -118,7 +118,7 @@
                     <div class="col s12">
                         <button class="profile btn waves-effect waves-light light-green" type="submit"
                             name="action">Update
-                            Recipe in Temple Lean Community
+                            Recipe
                             <i class="fas fa-sign-in-alt"></i>
                         </button>
                         <a class="profile btn waves-effect waves-light light-green"

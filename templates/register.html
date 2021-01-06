@@ -1,7 +1,8 @@
 {% extends "base.html" %} {% block content %}
 
+<!--Registeration form-->
 <div class="s12 m7">
-    <h3 class="header">Register for Temple Lean Recipes</h3>
+    <h3 class="header">Register with Temple Lean Recipes</h3>
     <div class="card horizontal">
         <div class="card-stacked">
             <form class="card-content" method="POST" action="{{ url_for('register')}}">
@@ -37,7 +38,7 @@
                             <option value="Dinner">Dinner</option>
                             <option value="Snacks">Snacks</option>
                         </select>
-                        <label name="recipe_type">Select the recipes you're interested in <i class="fas fa-hand-pointer"></i></label>
+                        <label name="recipe_type">Prefered Recipe Category <i class="fas fa-hand-pointer"></i></label>
                     </div>
                 </div>
                 <!--email-->
