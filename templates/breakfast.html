@@ -68,7 +68,7 @@
                 <br>
                 <a href="{{ url_for('addrecipe')}}" class="profile btn waves-effect waves-light light-green" > Create Recipe
                     <i class="fas fa-plus-square"></i> </a>
-                <!--Buttons appear only when the user has created the recipe others they are not visible-->
+                <!--Buttons appear only when the user has created the recipe otherwise they are not visible-->
                 {% if session.user|lower == recipe.created_by|lower %}
                 <a href="{{ url_for('editrecipe', recipe_id=recipe._id)}}" class="profile btn waves-effect waves-light light-green" >Update Recipe
                     <i class="fas fa-user-edit"></i> </a>
