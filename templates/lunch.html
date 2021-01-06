@@ -5,7 +5,7 @@
     <div class="col s12 m12">
         {% for recipe in lunch_meals %}
         <div class="card">
-            <!--Lunch Recipe image-->
+            <!--Lunch Recipe image from MongoDB-->
             <div class="card-image">
                 <img class="breakfast" src="{{ recipe.recipe_image }}" alt="Lunch Image">
             </div>
@@ -13,7 +13,7 @@
                 <span class="card-title"> {{ recipe.meal_name }}</span>
                 <!--Collapsible Buttons-->
                 <ul class="collapsible">
-                    <!--Ingredients-->
+                    <!--Ingredients Button and collapsible content from MongoDB--->
                     <li>
                         <div class="collapsible-header light-green">
                             <h5>Ingredients <i class="fas fa-utensils"></i></h5>
@@ -21,7 +21,7 @@
                         <div class="collapsible-body"><span>{{recipe.meal_ingredients}}</span>
                         </div>
                     </li>
-                    <!--Method-->
+                    <!--Method Button and collapsible content from MongoDB--->
                     <li>
                         <div class="collapsible-header light-green"><h5>Method <i class="far fa-map"></i></h5> </div>
                         <div class="collapsible-body"><span>
@@ -30,7 +30,7 @@
                             </span>
                         </div>
                     </li>
-                    <!--Tools-->
+                    <!--Tools Button and collapsible content from MongoDB--->
                     <li>
                         <div class="collapsible-header light-green"><h5>Tools <i class="fas fa-utensils"></i></h5></div>
                         <div class="collapsible-body"><span>
@@ -38,7 +38,7 @@
                             </span>
                         </div>
                     </li>
-                    <!--Nutritional Information-->
+                    <!--Nutritional Information Button and collapsible content from MongoDB--->
                     <li>
                         <div class="collapsible-header light-green"><h5>Nutritional Information <i class="fab fa-nutritionix"></i></h5></div>
                         <div class="collapsible-body">
@@ -55,10 +55,12 @@
                 </ul>
             </div>
             <div class="card-action">
+                <!--Buttons to move between recipe pages-->
                 <a href="{{ url_for('breakfast')}}">Go to Breakfast Recipes</a>
                 <a href="{{ url_for('dinner')}}">Go to Dinner Recipes</a>
                 <a href="{{ url_for('snacks')}}">Go to Snack Recipes</a>
                 <br>
+                <!--Buttons appear only when the user has created the recipe otherwise they are not visible-->
                 <a href="{{ url_for('addrecipe')}}" class="profile btn waves-effect waves-light light-green" >Create Recipe
                     <i class="fas fa-plus-square"></i> </a>
                 {% if session.user|lower == recipe.created_by|lower %}
