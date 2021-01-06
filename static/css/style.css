@@ -119,6 +119,7 @@ i {
     height:400px;
 }
 
+/*--Try min or max height--*/
 .card.horizontal, .card-image img .breakfast {
  width: 100%;
  height: 100%;
