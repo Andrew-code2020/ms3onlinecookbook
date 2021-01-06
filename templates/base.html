@@ -20,21 +20,24 @@
         <!--Extended Navbar with Tabs from Materialise-->
         <nav class="nav-extended light-green">
             <div class="nav-wrapper text-shadow">
+            <!--Home page and collapsible side nav element-->
                 <a href="{{ url_for('home_page')}}" class="brand-logo hide-on-small-only">Temple Lean Recipes</a>
                 <a href="{{ url_for('home_page')}}" data-target="mobile-demo" class="right sidenav-trigger"><i class="fas fa-apple-alt"></i></a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down text-shadow">
+                    <!--Main Nav elements including if and else active class and if and else user logged in-->
                     {% if session.user %}
                     <li class="{{ 'active' if page == 'profile' else ' ' }}"><a href="{{ url_for('profile', username=session['user']) }}">Profile <i
                                 class="far fa-id-card"></i> </a></li>
                     <li><a href="{{ url_for('logout') }}">Logout <i class="fas fa-sign-out-alt"></i> </a></li>
                     <!--Need to add search functionality here-->
-                    <li><a href="">Search <i class="fab fa-searchengin"></i> </a></li>
+                    <li><a href="#">Search <i class="fab fa-searchengin"></i> </a></li>
                     {% else %}
                     <li class = "{{ 'active' if page == 'login' else ' ' }}"><a href="{{ url_for('login')}}">Log In <i class="fas fa-sign-in-alt"></i></a></li>
                     <li class = "{{ 'active' if page == 'register' else ' ' }}"><a href="{{ url_for('register')}}">Register <i class="far fa-registered"></i></a></li>
                     {% endif %}
                 </ul>
             </div>
+            <!--Secondary Navigation appears when the user is logged in. Reveals recipes-->
             <div class="nav-content">
                 <ul class="tabs tabs-transparent text-shadow">
                     {% if session.user %}
@@ -46,7 +49,7 @@
                 </ul>
             </div>
         </nav>
-
+        <!--On Mobile Device Apple appear on right hand side to all the user register, log in and log out-->
         <ul class="sidenav" id="mobile-demo">
             {% if session.user %}
             <li class = "{{ 'active' if page == 'profile' else ' ' }}"><a href="{{ url_for('profile', username=session['user']) }}">Profile <i class="far fa-id-card"></i> </a>
@@ -60,8 +63,9 @@
             {% endif %}
         </ul>
     </header>
+    
     <section>
-        <!-- flash messages -->
+        <!-- Area for flash messages to appear making the site more responsive and intuitive -->
         {% with messages = get_flashed_messages() %}
         {% if messages %}
         {% for message in messages %}
@@ -76,13 +80,14 @@
 
     <main class="container">
         {% block content %}
+        <!--Area for the content of other pages to appear-->
         <section>
             <div class="container">
                 <div class="row">
                     <div class="col s12 m12">
                         <div class="card">
                             <div class="card-image">
-                                <img src="static/images/saladheroimage.jpg" />
+                                <img src="static/images/saladheroimage.jpg" alt="Salad Image" />
                                 <span class="card-title">Temple Lean Recipes</span>
                             </div>
                             <div class="card-content">
