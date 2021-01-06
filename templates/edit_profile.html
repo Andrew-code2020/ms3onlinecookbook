@@ -5,7 +5,7 @@
         <div class="card blue-grey darken-1">
             <div class="card-content white-text">
                 <!--First Name from user collection in Mongo DB-->
-                <h3 class="card-title">Edit {{ user.first_name.capitalize() }}'s Profile Page</h3>
+                <h3 class="card-title">Update {{ user.first_name.capitalize() }}'s Profile Page</h3>
                 <!--Edit Username from user collection in Mongo DB-->
                 <div class="row">
                     <div class="input-field col s12">
@@ -31,7 +31,7 @@
                 <!--Edit Recipe selection from user collection in Mongo DB-->
                 <div class="row">
                     <div class="input-field col s12">
-                        <label name="recipe_type">Select the recipes you're interested in <i
+                        <label name="recipe_type">Prefered Recipe Category <i
                                 class="fas fa-hand-pointer"></i> </label>
                         <br>
                       <select name="recipe_type" id="recipe_type">
@@ -56,11 +56,12 @@
                 </div>
             </div>
             <!--May Navigate away to recipe pages if desired-->
+
             <div class="card-action">
-                <a href="{{ url_for('breakfast')}}">Go to Breakfast Recipes</a>
-                <a href="{{ url_for('lunch')}}">Go to Lunch Recipes</a>
-                <a href="{{ url_for('dinner')}}">Go to Dinner Recipes</a>
-                <a href="{{ url_for('snacks')}}">Go to Snack Recipes</a>
+                <a href="{{ url_for('breakfast')}}">Breakfast Recipes</a>
+                <a href="{{ url_for('lunch')}}">Lunch Recipes</a>
+                <a href="{{ url_for('dinner')}}">Dinner Recipes</a>
+                <a href="{{ url_for('snacks')}}">Snack Recipes</a>
             </div>
             <!--Buttons to submit profile update and cancel edit functionality-->
             <div class="card-action">

@@ -566,6 +566,8 @@ I also used following website to help me correct any formatting anomalies in my 
 
 #### Bugs
 
+Change Go to Recipes to Breakfast recipes and Renders better on Mobile device
+
 Active Class in Navbar
 - color
 
