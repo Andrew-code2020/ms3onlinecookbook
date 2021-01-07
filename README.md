@@ -274,8 +274,11 @@ Mobile Device wireframe
 - Flask
 - Integrated with MongoDB
 - Icons
-- Jquery Toggle
-- 
+- Jquery 
+    - Collapsible
+    - Sidenav 
+    - Form Select
+
 
 
 ##### Existing Features
@@ -285,17 +288,17 @@ Mobile Device wireframe
 - Header - Contains the Navbar design for desktop and mobile devices 
 - Easy navigation - The Navbar at the top of each page is similar to conventional navbars of other recipe pages allowing the user an intuitive experience on a perhaps unfamiliar website. We maintained this navbar across each page using a base template for ease of navigation. The top part of the navbar including log in and registeration collapse on a mobile devices to a single apple icon which the user can click on. The navbar items Breakfast, Lunch, Dinner and Snacks appear after you register or log in. This was done to avoid overhwleming the user when they land on the page and guide them to log in or regsiter and then more content will be revealed. 
 - Footer - Linked to some pages we used to develop the website and contains direct links to the developers Social Media platforms, Milestone 1 project and private blog. Temple Lean recipes social media specific to this site does not exist but is in future plans.
-- Section - The middle section content changes on each page and gives basic information on aspect of the Holiday in Ireland site.
-- Hero Image - The eye catching landing page designed to convey that the user has arrived on a virtual piece of Ireland. 
-- Dropdown - We tried to use dropdown options to allow a better visual experience for the user and to avoid long typed response on the contact us form 
-- Hover - icons, internal and external links all turn blue when the cursor hovers over them. This lets the user know that there is more information they can access here
-- Icons - font awesome icons were used to add style and an intuitive feel to the user experience 
-- Contact Form - We wanted people to be able to send us basic information and a message. This feature is functional now. If a user submits the form we receive an email to the developers personal gmail burnsad@tcd.ie and a copy is sent the user
-- jQuery toggle - The buttons on Learn about Ireland and FAQ page allow the user to click on the button to reveal more information about holidays in Ireland
-- jQuery mouse enter - The cards on the Learn about Ireland and Explore Ireland pages allow the user to hover the cursor over a card to reveal more information or take the next step and click on a button to reveal more content about holidays in Ireland
-- jQuery show and hide - The cards on Learn about Ireland and Explore Ireland pages make use of show and hide features to allow the user control over when content from the Holiday in Ireland page is revealed to them.
-- JavaScript - Google Maps API so the user can locate where in Ireland their chosen holiday is
-- JavaScript - Contact form linked up by email JS so that the user can send the Holiday in Ireland a quick message with there booking preferences
+- Section - The middle section is where the block content Jinja template is injected. The content changes on each page and gives basic information on aspects of the Temple Lean Recipes site.
+- Hero Image - The eye catching landing/homepage page is designed to convey to the user that they have arrived on a Temple Lean Recipes site as distinct from the gym site. 
+- Select - We tried to use select options to allow a better visual experience for the user and to avoid long typed responses on the forms through out the website. 
+- Hover 
+   - social media icons all turn blue when the cursor hovers over them
+   - internal links turn light black when the cursor hovers over them except for the homepage. 
+   - external links do not have a hover
+   - This lets the user know that there is more information they can access here if they click. It draws attention to options which keep the user on the Temple Lean Recipe page. 
+- Icons - font awesome icons were used to add style and an intuitive feel to the user experience. 
+- jQuery & JavaScript 
+    - collapsible
 
 
 ##### Features Left to Implement
