@@ -298,19 +298,22 @@ Mobile Device wireframe
    - This lets the user know that there is more information they can access here if they click. It draws attention to options which keep the user on the Temple Lean Recipe page. 
 - Icons - font awesome icons were used to add style and an intuitive feel to the user experience. 
 - jQuery & JavaScript 
-    - collapsible
+    - collapsible - On each recipes page clicking the on the Ingredients, Method, Tools or Nutitrional Information will open the collapsible revealing more content  
+    - Sidenav - On Mobile devices the Navbar containing Login, Register and Logout collapses to an apple icon
+    - Form Select - Forms are used throughout the page to allow users to register, login, update profiles, create recipes and update recipes
+- CRUD Functionality
+    - Create - Users can create a profile and create recipes on the Temple Lean Recipe website
+    - Read - Logged in users can read recipes and their profile information on the Temple Lean Recipe site 
+    - Update - Logged in users can update recipes they created and their profile information only on the Temple Lean Recipe site
+    - Delete - Logged in users can delete recipes they created and their profile information only on the Temple Lean Recipe site
 
 
 ##### Features Left to Implement
-
-- Clock API to show tourists the current time in Ireland
-- Weather API to show tourists the time difference and the current time in Ireland
-- Blog of different places recommended by Holiday in Ireland
-- Live chat bubble
-- Book and Pay directly for a holiday rather than requesting a booking
 - Search function in Navbar
+- Automatic image upload
+- Book and pay for a private Nutrition Consultation
 - Analytics that show user traffic flow
-- Testimonials - Holiday users
+- Testimonials from Users
 
 ### Technologies Used
 
@@ -339,8 +342,8 @@ Mobile Device wireframe
 -Flask
 -Python
 -MongoDB
- -Cluster
- -Collections
+ -Clusters
+ -Collections to hold data inout by the user and pass data to the appropriate page
 -Heroku for deployment
   - Website link to Heroku app https://lean-temple-recipes.herokuapp.com/ 
   - Used to deploy the website
@@ -411,7 +414,7 @@ outline of Testing
 
 Testing Browsers and screens you tested it on
 
-- I tested the website by copying and pasting the Github pages link https://andrew-code2020.github.io/MS2/ into Chrome and Edge Browsers
+- I tested the website by copying and pasting the Github pages link https://lean-temple-recipes.herokuapp.com/ into Chrome and Edge Browsers
 - I pressed control+shift+I to access developer tools in the Chrome Browser and checked the web pages responsiveness
 - I used the chrome developer tools to test that the websites appearance and functionality was available across multiple devices listed below;
   - Moto G4

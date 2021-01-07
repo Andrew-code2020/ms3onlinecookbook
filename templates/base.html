@@ -29,8 +29,6 @@
                     <li class="{{ 'active' if page == 'profile' else ' ' }}"><a href="{{ url_for('profile', username=session['user']) }}">Profile <i
                                 class="far fa-id-card"></i> </a></li>
                     <li><a href="{{ url_for('logout') }}">Logout <i class="fas fa-sign-out-alt"></i> </a></li>
-                    <!--Need to add search functionality here-->
-                    <li><a href="#">Search <i class="fab fa-searchengin"></i> </a></li>
                     {% else %}
                     <li class = "{{ 'active' if page == 'login' else ' ' }}"><a href="{{ url_for('login')}}">Log In <i class="fas fa-sign-in-alt"></i></a></li>
                     <li class = "{{ 'active' if page == 'register' else ' ' }}"><a href="{{ url_for('register')}}">Register <i class="far fa-registered"></i></a></li>
@@ -55,8 +53,6 @@
             <li class = "{{ 'active' if page == 'profile' else ' ' }}"><a href="{{ url_for('profile', username=session['user']) }}">Profile <i class="far fa-id-card"></i> </a>
             </li>
             <li><a href="{{ url_for('logout') }}">Logout <i class="fas fa-sign-out-alt"></i> </a></li>
-            <!--Need to add search functionality here-->
-            <li><a href="#">Search <i class="fab fa-searchengin"></i> </a></li>
             {% else %}
             <li class = "{{ 'active' if page == 'login' else ' ' }}"><a href="{{ url_for('login')}}">Log In <i class="fas fa-sign-in-alt"></i></a></li>
             <li class = "{{ 'active' if page == 'register' else ' ' }}"><a href="{{ url_for('register')}}">Register <i class="far fa-registered"></i></a></li>
