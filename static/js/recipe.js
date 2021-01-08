@@ -1,7 +1,7 @@
 $(document).ready(function(){
      /*--base template navbar--*/
      $(".sidenav").sidenav({edge: "right"});
-     /*--register page dropdown menu--*/
+     /*--register, edit profile, edit recipe page dropdown menu--*/
      $('select').formSelect();
      /*--collapsible in recipes--*/
     $('.collapsible').collapsible();

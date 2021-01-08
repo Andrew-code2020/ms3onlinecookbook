@@ -384,6 +384,27 @@ Template
 -outcomes
  - Test successful. the words 'linked properly' appeared into console
 
+
+- Name of Test JS file functionality
+- Outline of Testing
+  - Check that js code is producing functionality on the Temple Lean Recipe Website
+- Test planning
+  - Check the following js functionality
+  - collapsible - On each recipes page clicking the on the Ingredients, Method, Tools or Nutitrional Information will open the collapsible revealing more content. Does this happen?  
+  - Sidenav - On Mobile devices the Navbar containing Login, Register and Logout collapses to an apple icon. Does this happen?
+  - Form Select - The form select option is used across the site does the menu work and the options appear. Does this happen? 
+- Implementation
+  - Open deployed site https://lean-temple-recipes.herokuapp.com/
+  - Got to the Register page   
+- Fix (if applicable)
+  - We added disabled and selected attributes to ensure the register form was blank at first
+  - We added the relevant for example value = "breakfast" to each option to ensure the that the option was passed and documented in MongoDB. 
+- Results
+   - Register page results readmedocs/testing/jsfiletest/jsselectformresult.jpg
+- Outcomes
+   - The tests lead to bug fixes and helped ad functionality without errors on the site 
+
+
 Template
 - Name of Test Placeholder removed test
 - outline of Testing 
@@ -412,8 +433,8 @@ Template
 -outcomes
  - performance was optimum
 
-outline of Testing
-Name of Test - Testing Base html 
+Outline of Testing
+ -Name of Test - Testing Base html 
 -test planning
   -remove landing page code from base template
   -ensure Temple Lean site opens on homepage and base template is not rendered directly anywhere on the site  
