@@ -23,7 +23,9 @@
                     </li>
                     <!--Method button and collapsible content from MongoDB-->
                     <li>
-                        <div class="collapsible-header light-green"><h5>Method <i class="far fa-map"></i></h5> </div>
+                        <div class="collapsible-header light-green">
+                            <h5>Method <i class="far fa-map"></i></h5>
+                        </div>
                         <div class="collapsible-body"><span>
                                 <p>{{ recipe.meal_method }}</p>
                                 <p>{{ recipe.meal_time }}</p>
@@ -32,7 +34,9 @@
                     </li>
                     <!--Tools button and collapsible content from MongoDBs-->
                     <li>
-                        <div class="collapsible-header light-green"><h5>Tools <i class="fas fa-utensils"></i></h5></div>
+                        <div class="collapsible-header light-green">
+                            <h5>Tools <i class="fas fa-utensils"></i></h5>
+                        </div>
                         <div class="collapsible-body"><span>
                                 <p>{{ recipe.meal_tools }}</p>
                             </span>
@@ -40,7 +44,9 @@
                     </li>
                     <!--Nutritional Information button and collapsible content from MongoDB-->
                     <li>
-                        <div class="collapsible-header light-green"><h5>Nutritional Information <i class="fab fa-nutritionix"></i></h5></div>
+                        <div class="collapsible-header light-green">
+                            <h5>Nutritional Information <i class="fab fa-nutritionix"></i></h5>
+                        </div>
                         <div class="collapsible-body">
                             <span>
                                 <ul>
@@ -61,12 +67,15 @@
                 <a href="{{ url_for('dinner')}}">Go to Dinner Recipes</a>
                 <br>
                 <!--Buttons appear only when the user has created the recipe otherwise they are not visible-->
-                <a href="{{ url_for('addrecipe')}}" class="greenbutton btn waves-effect waves-light light-green" >Create Recipe
+                <a href="{{ url_for('addrecipe')}}" class="greenbutton btn waves-effect waves-light light-green">Create
+                    Recipe
                     <i class="fas fa-plus-square"></i> </a>
-                {% if session.user|lower == recipe.created_by|lower %}   
-                <a href="{{ url_for('editrecipe', recipe_id=recipe._id)}}" class="greenbutton btn waves-effect waves-light light-green" >Update Recipe
+                {% if session.user|lower == recipe.created_by|lower %}
+                <a href="{{ url_for('editrecipe', recipe_id=recipe._id)}}"
+                    class="greenbutton btn waves-effect waves-light light-green">Update Recipe
                     <i class="fas fa-user-edit"></i> </a>
-                <a href="{{ url_for('delete_recipe', recipe_id=recipe._id)}}" class="greenbutton btn waves-effect waves-light light-green" > Delete Recipe
+                <a href="{{ url_for('delete_recipe', recipe_id=recipe._id)}}"
+                    class="greenbutton btn waves-effect waves-light light-green"> Delete Recipe
                     <i class="fas fa-trash-alt"></i> </a>
                 {% endif %}
             </div>

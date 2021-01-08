@@ -9,48 +9,49 @@
                 <!--Edit Username from user collection in Mongo DB-->
                 <div class="row">
                     <div class="input-field col s12">
-                        <input id="username" name="username"  pattern="^[a-zA-Z0-9]{5,20}$"
-                            type="text" value="{{ user.username }}" />
+                        <input id="username" name="username" pattern="^[a-zA-Z0-9]{5,20}$" type="text"
+                            value="{{ user.username }}" />
                         <label for="username"> Username <i class="fas fa-user"></i></label>
                     </div>
                 </div>
                 <!--Edit First Name from user collection in Mongo DB-->
                 <div class="row">
                     <div class="input-field col s12">
-                        <input id="first_name" name="first_name" type="text" value="{{ user.first_name.capitalize() }}" />
+                        <input id="first_name" name="first_name" type="text"
+                            value="{{ user.first_name.capitalize() }}" />
                         <label for="first_name">First Name <i class="fas fa-pen"></i></label>
                     </div>
                 </div>
                 <!--Edit Last Name from user collection in Mongo DB-->
                 <div class="row">
                     <div class="input-field col s12">
-                        <input id="last_name" name="last_name" type="text" class="validate" value="{{ user.last_name.capitalize() }}" />
+                        <input id="last_name" name="last_name" type="text" class="validate"
+                            value="{{ user.last_name.capitalize() }}" />
                         <label for="last_name"> Last Name <i class="fas fa-pen"></i></label>
                     </div>
                 </div>
                 <!--Edit Recipe selection from user collection in Mongo DB-->
                 <div class="row">
                     <div class="input-field col s12">
-                        <label name="recipe_type">Preferred Recipe Category <i
-                                class="fas fa-hand-pointer"></i> </label>
+                        <label name="recipe_type">Preferred Recipe Category <i class="fas fa-hand-pointer"></i> </label>
                         <br>
-                      <select name="recipe_type" id="recipe_type">
-                        {% for recipe in recipe_type  %}
+                        <select name="recipe_type" id="recipe_type">
+                            {% for recipe in recipe_type  %}
                             {% if recipe.recipe_types == user.recipe_type %}
-                                <option value="{{recipe.recipe_types}}" selected>{{recipe.recipe_types}}</option>
+                            <option value="{{recipe.recipe_types}}" selected>{{recipe.recipe_types}}</option>
                             {% else %}
-                                <option value="{{recipe.recipe_types}}"> {{recipe.recipe_types}}</option>
+                            <option value="{{recipe.recipe_types}}"> {{recipe.recipe_types}}</option>
                             {% endif %}
-                      {% endfor %}
-                     </select>
+                            {% endfor %}
+                        </select>
                     </div>
                 </div>
                 <!--Edit email from user collection in Mongo DB-->
                 <div class="row">
                     <div class="input-field col s12">
-                        <input id="email" name="email"
-                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Please enter a valid email address"
-                            type="text" class="validate" required value="{{ user.email.lower() }}" />
+                        <input id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                            title="Please enter a valid email address" type="text" class="validate" required
+                            value="{{ user.email.lower() }}" />
                         <label for="email"> Email <i class="fas fa-envelope-square"></i></label>
                     </div>
                 </div>
@@ -67,7 +68,9 @@
             <div class="card-action">
                 <button class="greenbutton btn waves-effect waves-light light-green" type="submit"> Update Profile <i
                         class="fas fa-user-edit"></i></button>
-                <a class ="greenbutton btn waves-effect waves-light light-green" href="{{ url_for('profile', username=session['user']) }}">Cancel <i class="fas fa-window-close"></i></a>
+                <a class="greenbutton btn waves-effect waves-light light-green"
+                    href="{{ url_for('profile', username=session['user']) }}">Cancel <i
+                        class="fas fa-window-close"></i></a>
             </div>
         </div>
     </form>

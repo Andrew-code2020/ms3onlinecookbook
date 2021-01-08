@@ -647,6 +647,8 @@ I used the following code validators to help me debug my code
 I also used following website to help me correct any formatting anomalies in my code
 - https://codebeautify.org/ 
 
+I also used Shift+alt+F on my laptop to beautify each page of code
+
 #### Bugs
 
 Change Go to Recipes to Breakfast recipes and Renders better on Mobile device
@@ -661,12 +663,14 @@ Active Class in Navbar
 - We tried to introduce the active class to help user navigate our page 
 - As you can see if you click on Breakfast, Lunch, Dinner and Snacks, log in or register the background color changes to a light blue letting the user know where they are on the website
 - This was not as intuitive to code as in bootstrap.
-- A combination of if and else from jinja, a variable in our python code and then some custom css to render the active class.
+- A combination of if and else from jinja, a variable in our python code and then some custom css allowed us to render the active class.
 
 
 Base template code
-- Homepage was base.html whiched to create a home page then removed base.html code
-- was confused about base template. Thought it has to be the homepage
+- At the beginning of the project our homepage was the base.html tempalte 
+- To create a home page we removed base.html from python root
+- Initially the developer got confused about how to seperate a base template from a homepage. 
+- Eventually we seperated the two pages and removed some junk code from the base.html which held a card very similar to our hero image on the landing page
 
 Heading Bugs in Navbar
 - On the base.html page on a medium size screen you will see Temple Lean Recipes in the top left of the screen. During development I noticed on a small screen that 

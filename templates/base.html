@@ -20,18 +20,22 @@
         <!--Extended Navbar with Tabs from Materialise-->
         <nav class="nav-extended light-green">
             <div class="nav-wrapper text-shadow">
-            <!--Home page and collapsible side nav element-->
+                <!--Home page and collapsible side nav element-->
                 <a href="{{ url_for('home_page')}}" class="brand-logo hide-on-small-only">Temple Lean Recipes</a>
-                <a href="{{ url_for('home_page')}}" data-target="mobile-demo" class="right sidenav-trigger"><i class="fas fa-apple-alt"></i></a>
+                <a href="{{ url_for('home_page')}}" data-target="mobile-demo" class="right sidenav-trigger"><i
+                        class="fas fa-apple-alt"></i></a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down text-shadow">
                     <!--Main Nav elements including if and else active class and if and else user logged in-->
                     {% if session.user %}
-                    <li class="{{ 'active' if page == 'profile' else ' ' }}"><a href="{{ url_for('profile', username=session['user']) }}">Profile <i
+                    <li class="{{ 'active' if page == 'profile' else ' ' }}"><a
+                            href="{{ url_for('profile', username=session['user']) }}">Profile <i
                                 class="far fa-id-card"></i> </a></li>
                     <li><a href="{{ url_for('logout') }}">Logout <i class="fas fa-sign-out-alt"></i> </a></li>
                     {% else %}
-                    <li class = "{{ 'active' if page == 'login' else ' ' }}"><a href="{{ url_for('login')}}">Log In <i class="fas fa-sign-in-alt"></i></a></li>
-                    <li class = "{{ 'active' if page == 'register' else ' ' }}"><a href="{{ url_for('register')}}">Register <i class="far fa-registered"></i></a></li>
+                    <li class="{{ 'active' if page == 'login' else ' ' }}"><a href="{{ url_for('login')}}">Log In <i
+                                class="fas fa-sign-in-alt"></i></a></li>
+                    <li class="{{ 'active' if page == 'register' else ' ' }}"><a
+                            href="{{ url_for('register')}}">Register <i class="far fa-registered"></i></a></li>
                     {% endif %}
                 </ul>
             </div>
@@ -39,10 +43,14 @@
             <div class="nav-content">
                 <ul class="tabs tabs-transparent text-shadow">
                     {% if session.user %}
-                    <li class="{{ 'tab1 active' if page == 'breakfast' else 'tab1' }}"><a href="{{ url_for('breakfast')}}"> Breakfast</a></li>
-                    <li class="{{ 'tab1 active' if page == 'lunch' else 'tab1' }}"><a href="{{ url_for('lunch')}}">Lunch</a></li>
-                    <li class="{{ 'tab1 active' if page == 'dinner' else 'tab1' }}"><a href="{{ url_for('dinner')}}">Dinner</a></li>
-                    <li class="{{ 'tab1 active' if page == 'snacks' else 'tab1' }}"><a href="{{ url_for('snacks')}}">Snacks</a></li>
+                    <li class="{{ 'tab1 active' if page == 'breakfast' else 'tab1' }}"><a
+                            href="{{ url_for('breakfast')}}"> Breakfast</a></li>
+                    <li class="{{ 'tab1 active' if page == 'lunch' else 'tab1' }}"><a
+                            href="{{ url_for('lunch')}}">Lunch</a></li>
+                    <li class="{{ 'tab1 active' if page == 'dinner' else 'tab1' }}"><a
+                            href="{{ url_for('dinner')}}">Dinner</a></li>
+                    <li class="{{ 'tab1 active' if page == 'snacks' else 'tab1' }}"><a
+                            href="{{ url_for('snacks')}}">Snacks</a></li>
                     {% endif %}
                 </ul>
             </div>
@@ -50,16 +58,20 @@
         <!--On Mobile Device Apple appear on right hand side to all the user register, log in and log out-->
         <ul class="sidenav" id="mobile-demo">
             {% if session.user %}
-            <li class = "{{ 'active' if page == 'profile' else ' ' }}"><a href="{{ url_for('profile', username=session['user']) }}">Profile <i class="far fa-id-card"></i> </a>
+            <li class="{{ 'active' if page == 'profile' else ' ' }}"><a
+                    href="{{ url_for('profile', username=session['user']) }}">Profile <i class="far fa-id-card"></i>
+                </a>
             </li>
             <li><a href="{{ url_for('logout') }}">Logout <i class="fas fa-sign-out-alt"></i> </a></li>
             {% else %}
-            <li class = "{{ 'active' if page == 'login' else ' ' }}"><a href="{{ url_for('login')}}">Log In <i class="fas fa-sign-in-alt"></i></a></li>
-            <li class = "{{ 'active' if page == 'register' else ' ' }}"><a href="{{ url_for('register')}}">Register <i class="far fa-registered"></i></a></li>
+            <li class="{{ 'active' if page == 'login' else ' ' }}"><a href="{{ url_for('login')}}">Log In <i
+                        class="fas fa-sign-in-alt"></i></a></li>
+            <li class="{{ 'active' if page == 'register' else ' ' }}"><a href="{{ url_for('register')}}">Register <i
+                        class="far fa-registered"></i></a></li>
             {% endif %}
         </ul>
     </header>
-    
+
     <section>
         <!-- Area for flash messages to appear making the site more responsive and intuitive -->
         {% with messages = get_flashed_messages() %}
@@ -78,11 +90,11 @@
         {% block content %}
         <!--Area for the content of other pages to appear-->
         <section>
-            
+
         </section>
         {% endblock %}
     </main>
- <!--Footer-->
+    <!--Footer-->
     <footer class="page-footer light-green">
         <div class="container">
             <div class="row">
@@ -116,15 +128,15 @@
                 <!--Social Media with external links to the developers own social media-->
                 <div class="col l4 offset-l2 s12">
                     <h5>Social Media</h5>
-                        <a class="social-media" href="https://www.instagram.com/andrew_burns_moves/"
-                                target="_blank"><i class="fab fa-instagram-square"></i></a>
-                        <a class="social-media" href="https://www.facebook.com/andrewburnsmoves" target="_blank"><i
-                                    class="fab fa-facebook-square"></i></a>
-                            <a class="social-media" href="https://twitter.com/aburnsmoves" target="_blank"><i
-                                    class="fab fa-twitter"></i></a>
-                            <a class="social-media"
-                                href="https://www.youtube.com/channel/UCRAIA8-iy_A7460Ix0PjTYg?view_as=subscriber"
-                                target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a class="social-media" href="https://www.instagram.com/andrew_burns_moves/" target="_blank"><i
+                            class="fab fa-instagram-square"></i></a>
+                    <a class="social-media" href="https://www.facebook.com/andrewburnsmoves" target="_blank"><i
+                            class="fab fa-facebook-square"></i></a>
+                    <a class="social-media" href="https://twitter.com/aburnsmoves" target="_blank"><i
+                            class="fab fa-twitter"></i></a>
+                    <a class="social-media"
+                        href="https://www.youtube.com/channel/UCRAIA8-iy_A7460Ix0PjTYg?view_as=subscriber"
+                        target="_blank"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
         </div>

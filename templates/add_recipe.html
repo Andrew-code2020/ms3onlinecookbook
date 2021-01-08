@@ -8,7 +8,7 @@
             <form class="card-content" method="POST" action="{{ url_for('add_recipe')}}">
                 <div class="row">
                     <div class="input-field col s12">
-                         <!--Select Recipe type-->
+                        <!--Select Recipe type-->
                         <select name="recipe_types" id="recipe_types" required>
                             <option value="" disabled selected>Choose your option</option>
                             <option value="Breakfast">Breakfast</option>
@@ -16,8 +16,7 @@
                             <option value="Dinner">Dinner</option>
                             <option value="Snacks">Snacks</option>
                         </select>
-                        <label name="recipe_type">Recipe Category <i
-                                class="fas fa-hand-pointer"></i></label>
+                        <label name="recipe_type">Recipe Category <i class="fas fa-hand-pointer"></i></label>
                     </div>
                 </div>
                 <!--Add Recipe Image url-->
@@ -38,25 +37,21 @@
                 <div class="row">
                     <div class="input-field col s12">
                         <input id="meal_ingredients" name="meal_ingredients" type="text" class="validate" />
-                        <label for="last_name">Recipe Ingredients <i
-                                class="fas fa-mortar-pestle"></i></label>
+                        <label for="last_name">Recipe Ingredients <i class="fas fa-mortar-pestle"></i></label>
                     </div>
                 </div>
                 <!--Add Meal Method-->
                 <div class="row">
                     <div class="input-field col s12">
-                        <input id="meal_method" name="meal_method" type="text"
-                            class="validate" />
-                        <label for="meal_method">Method of Cooking Recipe <i
-                                class="fas fa-clipboard"></i></label>
+                        <input id="meal_method" name="meal_method" type="text" class="validate" />
+                        <label for="meal_method">Method of Cooking Recipe <i class="fas fa-clipboard"></i></label>
                     </div>
                 </div>
                 <!--Add to Cook Meal-->
                 <div class="row">
                     <div class="input-field col s12">
                         <input id="meal_time" name="meal_time" type="text" class="validate" />
-                        <label for="meal_time">Time to Cook Recipe <i
-                                class="fas fa-stopwatch"></i></label>
+                        <label for="meal_time">Time to Cook Recipe <i class="fas fa-stopwatch"></i></label>
                     </div>
                 </div>
 
@@ -64,15 +59,13 @@
                 <div class="row">
                     <div class="input-field col s12">
                         <input id="meal_tools" name="meal_tools" type="text" class="validate" />
-                        <label for="meal_tools">Tools to Cook Recipe <i
-                                class="fas fa-utensils"></i></label>
+                        <label for="meal_tools">Tools to Cook Recipe <i class="fas fa-utensils"></i></label>
                     </div>
                 </div>
                 <!--Add Meal Carbs-->
                 <div class="row">
                     <div class="input-field col s12">
-                        <input id="meal_nutracarbs" name="meal_nutracarbs" type="text"
-                            class="validate" />
+                        <input id="meal_nutracarbs" name="meal_nutracarbs" type="text" class="validate" />
                         <label for="meal_nutracarbs">Carbohydrate (eg 10g) in your recipe <i
                                 class="fas fa-apple-alt"></i></label>
                     </div>
@@ -80,28 +73,23 @@
                 <!-- Add Meal Fats-->
                 <div class="row">
                     <div class="input-field col s12">
-                        <input id="meal_nutrafats" name="meal_nutrafats" type="text"
-                            class="validate" />
-                        <label for="meal_nutrafats">Fat (eg 10g) your recipe <i
-                                class="fas fa-fill-drip"></i></label>
+                        <input id="meal_nutrafats" name="meal_nutrafats" type="text" class="validate" />
+                        <label for="meal_nutrafats">Fat (eg 10g) your recipe <i class="fas fa-fill-drip"></i></label>
                     </div>
                 </div>
 
                 <!--Add Meal Proteins-->
                 <div class="row">
                     <div class="input-field col s12">
-                        <input id="meal_nutraproteins" name="meal_nutraproteins" type="text"
-                            class="validate" />
-                        <label for="meal_nutraproteins">Protein (eg 10g) in recipe <i
-                                class="fas fa-dna"></i></label>
+                        <input id="meal_nutraproteins" name="meal_nutraproteins" type="text" class="validate" />
+                        <label for="meal_nutraproteins">Protein (eg 10g) in recipe <i class="fas fa-dna"></i></label>
                     </div>
                 </div>
 
                 <!--Add Meal Kcals-->
                 <div class="row">
                     <div class="input-field col s12">
-                        <input id="meal_nutrakcals" name="meal_nutrakcals" type="text"
-                            class="validate" />
+                        <input id="meal_nutrakcals" name="meal_nutrakcals" type="text" class="validate" />
                         <label for="meal_nutrakcals">Calories (eg 225 kcals) in Recipe <i
                                 class="fas fa-burn"></i></label>
                     </div>
@@ -109,7 +97,8 @@
                 <!--Buttons Submit Recipe and Cancel to return to profile screen-->
                 <div class="row">
                     <div class="col s12">
-                        <button class="greenbutton btn waves-effect waves-light light-green" type="submit" name="action">Create
+                        <button class="greenbutton btn waves-effect waves-light light-green" type="submit"
+                            name="action">Create
                             Recipe
                             <i class="fas fa-sign-in-alt"></i>
                         </button>
