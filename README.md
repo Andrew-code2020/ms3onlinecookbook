@@ -583,7 +583,7 @@ Testing Initial Python functionality
 - Go to the "Log in" page by clicking on the Log In icon
 - Verify that when you hover over Log In a light black background appears inviting the user to click on Log In   
 - Click on Log In verify the log in page appears. 
-- Verify that the Log In and icon appears with a light blue background to help user 
+- Verify that the Log In and icon appears with a light blue background to help users determine where they are on the Temple Lean Website
 - Fill in the log in form
 - Verify that you can log into the site or that the flash messages appears if you enter invalid or non existing log in information 
   
@@ -593,31 +593,41 @@ Testing Initial Python functionality
 - Go to the "Registeration" page by clicking on the Register icon
 - Verify that when you hover over Register a light black background appears inviting the user to click on Log In   
 - Click on Register verify the registeration page appears. 
-- Verify that when you on the Register and icon appears with a light blue background to help user 
+- Verify that when you on the Register and icon appears with a light blue background to help users determine where they are on the Temple Lean Website
 - Fill in the Registeration form
-- Verify that you can Register the site or that the flash messages appears if you enter invalid or non existing log in information
+- Verify that you can Register with the site and that the flash messages appears when you finish registeration and are redirected to your newly created profile page
 
 
-#### FAQ page
+#### Profile page including CRUD functionality
 
-FAQ 
+- Log into the Temple Lean Recipe page 
+- Verify that when you are to your profile page    
+- Verify that when you are on the Profile page that the icon and text appear with a light blue background to help users determine where they are on the Temple Lean Website  
+- Verify that you can update the profile and that the update renders on the profile page
+- Verify that you can receive a flash messages telling you that you have completed the update successfully and are redirected to your newly updated profile page
+- Verify that you can delete the profile and that you are automatically logged out with a flash message telling that your profile is deleted whilst you are actually redirected to the regsiteration page
 
-- Go to the "FAQ" page
-- Verify that when you click on the toggle button on the left next to the text that more content appears.
-- The information is almost entirely fictional. The place names are real but the prices and activites are made up.
 
-#### Contact Us
+#### Breakfast, Lunch, Dinner & Snacks page including CRUD functionality
 
-Contact us
+- Log into the Temple Lean Recipe page 
+- Verify that when you are to you log in the Breakfast, Lunch, Dinner & Snacks pages appear
 
-- Go to the "Home/Landing" page.
-- Click on the "Contact Us" section of the Navbar.
-- Verify that we are directed to the contact us page which opens with a form to fill out.
-- When you fill out the form and hit the "Submit your " button the form when a message "please fill out this field appears" if you do not submit a first name.
-- The contact us form is functional at this time and completed forms will be sent to burnsad@tcd.ie.
-    - a photo is available of a test email sent from the form is available in the following directory assets/readmedocs/emailjs/emailjs.jpg
-    - the {{from_email}} is set up in the cc of emailjs so the user gets a copy of the submitted form such that they know that the form has gone through to the  team. 
-- The form is coded such that it will empty when the "Submit your " button is pressed. 
+- Verify that when you are to your profile page    
+- Verify that when you are on the Profile page that the icon and text appear with a light blue background to help users determine where they are on the Temple Lean Website  
+- Verify that you can update the profile and that the update renders on the profile page
+- Verify that you can receive a flash messages telling you that you have completed the update successfully and are redirected to your newly updated profile page
+- Verify that you can delete the profile and that you are automatically logged out with a flash message telling that your profile is deleted whilst you are actually redirected to the regsiteration page
+ 
+
+#### Log Out functionality
+
+- Log into the Temple Lean Recipe page 
+- Verify that when you are to your profile page that the log out ability is available   
+- Verify that when you are on the Profile page that the icon and text appear with a light blue background to help users determine where they are on the Temple Lean Website  
+- Verify that you can update the profile and that the update renders on the profile page
+- Verify that you can receive a flash messages telling you that you have completed the update successfully and are redirected to your newly updated profile page
+- Verify that you can delete the profile and that you are automatically logged out with a flash message telling that your profile is deleted whilst you are actually redirected to the registeration page
 
 #### Appearance differences on other devices
 
