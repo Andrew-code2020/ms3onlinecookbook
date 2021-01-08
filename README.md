@@ -309,8 +309,8 @@ Mobile/Tablet Device wireframe
 
 
 ##### Features Left to Implement
-- Search function in Navbar
-- Automatic image upload
+- Search function
+- Automatic image upload and rednering to the website
 - Book and pay for a private Nutrition Consultation
 - Analytics that show user traffic flow
 - Testimonials from Users
@@ -343,7 +343,7 @@ Mobile/Tablet Device wireframe
 -Python
 -MongoDB
  -Clusters
- -Collections to hold data inout by the user and pass data to the appropriate page
+ -Collections to hold data input by the user and pass data to the appropriate page on the Temple Lean Recipe site
 -Heroku for deployment
   - Website link to Heroku app https://lean-temple-recipes.herokuapp.com/ 
   - Used to deploy the website
@@ -359,7 +359,7 @@ Mobile/Tablet Device wireframe
 
 ### Testing
 
-outline of Testing 
+##### Performance Testing 
 -Name of Test 
   - Lighthouse Test
 -test planning 
