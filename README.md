@@ -359,6 +359,15 @@ Mobile/Tablet Device wireframe
 
 ### Testing
 
+Template
+- Name of Test
+- outline of Testing 
+-test planning 
+-implementation
+-fix (if applicable)
+-results
+-outcomes
+
 ##### Performance Testing 
 -Name of Test 
   - Lighthouse Test
@@ -376,7 +385,7 @@ Mobile/Tablet Device wireframe
     - readmedocs/testing/lighthouse/mobilelighthousetest.jpg
     - readmedocs/testing/lighthouse/desktoplighthouseresults.jpg
 -outcomes
- - perfromance was optimum
+ - performance was optimum
 
 outline of Testing
 Name of Test - Testing Base html 
@@ -389,12 +398,7 @@ Name of Test - Testing Base html
   - 
 -outcomes
 
-outline of Testing 
--test planning 
--implementation
--fix (if applicable)
--results
--outcomes
+
 
 -test planning 
     - Premise is our custom css file talks to our html files through python 
@@ -409,7 +413,7 @@ outline of Testing
 
 
 
-Testing 
+Testing Initial Python functionality 
 - Subject Test app.py inital ran 
    - used python3 app.py to run the app.py file from gitpod
    - screenshots in readmedocs/testing/initalapppyrun.jpg
@@ -418,7 +422,7 @@ Testing
 - Conclusion
   - initial set up worked well"
 
-outline of Testing 
+ Testing 
 -test planning
    - Registeration form check the content renders on our app 
 -implementation
