@@ -343,7 +343,6 @@ Mobile/Tablet Device wireframe
     - Result visible in  readmedocs/testing/codevalidators/shintcheckresult.jpg
  - Python Validator http://pep8online.com/
     - Result visible readmedocs/testing/codevalidators/pep8vaildatorresult.jpg
-    
 -Flask
 -Python
 -MongoDB
@@ -446,11 +445,14 @@ Template
 Template
 - Name of Test Placeholder removed test
 - outline of Testing 
--test planning 
--implementation
--fix (if applicable)
--results
--outcomes
+ - The placeholder gave the site an unclear orange placeholder
+ - Despite our attempts to modify the color we were unsuccessful so we removed the placeholder code across the site.
+ - This had a minimum effect on the site style 
+- test planning 
+- implementation
+- fix (if applicable)
+- results
+- outcomes
 
 ##### Performance Testing 
 -Name of Test 
@@ -649,8 +651,18 @@ I also used following website to help me correct any formatting anomalies in my 
 
 Change Go to Recipes to Breakfast recipes and Renders better on Mobile device
 
+- Bug  Placeholder  
+ - The placeholder gave the site an unclear orange placeholder where the placeholder should be
+ - Despite our attempts to modify the color we were unsuccessful so we removed the placeholder code across the site.
+ - This had a minimum effect on the site style
+ - In future development I would like to reintroduce placeholders with a color that reflects the style of the site. 
+
 Active Class in Navbar
-- color
+- We tried to introduce the active class to help user navigate our page 
+- As you can see if you click on Breakfast, Lunch, Dinner and Snacks, log in or register the background color changes to a light blue letting the user know where they are on the website
+- This was not as intuitive to code as in bootstrap.
+- A combination of if and else from jinja, a variable in our python code and then some custom css to render the active class.
+
 
 Base template code
 - Homepage was base.html whiched to create a home page then removed base.html code
