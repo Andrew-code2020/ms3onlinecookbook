@@ -369,6 +369,17 @@ Template
 -outcomes
 
 Template
+- Name of Test JS
+- outline of Testing
+  - The objective of the test was to check if the directory to the js file was working 
+-test planning
+  - In the recipe.js file we input 
+-implementation
+-fix (if applicable)
+-results
+-outcomes
+
+Template
 - Name of Test Placeholder removed test
 - outline of Testing 
 -test planning 
@@ -444,11 +455,18 @@ Testing Initial Python functionality
 -outcomes
   - Fixed a visual bug
 
+##### Testing Browsers screens you tested it on
 
-Testing Browsers and screens you tested it on
-
-- I tested the website by copying and pasting the Github pages link https://lean-temple-recipes.herokuapp.com/ into Chrome and Edge Browsers
+###### Chrome Browser
+- I tested the website by copying and pasting the Heroku pages link https://lean-temple-recipes.herokuapp.com/ into Chrome Browsers
 - I pressed control+shift+I to access developer tools in the Chrome Browser and checked the web pages responsiveness
+
+###### Edge Browser
+- I tested the website by copying and pasting the Heroku pages link https://lean-temple-recipes.herokuapp.com/ into Edge Browser
+- I pressed control+shift+I to access developer tools in the Edge Browser and checked the web pages responsiveness
+
+
+##### Testing Device screens
 - I used the chrome developer tools to test that the websites appearance and functionality was available across multiple devices listed below;
   - Moto G4
   - Galaxy S5
