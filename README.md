@@ -213,19 +213,19 @@ In development we set out to make sure that our site would be consistent. We use
 ###### User Questions
 
 - Where am I?
-  - On each page the Navbar highlights that page in golden rod yellow. This helps you locate where you are on the Holiday in Ireland site
+  - On each page the Navbar highlights that page in golden rod yellow. This helps you locate where you are on the  site
 
 - How did I get here?
-  - Clicking on certain icons opens up new Tabs so the user does not forget which website they accessed the content from such as Holiday in Ireland social media platforms. The platforms are currently connected to the developers account because the Holiday in Ireland social media accounts do not exist 
+  - Clicking on certain icons opens up new Tabs so the user does not forget which website they accessed the content from such as  social media platforms. The platforms are currently connected to the developers account because the  social media accounts do not exist 
   - The navbar and footer are the exact same on each page and with the current page highlighted in golden rod yellow in the navbar so that the user may easily identify where they are and where they came from
   - The alert bar on the FAQ page has a COVID-19 alert providing users with the most to up to date travel information from the Government of Ireland. It opens into a new tab such that the user knows which website they came from
 
 - What can I do here?
-  - The user is invited clearly to click on and then access various features of the Holiday in Ireland website. 
+  - The user is invited clearly to click on and then access various features of the  website. 
   - This occurs in the following places;
      - Navbar with the hover feature
      - Footer via the social media icons
-     - The contact us page Submit your holiday in Ireland form button
+     - The contact us page Submit your  form button
      - The buttons under the flip cards toggle to reveal basic information 
      - The user can also click on the bottom left footer icons which directs the user to resources that helped make the website
      - The FAQ button contains a button to the left of the text which toggles to reveal more text content on the chosen subject area
@@ -398,12 +398,16 @@ Template
     - collapsible class added to brekfast, lunch, dinner and snacks html pages
     - pertinent initialisation code added to recipe.js
   - Sidenav
-    - Mobile
+    - check collapse to an apple on the right in Mobile device
+    - Open deployed site https://lean-temple-recipes.herokuapp.com/
+    - Ctrl+Shift+I on the keyboard
+    - Select mobile device from responsive dropdown menu 
   - Form Select
     - Open deployed site https://lean-temple-recipes.herokuapp.com/
     - Go to the Register page
     - Check the Preferred Recipe Category
     - Click the dropdown carrot
+    - See if options come up
      
 - Fix (if applicable)
   - Collapsible
@@ -413,11 +417,15 @@ Template
    - We added disabled and selected attributes to ensure the register form was blank at first
    - We added the relevant for example value = "breakfast" to each option to ensure the that the option was passed and documented in MongoDB. 
   - Sidenav
-    - Mobile
+    - To render the sidenav bar on the right of the page we added {edge: "right"} to the js code
+
 - Results
  - Collapsible
    - Breakfast result image start readmedocs/testing/jsfiletest/jscollapsibleresult1.jpg
    - Click on Collapsible result image start readmedocs/testing/jsfiletest/jscollapsibleresult2.jpg  
+ - Sidenav
+   - Sidenav result image readmedocs/testing/jsfiletest/jssidenavresult1.jpg
+   - Clicked through sidenav apple readmedocs/testing/jsfiletest/jssidenavresult2.jpg
  - Form Select   
    - Register page results readmedocs/testing/jsfiletest/jsselectformresult.jpg
    - Edit profile page resultss readmedocs/testing/jsfiletest/jsselectformresult.jpg
@@ -426,8 +434,9 @@ Template
    - Form Select
      - The tests lead to bug fixes and helped ad functionality without errors on the site
    - Collapsible
-     - Checked collapsible  across breakfast, lunch, dinner and snacks 
-
+     - Checked collapsible  across breakfast, lunch, dinner and snacks and it worked
+   - Sidenav
+     - Side nav functionality worked and revealed sidenav elements
 
 Template
 - Name of Test Placeholder removed test
@@ -532,14 +541,9 @@ Testing Initial Python functionality
 
 ##### Header
 
-Alert Bar
-
-- Go to the Holiday in Ireland "FAQ" page
-- Verify that by clicking on the information icon that a new tab opens and a government of Ireland travel advice website appears
-
 Navbar
 
-- Go to the Holiday in Ireland "Home/Landing" page or any other Holiday in Ireland page
+- Go to the Temple Lean Recipe "Home/Landing" page or any other  page
 - Verify that the home bar is highlighted in golden rod yellow.
 - Verify that this current page feature of highlight in in golden rod yellow occurs across all pages in our navbar by clicking each one in turn
 
@@ -547,11 +551,11 @@ Navbar
 
 Social Media
 
-- Go to the "Home/Landing" or any other page on the Holiday in Ireland website
+- Go to the "Home/Landing" or any other page on the Temple Lean Recipe website
 - Scroll down to the Footer
 - Click on any social media icon
 - Verify that a new tab opens on the correct (ie Facebook opens on Facebook) social media site
-- The social media sites are the developers sites because the Holiday in Ireland wesbite doe not have stand alone social media
+- The social media sites are the developers sites because the Temple Lean Recipe website doe not have stand alone social media
 
 Developed with
 
@@ -562,7 +566,7 @@ Developed with
 
 ##### Header and Footer
 
-- Across each of the Holiday in Ireland web pages you may verify that the Header and the Footer have the same features outlined above
+- Across each of the  web pages you may verify that the Header and the Footer have the same features outlined above
 - There is only one exception and that is the FAQ page where an alert bar is added above the main navigation bar to provide users with government of Ireland travel advice.
 
 ##### Section
@@ -576,26 +580,6 @@ Go to the "Home" page
 - Verify that when you hover the cursor over any destination in the grid that the grid turns light green
 - Click on any destination in the grid and verify that content pertinent to that destination appear below in a box with the destination turning golden rod yellow so the user knows which destination the content is referring too.  
 - Click on each destination in the grid and verify that the exact same thing happens for each of the topics below;
-  - Activity (Heading)
-    -  Delphi Resort
-    -  CenterParcs
-    -  Donegal Adventure Center
-    -  Waterford Greenway
-  - Culture (Heading)
-    - Newgrange 
-    - Croke Park
-    - De Barra Folk Club 
-    - Jameson Distillery
-  - Sport (Heading)
-   - Inchodoney
-   - The Europe
-   - Wicklow Yoga Retreat
-   - Powerscourt
-  - Culture (Heading)
-   - Dublin 
-   - Cork
-   - Limerick
-   - Kilkenny
 
 #### Learn about Ireland page
 
@@ -604,22 +588,7 @@ Learn about Ireland
 - Go to the "Learn about Ireland" page
 - Verify that when you  hover over each picture the picture flips over and content buttons appear 
 - Click  on each button to toggle the appearance of further information on each of the following topics
-  - History (Heading)
-    - 19th Century (Button)
-    - 20th Century (Button)
-    - 21st Century (Button)
-  - Geography (Heading)
-    - Dimensions (Button)
-    - Climate (Button)
-    - Wildlife (Button)
-  - Sport (Heading)
-    - GAA (Button)
-    - Soccer (Button)
-    - Rugby (Button)
-  - Culture (Heading)
-    - Music (Button)
-    - Language (Button)
-    - Science (Button)
+  
 
 #### Explore Ireland page:
 
@@ -645,14 +614,14 @@ FAQ
 
 Contact us
 
-- Go to the Holiday in Ireland "Home/Landing" page.
+- Go to the "Home/Landing" page.
 - Click on the "Contact Us" section of the Navbar.
 - Verify that we are directed to the contact us page which opens with a form to fill out.
-- When you fill out the form and hit the "Submit your holiday in Ireland" button the form when a message "please fill out this field appears" if you do not submit a first name.
+- When you fill out the form and hit the "Submit your " button the form when a message "please fill out this field appears" if you do not submit a first name.
 - The contact us form is functional at this time and completed forms will be sent to burnsad@tcd.ie.
     - a photo is available of a test email sent from the form is available in the following directory assets/readmedocs/emailjs/emailjs.jpg
-    - the {{from_email}} is set up in the cc of emailjs so the user gets a copy of the submitted form such that they know that the form has gone through to the Holiday in Ireland team. 
-- The form is coded such that it will empty when the "Submit your Holiday in Ireland" button is pressed. 
+    - the {{from_email}} is set up in the cc of emailjs so the user gets a copy of the submitted form such that they know that the form has gone through to the  team. 
+- The form is coded such that it will empty when the "Submit your " button is pressed. 
 
 #### Appearance differences on other devices
 
@@ -722,18 +691,7 @@ Future Development
 - Recipe Videos
 - E-Commerce subscription Business Model 
 - Comments so users can interact with other users
-
 - reset your password function
-
-- Fixed Top overlaying my alert bar. During develpment I played around with a fixed top for the Navbar. At first the Alert Bar would disappear behind the Navbar. Then as I corrected the code the alert bar came in on top of the navbar but this would then overlay onto the section of each page. I used padding and height settings to solve this problem but I also used the sticky-top class in the navbar. I am unsure whether the sticky-top class changed things very much. I did a lot of refining with heights and padding to get the website to render the way it looks now.
-- Fixed Bottom I deployed a fixed bottom for the footer early in the development process. Unfortunately this overlayed  in the section element of each page. I was unable to resolve this using height, padding and overflow css properties and values. Research and feedback would seem to indicate that fixed bottom is very hard to use appropriately. Perhaps future development will reveal a solution.
-- On the learn about Ireland page when you hover the cursor over the card and then toggle any of the buttons you will notice that unless you toggle the same button to "close" the content before moving onto the next button will simple add it's content underneath. This is a bug that needs to be resolved in future development. 
-- On the learn about Ireland page the history photo on the card flip had to be rotated to this photo because the other photos stretched and I could not resolve this stretch despite deploying css selector, properties and values to try and manipulate the other images.
-- On the learn about Ireland page each image has inline style written into the HTML for height and width. Despite many attempts to bring the style into the css file each attempt led to either an image that was too big or didn't fit the container. This is definitely something I will examine in future development as I attempt to adopt the convention of styling within the css style sheet. 
-- On the explore Ireland page you will find the code for the Google Maps API is written within the HTML file below the footer. I acknowledge that this is not recommended practise but I was unable to get the map to render unless the code was in the HTML page. I researched a reason why but I could not find one that I could understand and implement. I will need to keep looking for answers with this feature to better refine my coding skills.
-- On the explore Ireland page you will find that the map does not fill the screen space or operate relative to the elements on the left to balance it's appearance. This is something I'm keen to find a solution too in the next stage of development.
-- On the contact us pages the html code validator pointed out that the id = "gridRadios1" must be unique. I tried swapping the id gridRadios1 with gridRadios2 and adding the appropriate code in the sendEmail.js file but this did not lead to the correct information being transmitted through email JS onto my gmail account. Instead gridRadios1 was would render even if the gridRadio2 checkbox was selected. This is a code refinement I'll look to solve in future development. 
-- My Mentor noted that my code formatting was not correct in some areas I preformed the Gitpod formatting procedure several times and nothing changed. I tried exporting the code to VS Code and formatting it there but then I couldn't send it back to the Github repository. I ran all the code through a code beautifier https://codebeautify.org/ and the difference was minimal. I don't understand what good formatting looks like because as I understand it seems to be unique to the company. I'll continue my research here. 
 
 
 ### Deployment
@@ -795,7 +753,7 @@ Deploying the project to Heroku
             - Hover
             - overflow
             - card flip
-- I used Bootstrap through out the project to deploy a mobile first design principle.
+- I used Materialize through out the project to deploy a mobile first design principle.
   - Website https://getbootstrap.com/
   - Features influenced
     - Header
@@ -828,43 +786,20 @@ Deploying the project to Heroku
   - Interactive Front End Development
   - Data Centric Development Milestone Project 
 
-- I copied the knowledge of how to implement Bootstrap CDN and Font awesome CDN links from my previous milestone project. Link here https://andrew-code2020.github.io/CI-MS-1-Lean-Temple/
+- I copied the knowledge of how to implement Materialize CDN and Font awesome CDN links from my previous milestone project. Link here https://andrew-code2020.github.io/CI-MS-1-Lean-Temple/
 
 - I copied the idea of the class custom navbar from  https://www.geeksforgeeks.org/. This did not make the final project cut but never the less helped me shape my understanding of the navbar from bootstrap. 
-
-- I copied the majority of the content information available in the sections below from https://en.wikipedia.org/wiki/Ireland
-  - History (Heading)
-    - 19th Century (Button)
-    - 20th Century (Button)
-    - 21st Century (Button)
-  - Geography (Heading)
-    - Dimensions (Button)
-    - Climate (Button)
-    - Wildlife (Button)
-  - Sport (Heading)
-    - GAA (Button)
-    - Soccer (Button)
-    - Rugby (Button)
-  - Culture (Heading)
-    - Music (Button)
-    - Language (Button)
-    - Science (Button)
-
--Information not found in the wikipedia page reflects my own experience of Irish culture or pieces of information that I have known for a long time from living and working in Ireland.
 
 ##### Content
 
 - The content was constructed by the student with inspiration from their experience as an Irish citizen for the past 31 years. 
-- The holiday destinations and the markers they hold on the map are real. The price to stay there is completely made up as are the activities.
-- Holiday in Ireland is designed to be fictional and the business does not exist. 
+- The destinations and the markers they hold on the map are real. The price to stay there is completely made up as are the activities.
+-  is designed to be fictional and the business does not exist. 
 
 ##### Media
 
-- The Landing Page Hero Image is a photo from the students personal photo collection
 - The photos used in this site were obtained from pexels.com
   - These photos are placed in the website on the following pages;
-    - Learn about Ireland page
-    - Explore Ireland page
 - The photos used in this site were obtained from https://unsplash.com/
     These photos are placed in the website on the following pages;
     -index page
@@ -874,5 +809,5 @@ Deploying the project to Heroku
 
 ##### Acknowledgements
 
-- I received inspiration for this project from the Code Institute Tutorial videos and my mentors Mrs Rhey Ann Magcalas and Mr. Adegbenga Adeye.
-- I would also like thank the following members of the Tutor Assistance Team Tim Nelson, Anna (apologies that I could not find your surname), Xavier (apologies that I could not find your surname) and Haley (apologies that I could not find your surname). I spent many hours trying to work through problems I encountered with them.
+- I received inspiration for this project from the Code Institute Tutorial videos and my mentor Mr. Adegbenga Adeye.
+- I would also like thank the following members of the Tutor Assistance Team Tim Nelson, Anna, Xavier, Igor, Miklos, Cormac, Kevin, Johann and Haley (apologies that I could not find all your surnames). I spent many hours trying to work through problems I encountered with them.
