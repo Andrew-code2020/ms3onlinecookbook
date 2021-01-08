@@ -363,11 +363,20 @@ outline of Testing
 -Name of Test 
   - Lighthouse Test
 -test planning 
+  - Check the Temple Lean site for performance, best practices and accessibility. 
 -implementation
+  - access the deployed site via https://lean-temple-recipes.herokuapp.com/
+  - Use Ctrl+Shift+I on your keyboard to access the developer tools
+  - Click genereate report refer to image for visual detail readmedocs/testing/lighthouse/generatereportlighthouse.jpg
+  - 
 -fix (if applicable)
+  - no obvious performance issues on mobile or desktop device according to the lighthouse test
 -results
-  -
+  - The lighthouse test results are documented in the images below 
+    - readmedocs/testing/lighthouse/mobilelighthousetest.jpg
+    - readmedocs/testing/lighthouse/desktoplighthouseresults.jpg
 -outcomes
+ - perfromance was optimum
 
 outline of Testing
 Name of Test - Testing Base html 
@@ -377,7 +386,7 @@ Name of Test - Testing Base html
 -implementation
 -fix (if applicable)
 -results
-  - lighthousetest.jpg
+  - 
 -outcomes
 
 outline of Testing 
