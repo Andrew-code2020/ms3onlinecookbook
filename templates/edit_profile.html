@@ -65,9 +65,9 @@
             </div>
             <!--Buttons to submit profile update and cancel edit functionality-->
             <div class="card-action">
-                <button class="profile btn waves-effect waves-light light-green" type="submit"> Update profile <i
+                <button class="greenbutton btn waves-effect waves-light light-green" type="submit"> Update Profile <i
                         class="fas fa-user-edit"></i></button>
-                <a class ="profile btn waves-effect waves-light light-green" href="{{ url_for('profile', username=session['user']) }}">Cancel <i class="fas fa-window-close"></i></a>
+                <a class ="greenbutton btn waves-effect waves-light light-green" href="{{ url_for('profile', username=session['user']) }}">Cancel <i class="fas fa-window-close"></i></a>
             </div>
         </div>
     </form>
