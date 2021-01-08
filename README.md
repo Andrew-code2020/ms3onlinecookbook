@@ -251,7 +251,7 @@ Desktop wireframes
 - readmedocs/desktopwireframe/recipelooppage.jpg
 - readmedocs/desktopwireframe/registerpage.jpg
 
-Mobile Device wireframe
+Mobile/Tablet Device wireframe
 - readmedocs/mobilewireframe/recipeloopmobile.jpg
 - readmedocs/mobilewireframe/loginmobile.jpg
 - readmedocs/mobilewireframe/profilemobile.jpg
@@ -359,6 +359,16 @@ Mobile Device wireframe
 
 ### Testing
 
+outline of Testing 
+-Name of Test 
+  - Lighthouse Test
+-test planning 
+-implementation
+-fix (if applicable)
+-results
+  -
+-outcomes
+
 outline of Testing
 Name of Test - Testing Base html 
 -test planning
@@ -367,6 +377,7 @@ Name of Test - Testing Base html
 -implementation
 -fix (if applicable)
 -results
+  - lighthousetest.jpg
 -outcomes
 
 outline of Testing 

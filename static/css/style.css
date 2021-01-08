@@ -121,7 +121,7 @@ i {
 /*-----------------------------------Breakfast page-------------------------------------------------------------*/
 
 .card-image{
-    height:400px;
+    height:500px;
 }
 
 /*--Try min or max height--*/
@@ -130,6 +130,7 @@ i {
  height: 100%;
  object-fit:cover;
 }
+
 
 .card-title {
     color:#222222;
