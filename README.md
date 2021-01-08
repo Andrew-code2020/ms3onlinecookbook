@@ -647,7 +647,7 @@ I used the following code validators to help me debug my code
 I also used following website to help me correct any formatting anomalies in my code
 - https://codebeautify.org/ 
 
-I also used Shift+alt+F on my laptop to beautify each page of code
+I also used Shift+alt+F on my laptop to beautify each page of code in gitpod
 
 #### Bugs
 
@@ -719,18 +719,20 @@ Future Development
 
 Basic information 
 
-- Deployment project on Github
-- This project is hosted in github repository. It was developed using Gitpod. Link to the repository https://github.com/Andrew-code2020/MS2
-- Open link to project website https://andrew-code2020.github.io/MS2/
+- Project Repository on Github
+  - This project is hosted in a github repository. 
+  - It was developed using Gitpod. 
+  - Link to the repository https://github.com/Andrew-code2020/ms3onlinecookbook
+
 
 Creating the repository
 
-- cloned the repository from milestone project 2
+- We cloned the repository from milestone project 2
 - To make the project in my github repository I went to the code institute recommended repository via this link https://github.com/Code-Institute-Org/gitpod-full-template
 - I then clicked on use this template and created a new repository in my github account
 - The screenshots of this process are available by following the directories below
-    - assets/readmedocs/creatingrepo/step1copyrepotemplate.png
-    - assets/readmedocs/creatingrepo/step2creatingreponame.png
+    - readmedocs/creatingrepo/step1copyrepotemplate.png
+    - readmedocs/creatingrepo/step2creatingreponame.png
 
 Deploying the project to Github
 
