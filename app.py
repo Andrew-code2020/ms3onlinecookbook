@@ -233,7 +233,7 @@ def edit_profile(user_id):
     return render_template("edit_profile.html", user=user, recipe_type=types)
 
 
-# Deletes user profile and logs them out
+# Deletes user profile and logs them outá
 @app.route("/delete_profile/<user_id>")
 def delete_profile(user_id):
     mongo.db.users.remove({"_id": ObjectId(user_id)})
