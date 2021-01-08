@@ -338,6 +338,7 @@ Mobile/Tablet Device wireframe
 - Code Validators
  - HTML - https://validator.w3.org/
  - CSS Validator - https://jigsaw.w3.org/css-validator/#validate_by_input
+    - Result visible in readmedocs/testing/codevalidators/cssvalidatorresult.jpg
  - JavaScript and JQuery validator https://jshint.com/
     - Result visible in  readmedocs/testing/codevalidators/shintcheckresult.jpg
  - Python Validator http://pep8online.com/
