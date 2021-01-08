@@ -548,7 +548,7 @@ Testing Initial Python functionality
 
 ##### Header
 
-Navbar
+###### Navbar
 
 - Go to the Temple Lean Recipe "Home/Landing" page or any other  page
 - Verify that the home bar is highlighted in golden rod yellow.
@@ -556,25 +556,17 @@ Navbar
 
 ##### Footer
 
-Social Media
+###### Social Media
 
 - Go to the "Home/Landing" or any other page on the Temple Lean Recipe website
 - Scroll down to the Footer
 - Click on any social media icon
 - Verify that a new tab opens on the correct (ie Facebook opens on Facebook) social media site
-- The social media sites are the developers sites because the Temple Lean Recipe website doe not have stand alone social media
-
-Developed with
-
-- Go to the "Home/Landing" page
-- Scroll down to the Footer
-- Click on the bootstrap, jQuery or Code institute icons
-- Verify that a new tab opens and the appropriate website opens
+- The social media sites are the developers sites because the Temple Lean Recipe website does not have stand alone social media
 
 ##### Header and Footer
 
-- Across each of the  web pages you may verify that the Header and the Footer have the same features outlined above
-- There is only one exception and that is the FAQ page where an alert bar is added above the main navigation bar to provide users with government of Ireland travel advice.
+- Across each page of the website you may verify that the Header and the Footer have the same features outlined above
 
 ##### Section
 
@@ -583,31 +575,28 @@ Developed with
 
 #### Home/Landing page
 
-Go to the "Home" page
-- Verify that when you hover the cursor over any destination in the grid that the grid turns light green
-- Click on any destination in the grid and verify that content pertinent to that destination appear below in a box with the destination turning golden rod yellow so the user knows which destination the content is referring too.  
-- Click on each destination in the grid and verify that the exact same thing happens for each of the topics below;
+- Go to the "Home" page by clicking on the words Temple Lean Recipes
+- Verify that the page with the salad bowl appears with a welcome message and log in and registeration buttons
 
-#### Learn about Ireland page
+#### Log In
 
-Learn about Ireland
-
-- Go to the "Learn about Ireland" page
-- Verify that when you  hover over each picture the picture flips over and content buttons appear 
-- Click  on each button to toggle the appearance of further information on each of the following topics
+- Go to the "Log in" page by clicking on the Log In icon
+- Verify that when you hover over Log In a light black background appears inviting the user to click on Log In   
+- Click on Log In verify the log in page appears. 
+- Verify that the Log In and icon appears with a light blue background to help user 
+- Fill in the log in form
+- Verify that you can log into the site or that the flash messages appears if you enter invalid or non existing log in information 
   
 
-#### Explore Ireland page:
+#### Registeration page
 
-Explore Ireland page
+- Go to the "Registeration" page by clicking on the Register icon
+- Verify that when you hover over Register a light black background appears inviting the user to click on Log In   
+- Click on Register verify the registeration page appears. 
+- Verify that when you on the Register and icon appears with a light blue background to help user 
+- Fill in the Registeration form
+- Verify that you can Register the site or that the flash messages appears if you enter invalid or non existing log in information
 
-- Go to the "Explore Ireland" page
-- Verify that when you hover the cursor over the cards on the left hand side that cards turn over and reveal which location is matched to the google map markers visible on the map on the right hand side of the page
-- You may verify that the information is different on each card
-
-- Go to the "Explore Ireland" page
-- Verify that when you hover the cursor over the cards on the left hand side that cards turn over and reveal which location is matched to the google map markers visible on the map on right hand side
-- You may verify the marker by clicking on the appropriate section of the map. By clicking on the map you will zoom in on the location you are looking for.
 
 #### FAQ page
 
@@ -774,24 +763,26 @@ Future Development
 - I used Materialize through out the project to deploy a mobile first design principle.
   - Website https://materializecss.com/
   - Features influenced
+    - Navbar
     - Header
     - Footer
     - Section
     - Navbar
-    - Alert Bar
-    - Form
-    - Dropdown menu
+    - Forms
+    - Select Option
     - Buttons
 
-- Google Fonts I imported the text font Recursive from Google Fonts website https://fonts.google.com/
+- Google Fonts 
+  - I imported the text font Recursive from Google Fonts website https://fonts.google.com/
+  - I used this font because it was the same font as other recipe websites and therefore made my website feel familiar and readable to users
 
-- I copied the hero image idea in a similar way to the Jumbtron idea from our code along whiskey drop project with the code institute. I used Boostrap to copy the code and then modified it to fit the style of this project. Reference to Github repository from code along project https://andrew-code2020.github.io/whiskeydrop/
+- I copied the hero image idea in a similar way to the Jumbtron idea from our code along whiskey drop project with the code institute. I copied a Materialize card code to mimic a jumbotron. Reference to Github repository from code along project https://andrew-code2020.github.io/whiskeydrop/
 
-- I copied the icons from Font awesome https://fontawesome.com/ and used the CDN to implement them in the project. I then wrote custom code to style the icons and make them more responsive. The icon next to the code institute is not the true code institute icon it is a freely available icon in font awesome. I put that icon because I felt it accurately described the code institute in an icon.
+- I copied the icons from Font awesome https://fontawesome.com/ and used the CDN to implement them in the project. I then wrote custom css code to style the icons and make them more responsive. I did not use the materialize icons because they did not look as good as the font awesome icons.
 
-- I copied the card flip code from W3schools.com https://www.w3schools.com/howto/howto_css_flip_card.asp. I then customised it's functionality in my project.
+- I copied the collapsible code from Materializecss.com https://materializecss.com/. I then customised it's functionality in my project.
 
-- I copied the toggle, show and hide, mouseenter, mouseleave code from jQuery https://jquery.com/. I reviewed the lessons on jQuery in the Interactive Front Development Module to help me implement the features in this project. 
+- I copied the initialization of the collapsible, sidenav and select form from https://materializecss.com/. I referred to jQuery https://jquery.com/ to help me get the interactivity of the site working effectively. I reviewed the lessons on jQuery in the Interactive Front Development Module to help me implement the features in this project. 
 
 - I copied the footer design from https://dermomurphy.github.io/Dublin-360-CI/index.html and then customised it to fit my project.
 
@@ -802,27 +793,28 @@ Future Development
   - User Centric Front End Development
   - JavaScript Fundamentals
   - Interactive Front End Development
+  - Python Fundamentals
+  - Practical Python
   - Data Centric Development Milestone Project 
 
-- I copied the knowledge of how to implement Materialize CDN and Font awesome CDN links from my previous milestone project. Link here https://andrew-code2020.github.io/CI-MS-1-Lean-Temple/
-
-- I copied the idea of the class custom navbar from  https://www.geeksforgeeks.org/. This did not make the final project cut but never the less helped me shape my understanding of the navbar from bootstrap. 
+- I copied the knowledge of how to implement Materialize CDN and Font awesome CDN links from my mini project during the data centric development. Link here https://github.com/Andrew-code2020/datacentricminiproject
+ 
 
 ##### Content
 
-- The content was constructed by the student with inspiration from their experience as an Irish citizen for the past 31 years. 
-- The destinations and the markers they hold on the map are real. The price to stay there is completely made up as are the activities.
--  is designed to be fictional and the business does not exist. 
+- The content was constructed by the student with inspiration from their experience as a Health and Fitness professional for the past 10 years. 
+- The recipes are taken from https://www.safefood.net/recipes  
 
 ##### Media
 
-- The photos used in this site were obtained from pexels.com
+- The photos used in this site were obtained from pexels.com and https://unsplash.com/
   - These photos are placed in the website on the following pages;
-- The photos used in this site were obtained from https://unsplash.com/
-    These photos are placed in the website on the following pages;
-    -index page
-    -Registeration page
-    -Lunch page
+    - Home page
+    - Registeration page
+    - Breakfast page
+    - Lunch page
+    - Dinner page
+    - Snacks page
 
 
 ##### Acknowledgements
