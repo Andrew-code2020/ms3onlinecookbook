@@ -368,6 +368,15 @@ Template
 -results
 -outcomes
 
+Template
+- Name of Test Placeholder removed test
+- outline of Testing 
+-test planning 
+-implementation
+-fix (if applicable)
+-results
+-outcomes
+
 ##### Performance Testing 
 -Name of Test 
   - Lighthouse Test
