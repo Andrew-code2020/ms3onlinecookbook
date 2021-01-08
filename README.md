@@ -390,10 +390,13 @@ Template
   - Check that js code is producing functionality on the Temple Lean Recipe Website
 - Test planning
   - Check the following js functionality
-  - collapsible - On each recipes page clicking the on the Ingredients, Method, Tools or Nutitrional Information will open the collapsible revealing more content. Does this happen?  
+  - Collapsible - On each recipes page clicking the on the Ingredients, Method, Tools or Nutitrional Information will open the collapsible revealing more content. Does this happen?  
   - Sidenav - On Mobile devices the Navbar containing Login, Register and Logout collapses to an apple icon. Does this happen?
   - Form Select - The form select option is used across the site does the menu work and the options appear. Does this happen? 
 - Implementation
+  - Collapsible
+    - collapsible class added to brekfast, lunch, dinner and snacks html pages
+    - pertinent initialisation code added to recipe.js
   - Sidenav
     - Mobile
   - Form Select
@@ -403,17 +406,27 @@ Template
     - Click the dropdown carrot
      
 - Fix (if applicable)
--Form Select
-  - We added disabled and selected attributes to ensure the register form was blank at first
-  - We added the relevant for example value = "breakfast" to each option to ensure the that the option was passed and documented in MongoDB. 
-
+  - Collapsible
+    - no fix neccessary
+    - code was copied and extended to add more collapsible sections on the page
+  -Form Select
+   - We added disabled and selected attributes to ensure the register form was blank at first
+   - We added the relevant for example value = "breakfast" to each option to ensure the that the option was passed and documented in MongoDB. 
+  - Sidenav
+    - Mobile
 - Results
+ - Collapsible
+   - Breakfast result image start readmedocs/testing/jsfiletest/jscollapsibleresult1.jpg
+   - Click on Collapsible result image start readmedocs/testing/jsfiletest/jscollapsibleresult2.jpg  
  - Form Select   
    - Register page results readmedocs/testing/jsfiletest/jsselectformresult.jpg
-   - Edit profile page results readmedocs/testing/jsfiletest/jsselectformresult.jpg
-   - Edit recipe page results
+   - Edit profile page resultss readmedocs/testing/jsfiletest/jsselectformresult.jpg
+   - Edit recipe page results readmedocs/testing/jsfiletest/jsselectformupdatereciperesult.jpg
 - Outcomes
-   - The tests lead to bug fixes and helped ad functionality without errors on the site 
+   - Form Select
+     - The tests lead to bug fixes and helped ad functionality without errors on the site
+   - Collapsible
+     - Checked collapsible  across breakfast, lunch, dinner and snacks 
 
 
 Template
