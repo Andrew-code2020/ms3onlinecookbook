@@ -101,12 +101,7 @@ def profile(username):
     return redirect(url_for("login"))
 
 
-# allows the user 
-# to log out and 
-# receive a flash 
-# message stating 
-# that they have 
-# logged out
+# allows the user to log out
 @app.route("/logout")
 def logout():
     # remove user from session cookie
@@ -115,19 +110,16 @@ def logout():
     return redirect(url_for("login"))
 
 
-# Finds recipes types
-# named Breakfast and 
-# returns the data in 
-# their contents to 
-# the breakfast html
+# breakfast page navigation and data
 @app.route("/breakfast", methods=["GET", "POST"])
 def breakfast():
     breakfast_meals = mongo.db.lean_recipes.find({"recipe_types": "Breakfast"})
     print(breakfast_meals)
-    return render_template("breakfast.html", breakfast_meals=breakfast_meals, page='breakfast')
+    return render_template("breakfast.html",
+                           breakfast_meals=breakfast_meals, page='breakfast')
 
 
-# Finds recipes types named Lunch and returns the data in their contents to the lunch html
+# lunch page navigation and data
 @app.route("/lunch", methods=["GET", "POST"])
 def lunch():
     lunch_meals = mongo.db.lean_recipes.find({"recipe_types": "Lunch"})
@@ -135,20 +127,22 @@ def lunch():
     return render_template("lunch.html", lunch_meals=lunch_meals, page='lunch')
 
 
-# Finds recipes types named Dinner and returns the data in their contents to the Dinner html
+# dinner page navigation and data
 @app.route("/dinner", methods=["GET", "POST"])
 def dinner():
     dinner_meals = mongo.db.lean_recipes.find({"recipe_types": "Dinner"})
     print(dinner_meals)
-    return render_template("dinner.html", dinner_meals=dinner_meals, page='dinner')
+    return render_template("dinner.html",
+                           dinner_meals=dinner_meals, page='dinner')
 
 
-# Finds recipes types named Snacks and returns the data in their contents to the Snacks html
+# snack page navigation and data
 @app.route("/snacks", methods=["GET", "POST"])
 def snacks():
     snack_meals = mongo.db.lean_recipes.find({"recipe_types": "Snacks"})
     print(snack_meals)
-    return render_template("snacks.html", snack_meals=snack_meals, page='snacks')
+    return render_template("snacks.html",
+                           snack_meals=snack_meals, page='snacks')
 
 
 # Allows user to recipe to Temple Lean site
@@ -214,7 +208,8 @@ def editrecipe(recipe_id):
 
     lean_recipes = mongo.db.lean_recipes.find_one({"_id": ObjectId(recipe_id)})
     types = mongo.db.types.find()
-    return render_template("edit_recipe.html", lean_recipes=lean_recipes, recipe_types=types)
+    return render_template("edit_recipe.html",
+                           lean_recipes=lean_recipes, recipe_types=types)
 
 
 # allows the user to edit their profile
@@ -238,7 +233,7 @@ def edit_profile(user_id):
     return render_template("edit_profile.html", user=user, recipe_type=types)
 
 
-# Allows the user to delete their profile and automatically logs them out as well
+# Deletes user profile and logs them out
 @app.route("/delete_profile/<user_id>")
 def delete_profile(user_id):
     mongo.db.users.remove({"_id": ObjectId(user_id)})
@@ -257,7 +252,6 @@ def delete_recipe(recipe_id):
         "profile", username=session["user"]))
 
 
-# debug=false before submission
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
