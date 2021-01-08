@@ -369,15 +369,20 @@ Template
 -outcomes
 
 Template
-- Name of Test JS
+- Name of Test JS File
 - outline of Testing
   - The objective of the test was to check if the directory to the js file was working 
 -test planning
-  - In the recipe.js file we input 
+  - Input code into recipe.js and check the developer tools specifically the console tab to check if the js file is rednering effects across the Temple Lean Recipes  
 -implementation
+  - In the recipe.js file we input the code  console.log('linked properly');
 -fix (if applicable)
+  - A fix was not necessary because the code worked 
 -results
+  - The results are available to view 
+  - readmedocs/testing/jsfiletest/jsfiletestresult.jpg
 -outcomes
+ - Test successful. the words 'linked properly' appeared into console
 
 Template
 - Name of Test Placeholder removed test
