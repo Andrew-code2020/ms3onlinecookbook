@@ -8,24 +8,14 @@
 
 /*--------------------------------Header-----------------------------------------------------------------------*/
 
-/*--------------------------------------------General-------------------------------------------------------*/
-/*--hover in blog section--*/
-.page-footer a:hover{
-    color:#bfcfff;
-}
-
-
 /*------------------------------------Navbar---------------------------------------------------------------------*/
-
-
 
 .tabs {
     color: #ffffff;
 }
 
-
 nav .brand-logo{
-  color:#222222;  
+  color:#222222;;
 }
 
 nav ul a{
@@ -45,8 +35,7 @@ body {
 }
 
 
-/* ----------Card styles------------ */
-
+/* ----------Card styles Cards present across the website------------ */
 
 .card-content {
     background-color:#bfcfff;
@@ -56,8 +45,6 @@ body {
 }
 
 
-
-
 /* ----------Register page ------------ */
 
 .input-field>label {
@@ -65,6 +52,7 @@ body {
     font-size: 16px;
     color:#222222;
 }
+
 
 i {
     font-size:24px;
