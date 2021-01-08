@@ -394,13 +394,24 @@ Template
   - Sidenav - On Mobile devices the Navbar containing Login, Register and Logout collapses to an apple icon. Does this happen?
   - Form Select - The form select option is used across the site does the menu work and the options appear. Does this happen? 
 - Implementation
-  - Open deployed site https://lean-temple-recipes.herokuapp.com/
-  - Got to the Register page   
+  - Sidenav
+    - Mobile
+  - Form Select
+    - Open deployed site https://lean-temple-recipes.herokuapp.com/
+    - Go to the Register page
+    - Check the Preferred Recipe Category
+    - Click the dropdown carrot
+     
 - Fix (if applicable)
+-Form Select
   - We added disabled and selected attributes to ensure the register form was blank at first
   - We added the relevant for example value = "breakfast" to each option to ensure the that the option was passed and documented in MongoDB. 
+
 - Results
+ - Form Select   
    - Register page results readmedocs/testing/jsfiletest/jsselectformresult.jpg
+   - Edit profile page results readmedocs/testing/jsfiletest/jsselectformresult.jpg
+   - Edit recipe page results
 - Outcomes
    - The tests lead to bug fixes and helped ad functionality without errors on the site 
 
