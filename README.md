@@ -727,12 +727,11 @@ Basic information
 
 Creating the repository
 
-- We cloned the repository from milestone project 2
-- To make the project in my github repository I went to the code institute recommended repository via this link https://github.com/Code-Institute-Org/gitpod-full-template
-- I then clicked on use this template and created a new repository in my github account
+- To make the project project in my github repository I went to the code institute recommended repository via this link https://github.com/Code-Institute-Org/gitpod-full-template
 - The screenshots of this process are available by following the directories below
     - readmedocs/creatingrepo/step1copyrepotemplate.png
     - readmedocs/creatingrepo/step2creatingreponame.png
+- We cloned the repository from the developers milestone project 2 using the instructions on the following website https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository
 
 Deploying the project to Github
 
