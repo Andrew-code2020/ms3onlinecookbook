@@ -717,46 +717,42 @@ Future Development
 
 ### Deployment
 
-Basic information 
+#### Basic information 
 
 - Project Repository on Github
   - This project is hosted in a github repository. 
-  - It was developed using Gitpod. 
+  - The project was developed using Gitpod. 
   - Link to the repository https://github.com/Andrew-code2020/ms3onlinecookbook
 
 
-Creating the repository
+#### Creating the repository
 
-- To make the project project in my github repository I went to the code institute recommended repository via this link https://github.com/Code-Institute-Org/gitpod-full-template
+- To create the project in my github repository I went to the code institute recommended repository via this link https://github.com/Code-Institute-Org/gitpod-full-template
+- We copied the code institute template
 - The screenshots of this process are available by following the directories below
-    - readmedocs/creatingrepo/step1copyrepotemplate.png
-    - readmedocs/creatingrepo/step2creatingreponame.png
-- We cloned the repository from the developers milestone project 2 using the instructions on the following website https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository
+    - readmedocs/creatingrepo/creatingsitetemplate/step1copyrepotemplate.png
+    - readmedocs/creatingrepo/creatingsitetemplate/step2creatingreponame.png
+- Finally we cloned the repository from the developers milestone project 2 using the instructions on the following website https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository
 
-Deploying the project to Github
+#### Deploying the project to Heroku
 
-- To deploy the project I went into the repository on this link https://github.com/Andrew-code2020/MS2
-- Clicked on the settings button
-- Scrolled down to the Github pages section
-- clicked the dropdown menu marked none then selected master
-- clicked save
-- The following link to the live site then appears in the Github Pages section https://andrew-code2020.github.io/MS2/
-- The screenshots of this process are available by following the directories below
-    - assets/readmedocs/deploytheproject/step1deployment.png
-    - assets/readmedocs/deploytheproject/step2deploymentselectnone.png
-    - assets/readmedocs/deploytheproject/step3deploymentselectsave.png
-    - assets/readmedocs/deploytheproject/step4deployedsite.png
-
-Deploying the project to Heroku
-
-- creating app in Heroku
-- automatic deployment enabled
-- readmedocs/deploytheproject/deployonheroku .jpg
+- To deploy the project the developer went into Gitpod 
+- The developer followed the steps outlined the code institute video available by following this link https://www.youtube.com/watch?v=YfQIUSuPm2w&feature=youtu.be
+- The screenshots of this process are available by following the directories below;
+    - readmedocs/deploytheproject/deployonheroku/deploymenttoheroku1.jpg
+    - readmedocs/deploytheproject/deployonheroku/deploymenttoheroku2.jpg
+    - readmedocs/deploytheproject/deployonheroku/deploymenttoheroku3.jpg
+    - readmedocs/deploytheproject/deployonheroku/deploymenttoheroku4.jpg
+    - readmedocs/deploytheproject/deployonheroku/deploymenttoheroku5.jpg
+    - readmedocs/deploytheproject/deployonheroku/deploymenttoheroku6.jpg
+    - readmedocs/deploytheproject/deployonheroku/deploymenttoheroku7.jpg
+    - readmedocs/deploytheproject/deployonheroku/deploymenttoheroku8.jpg
+- The live site may be accessed by following this link https://lean-temple-recipes.herokuapp.com/
 
 
 ### Credits
 
-- I consulted the folowing websites to learn about Recipe Websites and to help construct meaningful content for this web page
+- I consulted the folowing websites to learn about Recipe Websites and to help construct meaningful content for the Temple Lean Recipes site
    - Recipe Websites
      - http://www.eatingwell.com/
      - https://www.safefood.net/recipes
@@ -767,16 +763,16 @@ Deploying the project to Heroku
 - I consulted the following websites for inspiration and to learn how to implement certain features into my project;
     - https://stackoverflow.com/
         - Features influenced
-        - Background images
-        - height and view port of map
+        - Active class in navbar 
+        - height of images
     - https://www.w3schools.com/default.asp
          - Features influenced
             - Border
             - Hover
-            - overflow
-            - card flip
+            - Overflow
+            - Card custom css
 - I used Materialize through out the project to deploy a mobile first design principle.
-  - Website https://getbootstrap.com/
+  - Website https://materializecss.com/
   - Features influenced
     - Header
     - Footer
