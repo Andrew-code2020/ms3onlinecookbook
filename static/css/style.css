@@ -6,7 +6,6 @@
 
 /*-----Style choice background #f0f8ff (light blue) stronger blue #80C4FF  Writing #1a1a1a old color text color: #a8afb3 Alert #fff7f0---/*
 
-/*--------------------------------Header-----------------------------------------------------------------------*/
 
 /*------------------------------------Navbar---------------------------------------------------------------------*/
 
@@ -35,7 +34,7 @@ body {
 }
 
 
-/* ----------Card styles Cards present across the website------------ */
+/*-------------------------Card styles apply across the website-------------------------------- */
 
 .card-content {
     background-color:#bfcfff;
@@ -45,7 +44,7 @@ body {
 }
 
 
-/* ----------Register page ------------ */
+/* -----------------------------Register page------------------------------------------------ */
 
 .input-field>label {
     font-family: 'Recursive', sans-serif;
@@ -60,10 +59,10 @@ i {
 }
 
 .input-field input[type=text]:focus + label {
-     color: #ffffff;
+    color:#222222;
 }
 
-/* label underline focus color */
+
 .input-field input[type=text]:focus {
      border-bottom: 1px solid #ffffff;
      box-shadow: 0 1px 0 0 #ffffff;
@@ -82,10 +81,9 @@ i {
    color:#222222; 
 }
 
-/*----Profile Page-----*/
 
-/*----Buttons style and space throughout the page-----*/
-.profile{
+/*-------------------Buttons style and space throughout the page--------------------------------------------*/
+.greenbutton{
     margin: 5px;
     color:#222222;
 }

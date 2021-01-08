@@ -106,20 +106,18 @@
                                 class="fas fa-burn"></i></label>
                     </div>
                 </div>
-
                 <!--Buttons Submit Recipe and Cancel to return to profile screen-->
                 <div class="row">
                     <div class="col s12">
-                        <button class="profile btn waves-effect waves-light light-green" type="submit" name="action">Create
+                        <button class="greenbutton btn waves-effect waves-light light-green" type="submit" name="action">Create
                             Recipe
                             <i class="fas fa-sign-in-alt"></i>
                         </button>
-                        <a class="profile btn waves-effect waves-light light-green"
+                        <a class="greenbutton btn waves-effect waves-light light-green"
                             href="{{ url_for('profile', username=session['user']) }}">Cancel <i
                                 class="fas fa-window-close"></i></a>
                     </div>
                 </div>
-
             </form>
         </div>
     </div>

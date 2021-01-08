@@ -339,9 +339,9 @@ Mobile/Tablet Device wireframe
  - HTML - https://validator.w3.org/
  - CSS Validator - https://jigsaw.w3.org/css-validator/#validate_by_input
  - JavaScript and JQuery validator https://jshint.com/
-    -
+    - Result visible in  readmedocs/testing/codevalidators/shintcheckresult.jpg
  - Python Validator http://pep8online.com/
-    - Result readmedocs/testing/codevalidators/pep8vaildatorresult.jpg
+    - Result visible readmedocs/testing/codevalidators/pep8vaildatorresult.jpg
     
 -Flask
 -Python
