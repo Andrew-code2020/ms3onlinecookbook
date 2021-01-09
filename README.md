@@ -612,10 +612,14 @@ Testing Initial Python functionality
 
 - We carried out the procedure below to test this section of the Temple Lean Recipe Website
 - Log into the Temple Lean Recipe page 
-- Verify that when you are to you log in the Breakfast, Lunch, Dinner & Snacks pages appear in the secondary navbar.
+- Verify that when you are you logged into the Temple Lean Recipe site that the Breakfast, Lunch, Dinner & Snacks pages appear in the secondary navbar.
 - Verify that this Navbar adjusts on a mobile device to become smaller but the words and the ability to click on the Breakfast, Lunch, Dinner & Snacks pages remains possible    
 - Verify that when you are on the Breakfast, Lunch, Dinner or Snacks pages that the text appears with a light blue background to help users determine where they are on the Temple Lean Website  
-- Verify that you can update the profile and that the update renders on the profile page
+- Verify that you can create a recipe on the Breakfast, Lunch, Dinner or Snacks pages by pressing the create recipe button and that the recipe information appears in the relevant section of the Temple Lean Recipe website. (The image url will need to be adjusted from the back end to render on the Temple Lean Recipe site. The Temple Lean Admin will do this until in future development it is possible for the user to upload and image directly)
+- Verify that when you create a recipe on the Breakfast, Lunch, Dinner or Snacks pages that a flash appears telling you that the recipe has been added successfully and that you are redirected to your profile page.
+- Verify that the recipe has been added to the bottom of the relevant recipe page.
+- Verify that the alt image notice appears if your image link has not rendered successfully
+- Verify later the admin managing the site has added an appropriate image from the back end data.
 - Verify that you can receive a flash messages telling you that you have completed the update successfully and are redirected to your newly updated profile page
 - Verify that you can delete the profile and that you are automatically logged out with a flash message telling that your profile is deleted whilst you are actually redirected to the regsiteration page
  
