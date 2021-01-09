@@ -646,18 +646,11 @@ Template
 
 #### Testing Log Out functionality
 
-- Log into the Temple Lean Recipe page 
-- Verify that when you are on your profile page that the log out ability is available on the top right in the desktop and through the apple icon on a mobile device   
-- Verify that when you are on the Profile page that the icon and text appear with a light blue background to help users determine where they are on the Temple Lean Website  
-- Verify that you can update the profile by pressing the update profile button, making changes on the form, clicking the update profile button and that the update renders on the profile page
-- Verify that you receive a flash message telling you that you have completed the update successfully and are redirected to your newly updated profile page
-- Verify that you can delete the profile and that you are automatically logged out with a flash message telling that your profile is deleted whilst you are redirected to the registeration page
+- Log into the Temple Lean Recipes page 
+- Verify that when you are on your any page that the log out ability is available on the top right in the desktop and through the apple icon on a mobile device   
+- Click the log out button
+- Verify that you receive a flash message telling you that you have logged out are redirected to the log in page
 
-#### Appearance differences on other devices
-
-- On small mobile devices such as phones the navbar will collapse into a black cog wheel icon.
-- The programming of the website allows it to adjust column widths on smaller devices and stack elements in a display to fit different browsers mentioned earlier and different devices mentioned earlier. The most obvious examples are the navbar which becomes a drop down menu and stacks on top of itself and the footer which stacks on top of itself and allows the user to scroll down. 
-- The Project was built with mobile first design principles
 
 #### Code Validation
 I used the following code validators to help me debug my code
@@ -674,9 +667,15 @@ I also used Shift+alt+F on my laptop to beautify each page of code in gitpod
 
 #### Bugs
 
+Bug - Error in HTML Validator
+ - In the validator https://validator.w3.org/
+ - Errors related to the jinja template and url_for kept coming up
+ - I checked it versus the mini project and the format was the exact same
+ - I will research what to do here for future development but for now the error stand when you run the code through the validator
+
 Change Go to Recipes to Breakfast recipes and Renders better on Mobile device
 
-- Bug  Placeholder  
+- Bug Placeholder  
  - The placeholder gave the site an unclear orange placeholder where the placeholder should be
  - Despite our attempts to modify the color we were unsuccessful so we removed the placeholder code across the site.
  - This had a minimum effect on the site style
