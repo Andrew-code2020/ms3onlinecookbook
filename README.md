@@ -608,13 +608,13 @@ Testing Initial Python functionality
 - Verify that you can delete the profile and that you are automatically logged out with a flash message telling that your profile is deleted whilst you are actually redirected to the regsiteration page
 
 
-#### Breakfast, Lunch, Dinner & Snacks page including CRUD functionality
+#### Testing Breakfast, Lunch, Dinner & Snacks page including CRUD functionality
 
+- We carried out the procedure below to test this section of the Temple Lean Recipe Website
 - Log into the Temple Lean Recipe page 
-- Verify that when you are to you log in the Breakfast, Lunch, Dinner & Snacks pages appear
-
-- Verify that when you are to your profile page    
-- Verify that when you are on the Profile page that the icon and text appear with a light blue background to help users determine where they are on the Temple Lean Website  
+- Verify that when you are to you log in the Breakfast, Lunch, Dinner & Snacks pages appear in the secondary navbar.
+- Verify that this Navbar adjusts on a mobile device to become smaller but the words and the ability to click on the Breakfast, Lunch, Dinner & Snacks pages remains possible    
+- Verify that when you are on the Breakfast, Lunch, Dinner or Snacks pages that the text appears with a light blue background to help users determine where they are on the Temple Lean Website  
 - Verify that you can update the profile and that the update renders on the profile page
 - Verify that you can receive a flash messages telling you that you have completed the update successfully and are redirected to your newly updated profile page
 - Verify that you can delete the profile and that you are automatically logged out with a flash message telling that your profile is deleted whilst you are actually redirected to the regsiteration page
