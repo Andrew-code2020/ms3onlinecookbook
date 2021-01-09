@@ -727,21 +727,14 @@ Delete profile (Not logging out)
 - This solved the bug and kept the user away from unwanted error screens  
 
 
-Breakfast page
-
-- JS Tabs overflow on right handside light blue
-- Tried div tab overflow hidden in custom css didn't work
-- Tried container in French Toast
-- solved with css display property
-
-Profile page
-- Email for profile directory @ symbol caused a root error
-
 Gitpod 
 - Code beautifer stopped working a few times during the developement of this project
+- This may have been an internal gitpod problem
+- Later I returned to sections to use Shift+alt+F to beautify all code
 
 Container class in materialise (Be careful !!!)
-- If included in base html and code extended to other html then if class container present appears to wrap content twice and shrink size noticeably. Removed container from register html to solve this. 
+- If included in base html and code extended to other html if class container is present on both pages it appears to wrap content twice and shrink size noticeably. 
+- Removed the container class from templates html to solve this. 
 
 Future Development
 - Recipe Videos
@@ -756,7 +749,7 @@ Future Development
 
 - Project Repository on Github
   - This project is hosted in a github repository. 
-  - The project was developed using Gitpod. 
+  - The project was developed using a Gitpod workspace. 
   - Link to the repository https://github.com/Andrew-code2020/ms3onlinecookbook
 
 
@@ -782,7 +775,7 @@ Future Development
     - readmedocs/deploytheproject/deployonheroku/deploymenttoheroku6.jpg
     - readmedocs/deploytheproject/deployonheroku/deploymenttoheroku7.jpg
     - readmedocs/deploytheproject/deployonheroku/deploymenttoheroku8.jpg
-- The live site may be accessed by following this link https://lean-temple-recipes.herokuapp.com/
+- The live Temple Lean Recipes site may be accessed by following this link https://lean-temple-recipes.herokuapp.com/
 
 
 ### Credits
@@ -817,18 +810,21 @@ Future Development
     - Forms
     - Select Option
     - Buttons
+    - Cards
+    - Collapsible
 
 - Google Fonts 
   - I imported the text font Recursive from Google Fonts website https://fonts.google.com/
   - I used this font because it was the same font as other recipe websites and therefore made my website feel familiar and readable to users
 
-- I copied the hero image idea in a similar way to the Jumbtron idea from our code along whiskey drop project with the code institute. I copied a Materialize card code to mimic a jumbotron. Reference to Github repository from code along project https://andrew-code2020.github.io/whiskeydrop/
+- I copied the hero image idea in a similar way to the Jumbtron idea from our code along whiskey drop project with the code institute. I copied a Materialize card code to mimic a jumbotron. 
+  - Reference to Github repository from code along project https://andrew-code2020.github.io/whiskeydrop/
 
 - I copied the icons from Font awesome https://fontawesome.com/ and used the CDN to implement them in the project. I then wrote custom css code to style the icons and make them more responsive. I did not use the materialize icons because they did not look as good as the font awesome icons.
 
 - I copied the collapsible code from Materializecss.com https://materializecss.com/. I then customised it's functionality in my project.
 
-- I copied the initialization of the collapsible, sidenav and select form from https://materializecss.com/. I referred to jQuery https://jquery.com/ to help me get the interactivity of the site working effectively. I reviewed the lessons on jQuery in the Interactive Front Development Module to help me implement the features in this project. 
+- I copied the initialization code of the collapsible, sidenav and select form from https://materializecss.com/. I referred to jQuery https://jquery.com/ to help me get the interactivity of the site working effectively. I reviewed the lessons on jQuery in the Interactive Front Development Module to help me implement the features in this project. 
 
 - I frequently referred back to the following code institute modules to research how to construct certain features
 
@@ -841,13 +837,13 @@ Future Development
   - Practical Python
   - Data Centric Development Milestone Project 
 
-- I copied the knowledge of how to implement Materialize CDN and Font awesome CDN links from my mini project during the data centric development. Link here https://github.com/Andrew-code2020/datacentricminiproject
+- I copied the knowledge of how to implement Materialize CDN and Font awesome CDN links from my mini project during the data centric development. Link to mini project https://github.com/Andrew-code2020/datacentricminiproject
  
 
 ##### Content
 
 - The content was constructed by the student with inspiration from their experience as a Health and Fitness professional for the past 10 years. 
-- The recipes are taken from https://www.safefood.net/recipes  
+- The recipes are copied from this website https://www.safefood.net/recipes  
 
 ##### Media
 
@@ -864,4 +860,4 @@ Future Development
 ##### Acknowledgements
 
 - I received inspiration for this project from the Code Institute Tutorial videos and my mentor Mr. Adegbenga Adeye.
-- I would also like thank the following members of the Tutor Assistance Team Tim Nelson, Anna, Xavier, Igor, Miklos, Cormac, Kevin, Johann and Haley (apologies that I could not find all your surnames). I spent many hours trying to work through problems I encountered with them.
+- I would also like thank the following members of the Tutor Team Tim Nelson, Anna, Xavier, Igor, Miklos, Cormac, Kevin, Johann, Samantha and Haley (apologies that I could not find all your surnames). I spent many hours trying to work through problems I encountered with them.
