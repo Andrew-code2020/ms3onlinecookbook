@@ -398,6 +398,23 @@ Mobile/Tablet Device wireframe
 
 - We carried out the procedures below to test the Temple Lean Recipe Website
 
+- Name of Test CRUD Unique to User who created recipe 
+- Outline of Testing
+  - Check that different users could create recipes but they could update or delete recipes they created
+- Test planning
+  - Used two profiles and created recipes with them
+- Implementation
+  - We created recipes on mutliple profiles and reviewed which options came up for each user
+- Fix (if applicable)
+  - first we did have a created_by in our python views so our created recipes intially belonged to no one
+  - we corrected this by adding created_by in our python roots and then manually adding the created_by variable and value to MongoDB
+  - We assigned the variable to the admin or the developers user profile
+- Results
+  - We reached a point where admin profile had created half the recipes on the website and could update and delete them
+  - The other half were created and could be update or deleted by the developer who created a user in his own name
+- Outcomes
+  - Because we updated our root newly created recipes did not need us to intervene on MongoDB to assign a created_by instead the creator of the recipe was the only one who could modify that recipe
+  - This was verified by getting the developers girlfriend to add a recipe on her profile
 
 - Name of Test JS File
 - Outline of Testing
