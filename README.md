@@ -394,6 +394,8 @@ Mobile/Tablet Device wireframe
 
 ### Testing
 
+- We carried out the procedures below to test the Temple Lean Recipe Website
+
 Template
 - Name of Test
 - outline of Testing 
@@ -509,40 +511,39 @@ Template
 -Outcomes
  - test was successful
 
-
-
-Testing Initial Python functionality 
+##### Performance Testing Python Initial functionality 
 - Subject Test app.py inital ran 
    - used python3 app.py to run the app.py file from gitpod
-   - screenshots in readmedocs/testing/initalapppyrun.jpg
+   - screenshots in readmedocs/testing/pythontestfile/initialapppyrun.jpg
 - Result
    - Hello World of Temple Lean Again appeared in the browser as expected
 - Conclusion
-  - initial set up worked well"
+  - initial set up worked well
 
  Testing 
--test planning
+-Test planning
    - Registeration form check the content renders on our app 
--implementation
+-Implementation
    -used python3 app.py to run the app.py file from gitpod to visualise our registeration file
--fix (if applicable)
+-Fix (if applicable)
     - icons render on top of label text
     - to fix we placed the icons within the label element
--results
+-Results
  -visually the icon and the label are no longer over lapping
--outcomes
+-Outcomes
   - Fixed a visual bug
 
-##### Testing Browsers screens you tested it on
+##### Testing Browser Screens
 
 ###### Chrome Browser
-- I tested the website by copying and pasting the Heroku pages link https://lean-temple-recipes.herokuapp.com/ into Chrome Browsers
+- I tested the website by copying and pasting the Heroku pages link https://lean-temple-recipes.herokuapp.com/ into the Chrome Browsers
 - I pressed control+shift+I to access developer tools in the Chrome Browser and checked the web pages responsiveness
+- There were no obvious bugs in the chrome browser on desktop or mobile views within this browser
 
 ###### Edge Browser
 - I tested the website by copying and pasting the Heroku pages link https://lean-temple-recipes.herokuapp.com/ into Edge Browser
 - I pressed control+shift+I to access developer tools in the Edge Browser and checked the web pages responsiveness
-
+- There were no obvious bugs in the chrome browser on desktop or mobile views within this browser
 
 ##### Testing Device screens
 - I used the chrome developer tools to test that the websites appearance and functionality was available across multiple devices listed below;
@@ -556,82 +557,81 @@ Testing Initial Python functionality
   - iPhone X
   - iPad
   - iPad Pro
-- I checked the console in developer tools showed no errors on each page as I went through each page
-
-##### Header
-
-###### Navbar
-
-- Go to the Temple Lean Recipe "Home/Landing" page or any other  page
-- Verify that the home bar is highlighted in golden rod yellow.
-- Verify that this current page feature of highlight in in golden rod yellow occurs across all pages in our navbar by clicking each one in turn
-
-##### Footer
-
-###### Social Media
-
-- Go to the "Home/Landing" or any other page on the Temple Lean Recipe website
-- Scroll down to the Footer
-- Click on any social media icon
-- Verify that a new tab opens on the correct (ie Facebook opens on Facebook) social media site
-- The social media sites are the developers sites because the Temple Lean Recipe website does not have stand alone social media
+- I checked the console in developer tools showed no errors on each page as I went through each page of the Temple Lean Recipes site
 
 ##### Header and Footer
 
-- Across each page of the website you may verify that the Header and the Footer have the same features outlined above
+- Across each page of the website you may verify that the Header and the Footer have the same features outlined below in the Testing Navbar and Testing Footer sections
 
-##### Section
+###### Testing Navbar
+
+- Go to the Temple Lean Recipes "Home/Landing" page or any other Temple Lean Recipes page
+- Click on Log In or Register
+- On the Log In or Register page the text and icon will take on a light blue background so the user will know where they are on the Temple Lean Recipes Website
+- Verify that when the user clicks on the Log In or Register active feature highlights in light blue occurs when the user is on either page
+- Verify that the forms to allow a user to log in or register
+- When you have logged in or registered verify that the secondary navbar containing the Breakfast, Lunch, Dinner & Snacks appears
+- Verify that when the user clicks on Breakfast, Lunch, Dinner & Snacks active feature highlights the text in light blue when the user is on any of the pages
+
+##### Testing Footer
+ - Go to the Temple Lean Recipes "Home/Landing" page or any other Temple Lean Recipes page
+ - Verify that clicking the links to the blog open in a new tab
+ - Verify that clicking on the social media icons open the correct social media page in a new tab
+
+
+##### Testing Section
 
 - The section element changes it's content depending on which page you are on
 - Below I have outlined briefly the testing on each section
 
-#### Home/Landing page
+#### Testing Home/Landing page
 
 - Go to the "Home" page by clicking on the words Temple Lean Recipes
 - Verify that the page with the salad bowl appears with a welcome message and log in and registeration buttons
+- Verify that clicking the buttons connect to the correct internal page
 
-#### Log In
+#### Testing Log In
 
 - Go to the "Log in" page by clicking on the Log In icon
 - Verify that when you hover over Log In a light black background appears inviting the user to click on Log In   
 - Click on Log In verify the log in page appears. 
-- Verify that the Log In and icon appears with a light blue background to help users determine where they are on the Temple Lean Website
+- Verify that the Log In text and icon appears with a light blue background to help users determine where they are on the Temple Lean Website
 - Fill in the log in form
-- Verify that you can log into the site or that the flash messages appears if you enter invalid or non existing log in information 
+- Verify that you can log into the site or that the flash messages appears if you enter invalid or non existing log in information
+- Verify that when you log in you are directed to your profile page 
   
 
-#### Registeration page
+#### Testing Registeration page
 
 - Go to the "Registeration" page by clicking on the Register icon
 - Verify that when you hover over Register a light black background appears inviting the user to click on Log In   
 - Click on Register verify the registeration page appears. 
-- Verify that when you on the Register and icon appears with a light blue background to help users determine where they are on the Temple Lean Website
+- Verify that when you are on the Register page that the Register text and icon appears with a light blue background to help users determine where they are on the Temple Lean Recipes Website
 - Fill in the Registeration form
-- Verify that you can Register with the site and that the flash messages appears when you finish registeration and are redirected to your newly created profile page
+- Verify that you can Register with the site and that the flash messages appears when you finish registeration and you are redirected to your newly created profile page
 
 
-#### Profile page including CRUD functionality
+#### Testing Profile page including CRUD functionality
 
 - Log into the Temple Lean Recipe page 
-- Verify that when you are to your profile page    
-- Verify that when you are on the Profile page that the icon and text appear with a light blue background to help users determine where they are on the Temple Lean Website  
+- Verify that when you are logged your profile page appears on the screen    
+- Verify that when you are on the Profile page that the icon and text appear with a light blue background to help users determine where they are on the Temple Lean Recipes Website  
 - Verify that you can update the profile and that the update renders on the profile page
-- Verify that you can receive a flash messages telling you that you have completed the update successfully and are redirected to your newly updated profile page
-- Verify that you can delete the profile and that you are automatically logged out with a flash message telling that your profile is deleted whilst you are actually redirected to the regsiteration page
+- Verify that you receive a flash messages telling you that you have completed the update successfully and are redirected to your newly updated edit profile page
+- Verify that you can delete the profile and that you are automatically logged out with a flash message telling that your profile is deleted whilst you are redirected to the registeration page
 
 
 #### Testing Breakfast, Lunch, Dinner & Snacks page including CRUD functionality
 
-- We carried out the procedure below to test this section of the Temple Lean Recipe Website
 - Log into the Temple Lean Recipe page 
-- Verify that when you are you logged into the Temple Lean Recipe site that the Breakfast, Lunch, Dinner & Snacks pages appear in the secondary navbar.
+- Verify that when you are you logged into the Temple Lean Recipes site that the Breakfast, Lunch, Dinner & Snacks pages appear in the secondary navbar.
 - Verify that this Navbar adjusts on a mobile device to become smaller but the words and the ability to click on the Breakfast, Lunch, Dinner & Snacks pages remains possible    
-- Verify that when you are on the Breakfast, Lunch, Dinner or Snacks pages that the text appears with a light blue background to help users determine where they are on the Temple Lean Website  
-- Verify that you can create a recipe on the Breakfast, Lunch, Dinner or Snacks pages by pressing the create recipe button and that the recipe information appears in the relevant section of the Temple Lean Recipe website. (The image url will need to be adjusted from the back end to render on the Temple Lean Recipe site. The Temple Lean Admin will do this until in future development it is possible for the user to upload and image directly)
+- Verify that when you are on the Breakfast, Lunch, Dinner or Snacks pages that the text appears with a light blue background to help users determine where they are on the Temple Lean Recipes Website  
+- Verify that you can create a recipe on the Breakfast, Lunch, Dinner or Snacks pages by pressing the create recipe button and that the recipe information appears in the relevant section of the Temple Lean Recipe website. (The image url will need to be adjusted from the back end to render on the Temple Lean Recipe site. The Temple Lean Admin will do this until in future development it is possible for the user to upload an image directly)
 - Verify that when you create a recipe on the Breakfast, Lunch, Dinner or Snacks pages that a flash appears telling you that the recipe has been added successfully and that you are redirected to your profile page.
-- Verify that the recipe has been added to the bottom of the relevant recipe category page.
+- Verify that the recipe has been added to the bottom of the relevant recipe category page
 - Verify that the alt image notice appears if your image link has not rendered successfully
-- Verify later the admin managing the site has added an appropriate image from the back end database MongoDB.
+- Verify later that the admin managing the site has added an appropriate image from the back end database MongoDB.
 - Verify that you can receive a flash message telling you that you have completed the update successfully and are redirected to your profile page.
    - We redirected the user to the profile page to avoid creating seperate addrecipe roots in python that redirected users back to each individual recipe page.
    - The profile page was deemed an acceptable compromise as it also has quick links to the recipe pages so the user can easily verify within 3 clicks if their recipe has been created successfully.
@@ -740,7 +740,7 @@ Future Development
 
 ### Deployment
 
-#### Basic information 
+#### Set up the Repository 
 
 - Project Repository on Github
   - This project is hosted in a github repository. 
@@ -817,8 +817,6 @@ Future Development
 - I copied the collapsible code from Materializecss.com https://materializecss.com/. I then customised it's functionality in my project.
 
 - I copied the initialization of the collapsible, sidenav and select form from https://materializecss.com/. I referred to jQuery https://jquery.com/ to help me get the interactivity of the site working effectively. I reviewed the lessons on jQuery in the Interactive Front Development Module to help me implement the features in this project. 
-
-- I copied the footer design from https://dermomurphy.github.io/Dublin-360-CI/index.html and then customised it to fit my project.
 
 - I frequently referred back to the following code institute modules to research how to construct certain features
 
