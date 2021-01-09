@@ -176,7 +176,7 @@ def add_recipe():
             "created_by": session["user"],
         }
         mongo.db.lean_recipes.insert_one(add_recipe)
-        flash("Recipe added Successfully!")
+        flash("Recipe Created Successfully!")
 
     return redirect(url_for(
         "profile", username=session["user"]))
