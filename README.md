@@ -52,7 +52,7 @@ Further objectives included;
 - implementing interactive features on the Temple Lean Recipes website to help the user feel they were unlocking short manageable amounts of information about healthy food recipes.
 
 
-##### Strategy Plane - Business Strategy
+##### Strategy Plan - Business Strategy
 
 What are you aiming to achieve? 
 - Users are looking for; 
@@ -94,7 +94,7 @@ What are they doing, but they could be doing better?
 
 User interviews (What a user thinks they need may not be exactly what they need?)
 - User interviews suggested they wanted a lot more focused recipe suggestions like muscle building recipes or endurance programme recipes
-- In the same interviews the user would often sight struggling with what they should eat for breakfast or dinner for example.
+- In the same interviews the user would often cite struggling with what they should eat for breakfast or dinner for example.
 - Also the first time user was very unlikely to join the Temple Lean Recipes community if the recipes weren't accessible on a basic level. The user understood that recipes were for breakfast in the breakfast section but when presented with a Muscle Building recipe section most users were unsure if they could use that recipe as a general healthy recipe as well or they felt this was too advanced for them.
 - The conclusion the developer drew from these interviews was that we should start basic and progress to more advanced recipe recommendations if a clear market or demand emerged. 
 
