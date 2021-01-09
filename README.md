@@ -620,14 +620,14 @@ Testing Initial Python functionality
 - Verify that you can delete the profile and that you are automatically logged out with a flash message telling that your profile is deleted whilst you are actually redirected to the regsiteration page
  
 
-#### Log Out functionality
+#### Testing Log Out functionality
 
 - Log into the Temple Lean Recipe page 
-- Verify that when you are to your profile page that the log out ability is available   
+- Verify that when you are on your profile page that the log out ability is available on the top right in the desktop and through the apple icon on a mobile device   
 - Verify that when you are on the Profile page that the icon and text appear with a light blue background to help users determine where they are on the Temple Lean Website  
-- Verify that you can update the profile and that the update renders on the profile page
-- Verify that you can receive a flash messages telling you that you have completed the update successfully and are redirected to your newly updated profile page
-- Verify that you can delete the profile and that you are automatically logged out with a flash message telling that your profile is deleted whilst you are actually redirected to the registeration page
+- Verify that you can update the profile by pressing the update profile button, making changes on the form, clicking the update profile button and that the update renders on the profile page
+- Verify that you receive a flash message telling you that you have completed the update successfully and are redirected to your newly updated profile page
+- Verify that you can delete the profile and that you are automatically logged out with a flash message telling that your profile is deleted whilst you are redirected to the registeration page
 
 #### Appearance differences on other devices
 
