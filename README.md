@@ -23,15 +23,18 @@ Further success will be measured by the number of Temple Lean members who sign u
 
 The key reasons for producing the website were to;
 
-- help current gym members get the best quality recipes from their trusted Health professionals at Temple Lean Gym
+- help current gym members get the best quality recipes from their trusted Health and Fitness professionals at Temple Lean Gym
 - help members easily access 4 common recipe categories
-- help integrate new and current members into a community where they
+- help integrate new and current members into a community where they can
   - support each other on their nutritional journey
   - add recipes they have used themselves
-- help members share recipes they find useful and over time let them build an environment that they feel they have all the nutitional information they need in one place. 
-- In the future help Temple Lean attract and retain online subscription members 
+  - read recipes that others have added to the Temple Lean Recipe website
+  - update recipes they have used themselves
+  - delete recipes they no longer find useful 
+- help members share recipes they find useful and over time let them build an environment that they feel they have all the nutritional information they need in one place 
+- In the future help Temple Lean Gym attract and retain online subscription members through their recipe website 
 
-At the outset the minimum viable product was determined to be a community platform whereby the operator(s) of the Temple Lean and Temple Lean Recipe website add a source of basic information about healthy food recipes and begin to build a social support amongst members in a nutritional setting.
+At the outset the minimum viable product was determined to be a community platform whereby the operator(s) of the Temple Lean Gym and Temple Lean Recipes website add a source of basic information about healthy recipes and begin to build a social support platform amongst members in a nutritional context.
 It was an objective of this project to include an intuitive design which would allow new and current clients to navigate and enagage with the website without any prior experience of Temple Lean the gym facility or even a high level of knowledge about healthy food recipes. 
 Current and potential client surveys were conducted to assess the minumim effective information required to illicit a positive emotional response from users.
 This information was incredibly valuable during the construction of wireframes for the website. 
@@ -39,11 +42,11 @@ This information was incredibly valuable during the construction of wireframes f
 At the outset conventional web design features were favoured because we wanted everyone from the novice to the accompolished web user to feel like they were still in a familiar place on the web. 
 The vision for the project was to have a website that;
 
-- create basic information that the user could read about healthy food recipes 
+- Delivered basic information that the user could read about healthy food recipes 
 - Allow users to add recipes they feel have benefitted them for others to use
-- Allow users to modify the recipes they created they feel have benefitted them for others in case they discover new information about a recipe
+- Allow users to modify the recipes they created in case they discover new information about a recipe
 - Allow users to delete recipes they created should they feel that they are no longer useful
-- Offer a route to finding out more about Temple Lean the fitness facility
+- Offer a route to find out more about Temple Lean the fitness facility
 
 Further objectives included;
 - implementing interactive features on the Temple Lean Recipes website to help the user feel they were unlocking short manageable amounts of information about healthy food recipes.
@@ -53,15 +56,16 @@ Further objectives included;
 
 What are you aiming to achieve? 
 Users are looking for; 
-- A place to find guidance on the Nutrition programme they received at the gym
+- A place to find guidance on the Nutrition programme they received at the gym or general recipes they can use in their pursuit of a healthy lifestyle
 - A clear set of instructions to make the recipes
-- A place for users to create, read, update and delete their recipes they have found useful and want to share with others. This based on research will help the user/client feel at home in the Temple Lean community.
+- A place for users to create, read, update and delete their recipes they have found useful and want to share with others. This was based on research on what will help the user/client feel at home in the Temple Lean community.
 
 Business wants the client to;
-- Find recipes that support their Health, Lifestyle and Fitness Goals so they stay within the Health and Fitness community
+- Find recipes that support their Health, Lifestyle and Fitness Goals so they stay within the Temple Lean Health and Fitness community
 
 Review the competition - Is someone else already doing it?
-- a review of the market suggested that this was a new or under developed idea offering Gym members a place to go to for Nutrition Advice and recipes. A review of the businesses below showed little or no area for members to find the correct recipe advice from their trusted health and fitness provider
+- A review of the market in Cork Ireland suggested that a platform for members to access recipes within a Health and Fitness Clubs website was a new or under developed idea
+- A review of the businesses below showed little or no area for members to find the correct recipe advice from their trusted health and fitness provider
  Businesses reviewed
  - https://www.mardykearena.com/
  - https://www.dennehys.ie/
@@ -69,7 +73,7 @@ Review the competition - Is someone else already doing it?
  - https://onelifefitness.ie/
 
 Stakeholder interviews
-- conversations with Health and Fitness Club owners and Health and Fitness clients suggested that joining the exercise and nutrition component in an easy to use platform was the correct approach to take.
+- conversations with Health and Fitness Club owners and Health and Fitness clients suggested that joining the lifestyle components of exercise and nutrition in an easy to use platform was the correct approach to take.
 
 Who else is doing this?
 - Very few providers are known to be providing an area that
