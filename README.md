@@ -76,19 +76,21 @@ Stakeholder interviews
 - conversations with Health and Fitness Club owners and Health and Fitness clients suggested that joining the lifestyle components of exercise and nutrition in an easy to use platform was the correct approach to take.
 
 Who else is doing this?
-- Very few providers are known to be providing an area that
+- Very few Health and Fitness providers are known to be providing a web platform for their members to access healthy recipes
 
-What are the pros of what they're doing
-- Client benefit  
+What are the pros of what we're offering?
+- Client benefits from a joined up lifestyle offering
+- Business benefits from increased retention  
 
 What are the cons?
-- Unknown how to monetize this area of the business. What do we charge for this service? Market research suggested that we should build this into membership in some way.
+- Unknown how to monetize this area of the business. What do we charge for this service? Market research suggested that we should build this into the Health and Fitness facilities membership packages in some way.
+- Will this be a long term interest for the client
 
 What are the competition missing?
 - The connection this area offers
 
 What are they doing, but they could be doing better?
-- they providing the facility and knowledge to  particpate in regular exercise
+- they are providing the facility and knowledge to particpate in regular exercise
 
 User interviews (What a user thinks they need may not be exactly what they need?)
 - User interviews suggested they wanted a lot more focused recipe suggestions like muscle building recipes or endurance programme recipes
