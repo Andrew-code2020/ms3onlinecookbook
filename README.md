@@ -12,10 +12,10 @@ The recipe categories on offer are below ;
 
 
 The problem that we are trying to solve is that current Temple Lean members are trying to eat the right food and drink to back up their work in the gym but they get conflicting advice online when they do research or when they chat with friends and family.
-They lack a social support network to encourage them to eat the best quality food into their lifestyle. 
+They lack a social support network to encourage them to eat the best quality recipes in their daily lives. 
 We set out to bring Temple Lean gym members into a community of their peers that contained the best advice on recipes to help them get the most quality from of their gym membership at Temple Lean gym. 
 The above named recipe categories are four strategically valuable markets. They are how people understand recipes at a glance. We have designed the website to offer bitesize information on the best quality recipes in these four categories. 
-The success of this website is that the user is able to locate the type of recipe they want quickly and easily without having to sift through the large amount conflicting information in other areas offering the web. 
+The success of this website is that the user is able to locate the type of recipe they want quickly and easily without having to sift through the large amount of conflicting information in other areas on the web. 
 
 Further success will be measured by the number of Temple Lean members who sign up to the Temple Lean Recipes website, create and share their own recipes, update their recipes and delete recipes they no longer find useful.   
 
@@ -34,8 +34,8 @@ The key reasons for producing the website were to;
 - help members share recipes they find useful and over time let them build an environment that they feel they have all the nutritional information they need in one place 
 - In the future help Temple Lean Gym attract and retain online subscription members through their recipe website 
 
-At the outset the minimum viable product was determined to be a community platform whereby the operator(s) of the Temple Lean Gym and Temple Lean Recipes website add a source of basic information about healthy recipes and begin to build a social support platform amongst members in a nutritional context.
-It was an objective of this project to include an intuitive design which would allow new and current clients to navigate and enagage with the website without any prior experience of Temple Lean the gym facility or even a high level of knowledge about healthy food recipes. 
+At the outset the minimum viable product was determined to be a community platform whereby the operator(s) of the Temple Lean Recipes website add a source of basic information about healthy recipes and begin to build a social support platform amongst members in a nutritional context.
+It was an objective of this project to include an intuitive design which would allow new and current clients to navigate and engage with the website without any prior experience of Temple Lean the gym facility or even a high level of knowledge about healthy food recipes. 
 Current and potential client surveys were conducted to assess the minumim effective information required to illicit a positive emotional response from users.
 This information was incredibly valuable during the construction of wireframes for the website. 
 
@@ -55,10 +55,10 @@ Further objectives included;
 ##### Strategy Plane - Business Strategy
 
 What are you aiming to achieve? 
-Users are looking for; 
-- A place to find guidance on the Nutrition programme they received at the gym or general recipes they can use in their pursuit of a healthy lifestyle
-- A clear set of instructions to make the recipes
-- A place for users to create, read, update and delete their recipes they have found useful and want to share with others. This was based on research on what will help the user/client feel at home in the Temple Lean community.
+- Users are looking for; 
+  - A place to find guidance on the Nutrition programme they received at the gym or general recipes they can use in their pursuit of a healthy lifestyle
+  - A clear set of instructions to make the recipes
+  - A place for users to create, read, update and delete their recipes they have found useful and want to share with others. This was based on research on what will help the user/client feel at home in the Temple Lean Recipes community.
 
 Business wants the client to;
 - Find recipes that support their Health, Lifestyle and Fitness Goals so they stay within the Temple Lean Health and Fitness community
@@ -66,11 +66,11 @@ Business wants the client to;
 Review the competition - Is someone else already doing it?
 - A review of the market in Cork Ireland suggested that a platform for members to access recipes within a Health and Fitness Clubs website was a new or under developed idea
 - A review of the businesses below showed little or no area for members to find the correct recipe advice from their trusted health and fitness provider
- Businesses reviewed
- - https://www.mardykearena.com/
- - https://www.dennehys.ie/
- - https://www.energiefitness.com/midleton
- - https://onelifefitness.ie/
+- Businesses reviewed
+   - https://www.mardykearena.com/
+   - https://www.dennehys.ie/
+   - https://www.energiefitness.com/midleton
+   - https://onelifefitness.ie/
 
 Stakeholder interviews
 - conversations with Health and Fitness Club owners and Health and Fitness clients suggested that joining the lifestyle components of exercise and nutrition in an easy to use platform was the correct approach to take.
@@ -87,19 +87,20 @@ What are the cons?
 - Will this be a long term interest for the client
 
 What are the competition missing?
-- The connection this area offers
+- The connectivity this area offers
 
 What are they doing, but they could be doing better?
-- they are providing the facility and knowledge to particpate in regular exercise
+- They are providing the facility and knowledge to particpate in regular exercise
 
 User interviews (What a user thinks they need may not be exactly what they need?)
 - User interviews suggested they wanted a lot more focused recipe suggestions like muscle building recipes or endurance programme recipes
 - In the same interviews the user would often sight struggling with what they should eat for breakfast or dinner for example.
-- Also the first time user was very unlikely to join the Temple Lean community if the recipes weren't accessible on a basic level. The user understood that recipes were for breakfast in the breakfast section but when presented with a Muscle Building recipe section most users were unsure if they could use these recipes as a general healthy as well or they felt this was too advanced for them.
-- The conclusion the developer drew from these interviews was that we should start basic and progress to more advanced recipe recommendations if a clearer market emerged. 
+- Also the first time user was very unlikely to join the Temple Lean Recipes community if the recipes weren't accessible on a basic level. The user understood that recipes were for breakfast in the breakfast section but when presented with a Muscle Building recipe section most users were unsure if they could use that recipe as a general healthy recipe as well or they felt this was too advanced for them.
+- The conclusion the developer drew from these interviews was that we should start basic and progress to more advanced recipe recommendations if a clear market or demand emerged. 
 
 Would you use this and why? 
 - I would use the recipe website because I like the idea of my Health and Wellness resources being in one place provided by people from an organisation I trust.
+- Clients indicated they would use it because the would finally have vital health resource in place that they knew with information they felt was clear and trustworthy.
 
 Who is our target audience? 
 - This project is primarily a consumer business to customer service (B2C) 
@@ -108,41 +109,40 @@ Who is our target audience?
 - Our thoughts were that our current clients wouldn't need much justifcation to purchase a new offering from us given our existing relationship and the trust we have built up over many years.
 
 What makes a good recipe website experience?
-Following reserach we settled on the points below as a good recipe website experience
-- Intuitive design (Simple Navigation)
-- Clean, attractive layout with point and clicks revealing information slowly in an easy to understand readable format
-- Blog (Users liked to read about recipe experiences or other health and fitness related experiences)
-- Users can create, read, update and delete their own recipes and interact with other members(future development) 
-- Pictures of the finished recipe
-- Videos (This was placed in future development plans)
-- Pricing transparent (3 step purchase - This was placed in future development plans) 
+- Following reserach we settled on the points below as a good recipe website experience
+  - Intuitive design (Simple Navigation)
+  - Clean, attractive layout with point and clicks revealing information slowly in an easy to understand readable format
+  - Blog (Users liked to read about recipe experiences or other health and fitness related experiences)
+  - Users can create, read, update and delete their own recipes and interact with other members(future development) 
+  - Pictures of the finished recipe
+  - Videos (This was placed in future development plans)
+  - Pricing transparent (3 step purchase - This was placed in future development plans) 
 
 
-##### Scope Plane 
+## Scope Plane 
 Features we wanted to include in our design
 
 - Colour light background generally white then strong font and color
-Basic Observations
- - Navbar 
-   - Two tiers
+- Basic Observations
+   - Navbar 
+    - Two tiers
    - Includes Navigation for following items
-   - Breakfast (Left revealed after log in)
-   - Lunch (Left revealed after log in)
-   - Dinner (Left revealed after log in)
-   - Snacks (Left revealed after log in)
-   - Search (Right revealed after log in)
+    - Breakfast (Left revealed after log in)
+    - Lunch (Left revealed after log in)
+    - Dinner (Left revealed after log in)
+    - Snacks (Left revealed after log in)
+    - Search (Right revealed after log in)
    - Testimonials (Opportunity to Card Flip js)
    - Register/Login (Right and collapsible) then reveals, profile and log out and recipe navbar
 
-Section
-
-- Home/Landing Page Body (Hero image photo options))
-- CRUD Functionality to be available in 
-  - Profile
-  - Breakfast 
-  - Lunch 
-  - Dinner 
-  - Snacks
+- Section
+  - Home/Landing Page Body (Hero image photo options))
+  - CRUD Functionality to be available in 
+    - Profile
+    - Breakfast 
+    - Lunch 
+    - Dinner 
+    - Snacks
 
 Cards with Photo Gallery
   - Homepage
@@ -160,6 +160,8 @@ Footer
  - Blog entries (Right)
 
 Data Schema - Database Mongo DB
+
+Collections
 
 User information
 - Object Id
@@ -191,35 +193,35 @@ Recipe types or Categories
 - Snacks
 
 
-###### User Story 1 (Creating and reading a profile - Registeration)
+### User Story 1 (Creating and reading a profile - Registeration)
 
 I am a currently a member of Temple Lean Gym. Following a conversation with a friend about diet and exercise my friend recommends that I check out a new website named "Temple Lean Recipes". I search the web find the Temple Lean Recipes website. 
 I register and I click on the option 'Dinner' because I have always had trouble cooking healthy dinner recipes. I click on a recipe I am interested in through the collapsible buttons on the page and the collapsible feature reveals information in a
 step wise manner that allows me to learn what I need to know about how to make the recipe as well as other information.
 
-###### User Story 2 (Editing my profile)
+### User Story 2 (Editing my profile)
 
-I have registered for Temple Lean Recipes. My email provider has decided to charge me a monthly fee to continue using my email address. I have gone ahead and changed to a new email provider. I want to update my email on the Temple Lean Website. I log in to the Temple Lean Website. I am brought directly to my profile page. I click on the update profile button. I make my updates to the email section and then click the update profile button. The screen flashes a message updated successfully. I can also see the updates rendered on the form in front of me. I then click profile on the top right of the screen to bring me back to my profile page where I can also review the update I have made.
+I have registered for Temple Lean Recipes. My email provider has decided to charge me a monthly fee to continue using my email address. I have gone ahead and changed to a new email provider. I want to update my email on the Temple Lean Recipes Website. I log in to the Temple Lean Website. I am brought directly to my profile page. I click on the update profile button. I make my updates to the email section and then click the update profile button. The screen flashes a message updated successfully. I can also see the updates rendered on the form in front of me. I then click profile on the top right of the screen to bring me back to my profile page where I can also review the update I have made.
 
-###### User Story 2B (Delete profile)
-I wish to leave the Temple Lean Recipes community. I log in and go to the profile I created in User Story 1 on the Temple Lean Recipes website. On the profile page that I am directed too I see the Delete Profile button. I click the button and I receive a flash message on the screen telling me my profile has been deleted. I am automatically logged out when I delete my profile. 
+### User Story 2B (Delete profile)
+I wish to leave the Temple Lean Recipes community. I log in and go to the profile I created in User Story 1 on the Temple Lean Recipes website. On the profile page that I see the Delete Profile button. I click the button and I receive a flash message on the screen telling me my profile has been deleted. I am automatically logged out when I delete my profile. 
 
-###### User Story 3 (Creating and Reading Recipes)
+### User Story 3 (Creating and Reading Recipes)
 
-I am registered and logged in at Temple Lean Recipes. I use a recipe that I wish to add to the community. I click create recipe on any recipe page. I am brought to the add recipe form. I select the category (Breakfast, Lunch, Dinner or Snacks). I fill in the rest of the form. When I click the create recipe button I see a flash message stating "Recipe Created Successfully!". I am redirected to my profile where I click on the appropriate category and I scroll down to see the recipe I created and the information I put into the input on the form earlier. 
+I am registered and logged in at the Temple Lean Recipes page. I use a recipe that I wish to add to the community. I click create recipe on any recipe page. I am brought to the add recipe form. I select the category (Breakfast, Lunch, Dinner or Snacks). I fill in the rest of the form. When I click the create recipe button I see a flash message stating "Recipe Created Successfully!". I am redirected to my profile where I click on the appropriate category and I scroll down to see the recipe I created and the information I input on the form earlier on the screen. 
 
 
-###### User Story 3A (Update Recipes)
+### User Story 3A (Update Recipes)
 I spot an error in the recipe I created (from User Story 3) so I click update recipe. I notice that I can only update the recipes I have created but not any other recipes. I make my edits I need to make in the form hit update recipe and then review my updates as before on the relevant page.
 
-###### User Story 3B (Delete Recipes)
+### User Story 3B (Delete Recipes)
 A recipe I created a while ago has stopped being useful to me and the Temple Lean Recipes community. I log into the Temple Lean recipes website. I scroll to the Recipe I created earlier click the Delete Recipe button. I receive a flash message on the screen telling me the recipe has been deleted. 
 
-###### User Story 4 (Log out)
+### User Story 4 (Log out)
 
 I am logged into the Temple Lean Recipes page. I have found the recipe I wanted and made the recipe using the Temple Lean Recipes site as a reference. I click on the log out button to log out. I receive a flash message stating that I have been logged out and I am redirected to the log in page. The recipe pages disappear and I am unable to access them until I log in again.
 
-##### Structure Plane
+## Structure Plane
 In development we set out to make sure that our site would be consistent. We used the categories below to describe our efforts
  - Predictable
    - To make the website predictable we used the same materialize cards and collapsibles for Breakfast, Lunch, Dinner and Snacks
@@ -229,18 +231,18 @@ In development we set out to make sure that our site would be consistent. We use
    - We repeated the collapsible to make the website easily learnable no matter what recipe page we are on
    - Flash messages tell the user that have successfully complete a task or entered any invalid information 
  - Visible 
-  - A user can easily review updates the have made on the site immediately after they have been made
+   - A user can easily review updates they have made on the site immediately after they have been made
  - Clear and intuitive feedback
-  - Flash messages give clear and intuituve feedback to the user
-  - Collapsibles reveal and close off information with one click
+   - Flash messages give clear and intuituve feedback to the user
+   - Collapsibles reveal and close off information with one click
 
-###### User Questions
+### User Questions
 
 - Where am I?
-  - On each page the Navbar highlights in light blue that page. This helps you locate where you are on the Temple Lean Recipes site
+  - On each page the Navbar highlights text in light blue of the relevant page. This helps you locate where you are on the Temple Lean Recipes site
 
 - How did I get here?
-  - Clicking on certain icons (such as opens up new Tabs so the user does not forget which website they accessed the content from such as social media platforms and the monthly blog links. The platforms are currently connected to the developers accounts and website because the social media accounts for this website do not exist 
+  - Clicking on certain icons or words opens up new tabs to a specific external site so the user does not forget which website they accessed the content from such as social media platforms and the monthly blog links. The platforms are currently connected to the developers social media accounts and private website because the social media accounts for this website do not exist 
   - The navbar and footer are the exact same on each page and with the current page highlighted in light blue in the navbar so that the user may easily identify where they are on the Temple Lean website
   
 - What can I do here?
@@ -250,13 +252,16 @@ In development we set out to make sure that our site would be consistent. We use
      - Footer via the social media icons (Hover feature turns them light blue when the cursor is over the icons)
      - The Create, Update and Delete buttons
      - On click the collapsible feature reveals basic information 
+     - The user is also invited to type information on forms throughout the site
 
 - Where can I go from here?
-  - The navbar and footer are the exact same on each page. In the navbar the user is able to easily identify where they are using the light blue active feature and where they can go from here. 
+  - The navbar and footer are the exact same on each page. In the navbar the user is able to easily identify where they are using the light blue active feature and where they can go from here is not highlighted letting the user know that they can go here if they wish. 
+  - Buttons also tell the user intuitively where they can go from here ie update profile or create recipe
   - The blue hover feature is also designed to indicate to the user that they can click on this icon in the footer and access further content.
   - On the home page in the cards (under the main hero image) the Log In and Register Page buttons invite the user to click on them and log in or register.
+ 
 
-###### Skeleton Plane
+### Skeleton Plane
 
 Wireframe Pictures 
 
@@ -302,10 +307,10 @@ Mobile/Tablet Device wireframe
 
 ##### Existing Features
 
-- Internal links to different parts of the Temple Lean Recipe website
+- Internal links to different parts of the Temple Lean Recipes website
 - External links that open different platforms such as social media, the developers Milestone 1 project website and the developers private blog. The social media accounts, the developers Milestone 1 project website and the developers private blog are linked to this project to demonstrate the skill of adding external links.
 - Header - Contains the Navbar design for desktop and mobile devices 
-- Easy navigation - The Navbar at the top of each page is similar to conventional navbars of other recipe pages allowing the user an intuitive experience on a perhaps unfamiliar website. We maintained this navbar across each page using a base template for ease of navigation and coding. The top part of the navbar including log in and registeration collapse on a mobile devices to a single apple icon which the user can click on. The navbar items Breakfast, Lunch, Dinner and Snacks appear after you register or log in. This was done to avoid overhwleming the user when they land on the page and guide them to log in or regsiter and then more content will be revealed. 
+- Easy navigation - The Navbar at the top of each page is similar to conventional navbars of other recipe pages allowing the user an intuitive experience on a perhaps unfamiliar website. We maintained this navbar across each page using a base template for ease of navigation and coding. The top part of the navbar including log in and registeration collapse on a mobile device to a single apple icon which the user can click on. The navbar items Breakfast, Lunch, Dinner and Snacks appear after you register or log in. This was done to avoid overhwleming the user when they land on the page and guide them to log in or register and then more content will be revealed. 
 - Footer - Linked to some pages we used to develop the website and contains direct links to the developers Social Media platforms, Milestone 1 project and private blog. Temple Lean recipes social media specific to this site does not exist but is in future plans.
 - Section - The middle section is where the block content Jinja template is injected. The content changes on each page and gives basic information on aspects of the Temple Lean Recipes site.
 - Hero Image - The eye catching landing/homepage page is designed to convey to the user that they have arrived on a Temple Lean Recipes site as distinct from the gym site. 
@@ -334,8 +339,12 @@ Mobile/Tablet Device wireframe
 - Analytics that show user traffic flow
 - Testimonials from Users
 - Members Subscription
-- Password update
+- Password update & reset your password function
 - Forgot password feature
+- Recipe Videos
+- E-Commerce subscription Business Model 
+- Comments so users can interact with other users
+
 
 ### Technologies Used
 
@@ -735,12 +744,6 @@ Gitpod
 Container class in materialise (Be careful !!!)
 - If included in base html and code extended to other html if class container is present on both pages it appears to wrap content twice and shrink size noticeably. 
 - Removed the container class from templates html to solve this. 
-
-Future Development
-- Recipe Videos
-- E-Commerce subscription Business Model 
-- Comments so users can interact with other users
-- reset your password function
 
 
 ### Deployment
