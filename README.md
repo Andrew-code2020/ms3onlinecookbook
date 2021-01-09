@@ -370,65 +370,49 @@ Mobile/Tablet Device wireframe
 - Google Font
   - Website https://fonts.google.com/
   - Used to import font
-- Code Validators
- - HTML - https://validator.w3.org/
- - CSS Validator - https://jigsaw.w3.org/css-validator/#validate_by_input
-    - Result visible in readmedocs/testing/codevalidators/cssvalidatorresult.jpg
- - JavaScript and JQuery validator https://jshint.com/
-    - Result visible in  readmedocs/testing/codevalidators/shintcheckresult.jpg
- - Python Validator http://pep8online.com/
-    - Result visible readmedocs/testing/codevalidators/pep8vaildatorresult.jpg
--Flask https://flask.palletsprojects.com/en/1.1.x/
- - Used to render information from MongoDB to templates
- - Used to import flash messages render_template,
+ 
+- Flask https://flask.palletsprojects.com/en/1.1.x/
+   - Used to render information from MongoDB to templates
+   - Used to import flash messages render_template,
     redirect, request, session and url_for)
--Python https://www.python.org/
+- Python https://www.python.org/
   - Used to created roots,view and integrate with flask to deliver functionality to the website 
--MongoDB https://www.mongodb.com/
+- MongoDB https://www.mongodb.com/
  - Used to host data for the Temple Lean Recipes
  - Clusters and Collections to hold data input by the user and pass data to the appropriate page on the Temple Lean Recipe site
--Heroku https://www.heroku.com/  
+- Heroku https://www.heroku.com/  
   - Used to deploy the website
   - Website link to the deployed Heroku app https://lean-temple-recipes.herokuapp.com/ 
   
--Dependencies (Also listed in requirements.txt file)
-  -click==7.1.2
-  -dnspython==2.0.0
-  -Flask==1.1.2
-  -Flask-PyMongo==2.3.0
-  -itsdangerous==1.1.0
-  -pymongo==3.11.1
-  -Werkzeug==1.0.1
+- Dependencies (Also listed in requirements.txt file)
+  - click==7.1.2
+  - dnspython==2.0.0
+  - Flask==1.1.2
+  - Flask-PyMongo==2.3.0
+  - itsdangerous==1.1.0
+  - pymongo==3.11.1
+  - Werkzeug==1.0.1
 
 
 ### Testing
 
 - We carried out the procedures below to test the Temple Lean Recipe Website
 
-Template
-- Name of Test
-- outline of Testing 
--test planning 
--implementation
--fix (if applicable)
--results
--outcomes
 
-Template
 - Name of Test JS File
-- outline of Testing
+- Outline of Testing
   - The objective of the test was to check if the directory to the js file was working 
--test planning
+- Test planning
   - Input code into recipe.js and check the developer tools specifically the console tab to check if the js file is rendering effects across the Temple Lean Recipes website  
--implementation
+- Implementation
   - In the recipe.js file we input the code console.log('linked properly');
--fix (if applicable)
+- Fix (if applicable)
   - A fix was not necessary because the code worked 
--results
+- Results
   - The results are available to view 
   - readmedocs/testing/jsfiletest/jsfiletestresult.jpg
--outcomes
- - Test successful. the words 'linked properly' appeared into console
+- Outcomes
+  - Test successful. the words 'linked properly' appeared into console
 
 
 - Name of Test - JS file functionality
@@ -469,9 +453,9 @@ Template
     - To render the sidenav bar on the right of the page we added {edge: "right"} to the js code
 
 - Results
- - Collapsible
-   - Breakfast result image start readmedocs/testing/jsfiletest/jscollapsibleresult1.jpg
-   - Click on Collapsible result image start readmedocs/testing/jsfiletest/jscollapsibleresult2.jpg  
+  - Collapsible
+    - Breakfast result image start readmedocs/testing/jsfiletest/jscollapsibleresult1.jpg
+    - Click on Collapsible result image start readmedocs/testing/jsfiletest/jscollapsibleresult2.jpg  
  - Sidenav
    - Sidenav result image readmedocs/testing/jsfiletest/jssidenavresult1.jpg
    - Clicked through sidenav apple readmedocs/testing/jsfiletest/jssidenavresult2.jpg
@@ -489,38 +473,38 @@ Template
 
 
 
-##### Performance Testing Lighthouse 
--Name of Test 
+### Performance Testing Lighthouse 
+- Name of Test 
   - Lighthouse Test
--Test planning 
+- Test planning 
   - Check the Temple Lean site for performance, best practices and accessibility. 
--Implementation
+- Implementation
   - access the deployed site via https://lean-temple-recipes.herokuapp.com/
   - Use Ctrl+Shift+I on your keyboard to access the developer tools
   - Click genereate report refer to image for visual detail 
   - Sample result image readmedocs/testing/lighthouse/generatereportlighthouse.jpg
--Fix (if applicable)
+- Fix (if applicable)
   - no obvious performance issues on mobile or desktop device according to the lighthouse tests
--Results
+- Results
   - The lighthouse test results are documented in the images below 
     - readmedocs/testing/lighthouse/mobilelighthousetest.jpg
     - readmedocs/testing/lighthouse/desktoplighthouseresults.jpg
--Outcomes
- - performance was optimum
+- Outcomes
+  - performance was optimum
 
-##### Performance Testing CSS
--Test planning 
+### Performance Testing CSS
+- Test planning 
     - Premise is our custom css file talks to our html files through python 
--Implementation
+- Implementation
     - At the beginning of the project we checked to see if the background color red appeared when we added background color red to style.css
--Fix (if applicable)
+- Fix (if applicable)
     - not applicable code worked
--Results
- - readmedocs/testing/cssfiletest/testinglinkbetweenbasetemplateandcustomcss.jpg
--Outcomes
- - test was successful
+- Results
+  - readmedocs/testing/cssfiletest/testinglinkbetweenbasetemplateandcustomcss.jpg
+- Outcomes
+  - test was successful
 
-##### Performance Testing Python Initial functionality 
+### Performance Testing Python Initial functionality 
 - Subject Test app.py inital ran 
    - used python3 app.py to run the app.py file from gitpod
    - screenshots in readmedocs/testing/pythontestfile/initialapppyrun.jpg
@@ -530,31 +514,31 @@ Template
   - initial set up worked well
 
  Testing 
--Test planning
+- Test
    - Registeration form check the content renders on our app 
--Implementation
+- Implementation
    -used python3 app.py to run the app.py file from gitpod to visualise our registeration file
--Fix (if applicable)
+- Fix (if applicable)
     - icons render on top of label text
     - to fix we placed the icons within the label element
--Results
- -visually the icon and the label are no longer over lapping
--Outcomes
+- Results
+  - visually the icon and the label are no longer over lapping
+- Outcomes
   - Fixed a visual bug
 
-##### Testing Browser Screens
+### Testing Browser Screens
 
-###### Chrome Browser
+### Chrome Browser
 - I tested the website by copying and pasting the Heroku pages link https://lean-temple-recipes.herokuapp.com/ into the Chrome Browsers
 - I pressed control+shift+I to access developer tools in the Chrome Browser and checked the web pages responsiveness
 - There were no obvious bugs in the chrome browser on desktop or mobile views within this browser
 
-###### Edge Browser
+### Edge Browser
 - I tested the website by copying and pasting the Heroku pages link https://lean-temple-recipes.herokuapp.com/ into Edge Browser
 - I pressed control+shift+I to access developer tools in the Edge Browser and checked the web pages responsiveness
 - There were no obvious bugs in the chrome browser on desktop or mobile views within this browser
 
-##### Testing Device screens
+### Testing Device screens
 - I used the chrome developer tools to test that the websites appearance and functionality was available across multiple devices listed below;
   - Moto G4
   - Galaxy S5
@@ -568,32 +552,32 @@ Template
   - iPad Pro
 - I checked the console in developer tools showed no errors on each page as I went through each page of the Temple Lean Recipes site
 
-##### Header and Footer
+### Header and Footer
 
 - Across each page of the website you may verify that the Header and the Footer have the same features outlined below in the Testing Navbar and Testing Footer sections
 
-###### Testing Navbar
+### Testing Navbar
 
 - Go to the Temple Lean Recipes "Home/Landing" page or any other Temple Lean Recipes page
 - Click on Log In or Register
 - On the Log In or Register page the text and icon will take on a light blue background so the user will know where they are on the Temple Lean Recipes Website
 - Verify that when the user clicks on the Log In or Register active feature highlights in light blue occurs when the user is on either page
-- Verify that the forms to allow a user to log in or register
-- When you have logged in or registered verify that the secondary navbar containing the Breakfast, Lunch, Dinner & Snacks appears
+- Verify that the forms to allow a user to log in or register appear
+- When you have logged in or registered verify that the secondary navbar containing the Breakfast, Lunch, Dinner & Snacks appear
 - Verify that when the user clicks on Breakfast, Lunch, Dinner & Snacks active feature highlights the text in light blue when the user is on any of the pages
 
-##### Testing Footer
+### Testing Footer
  - Go to the Temple Lean Recipes "Home/Landing" page or any other Temple Lean Recipes page
  - Verify that clicking the links to the blog open in a new tab
  - Verify that clicking on the social media icons open the correct social media page in a new tab
 
 
-##### Testing Section
+### Testing Section
 
 - The section element changes it's content depending on which page you are on
 - Below I have outlined briefly the testing on each section
 
-#### Testing Home/Landing page
+### Testing Home/Landing page
 
 - Go to the "Home" page by clicking on the words Temple Lean Recipes
 - Verify that the page with the salad bowl appears with a welcome message and log in and registeration buttons
@@ -661,13 +645,15 @@ Template
 - Verify that you receive a flash message telling you that you have logged out are redirected to the log in page
 
 
-#### Code Validation
-I used the following code validators to help me debug my code
-
-- Code Validators
+### Code Validators
+I used the following code validators to help me debug my code 
  - HTML - https://validator.w3.org/
  - CSS Validator - https://jigsaw.w3.org/css-validator/#validate_by_input
- - JavaScript and JQuery valiadtor https://jshint.com/
+    - Result visible in readmedocs/testing/codevalidators/cssvalidatorresult.jpg
+ - JavaScript and JQuery validator https://jshint.com/
+    - Result visible in  readmedocs/testing/codevalidators/shintcheckresult.jpg
+ - Python Validator http://pep8online.com/
+    - Result visible readmedocs/testing/codevalidators/pep8vaildatorresult.jpg
 
 I also used following website to help me correct any formatting anomalies in my code
 - https://codebeautify.org/ 
@@ -684,7 +670,7 @@ Bug - Error in HTML Validator
 
 Bug - Visual
 - The words Go to Breakfast recipes appeared in the profile and recipe pages at first 
-- Unfrotunately the words rendered unevenly on a Mobile device
+- Unfortunately the words rendered unevenly on a Mobile device
 - We shorten the words to Breakfast Recipes which rendered better
 
 Bug - Placeholder  
@@ -693,35 +679,35 @@ Bug - Placeholder
  - This had a minimum effect on the site style
  - In future development I would like to reintroduce placeholders with a color that reflects the style of the site. 
 
-Active Class in Navbar
+Bug - Active Class in Navbar
 - We tried to introduce the active class to help the user navigate our page 
 - As you can see if you click on Breakfast, Lunch, Dinner and Snacks, Log in or register the background color changes to a light blue letting the user know where they are on the website
 - This was not as intuitive to code as in bootstrap
 - A combination of if and else from jinja, a variable in our python code and then some custom css allowed us to render the active class.
 
 
-Base template code
+Bug - Base template code
 - At the beginning of the project our homepage was the base.html template 
 - To create a home page we removed base.html from homepage python view
 - Initially the developer got confused about how to seperate a base template from the homepage view. 
 - Eventually we seperated the two pages and removed some junk code from the base.html which held a card very similar to our hero image on the landing page
 - This simplified the development process
 
-Heading Bugs in Navbar
+Bug - Heading in Navbar
 - On the any page on a medium size screen you will see Temple Lean Recipes in the top left of the screen. 
 - During development I noticed on a small screen that this text would wrap around the other navigation list items Breakfast, Lunch, Dinner and Snacks
 - The words 'Temple Lean' part would sit on top of the list items and Recipes would sit below the list items
 - I input the class of hide-on-small-only class to avoid the text Temple Lean Recipes rendering above and below the recipe navigation list items 
 - In future development I would like to contain the words Temple Lean Recipes but adjust them to the mobie device rather than remove them for small devices and bring them back on larger devices   
 
-JS Tabs
+Bug - JS Tabs
 - Initially we deployed js tabs on the recipe pages of our site from https://www.w3schools.com/default.asp as per our milestone 2 project
 - We diverted to a materialize collapsible due to JS tabs rendering same information on each loop which we could not change
 - And because it cut down the amount of code we need in our js.
 - The tabs also continued to slip outside there parent element and overflow onto other areas of the page
 
 
-Pictures 
+Bug - Pictures 
 - In initial development we had pictures in our forms 
 - Unfortunately setting the height of the pictures in these forms also triggered a change in picture height for the recipe pages
 - We couldn't find a suitable seperation using conventional css classes so we removed the pictures from the login and register form 
@@ -729,19 +715,19 @@ Pictures
 - This isn't perfectly fixed as the heights still don't quite render images perfectly
 - We suspect this might be a flaw in materialize which led us to consider possibly returning to using Bootstrap in future 
 
-Delete profile (Not logging out)
+Bug - Delete profile (Not logging out)
 - During the development of the delete functionality a bug was recognised whereby a profile could be deleted but the user was not logged out
 - The user could then click the profile button and then get a jinja error message
 - To eradicate this bug we input the pop method into the delete function and redirected the user back to the registeration page
 - This solved the bug and kept the user away from unwanted error screens  
 
 
-Gitpod 
+Bug - Gitpod 
 - Code beautifer stopped working a few times during the developement of this project
 - This may have been an internal gitpod problem
 - Later I returned to sections to use Shift+alt+F to beautify all code
 
-Container class in materialise (Be careful !!!)
+Bug - Container class in materialise (Be careful !!!)
 - If included in base html and code extended to other html if class container is present on both pages it appears to wrap content twice and shrink size noticeably. 
 - Removed the container class from templates html to solve this. 
 
