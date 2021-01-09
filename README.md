@@ -617,12 +617,20 @@ Testing Initial Python functionality
 - Verify that when you are on the Breakfast, Lunch, Dinner or Snacks pages that the text appears with a light blue background to help users determine where they are on the Temple Lean Website  
 - Verify that you can create a recipe on the Breakfast, Lunch, Dinner or Snacks pages by pressing the create recipe button and that the recipe information appears in the relevant section of the Temple Lean Recipe website. (The image url will need to be adjusted from the back end to render on the Temple Lean Recipe site. The Temple Lean Admin will do this until in future development it is possible for the user to upload and image directly)
 - Verify that when you create a recipe on the Breakfast, Lunch, Dinner or Snacks pages that a flash appears telling you that the recipe has been added successfully and that you are redirected to your profile page.
-- Verify that the recipe has been added to the bottom of the relevant recipe page.
+- Verify that the recipe has been added to the bottom of the relevant recipe category page.
 - Verify that the alt image notice appears if your image link has not rendered successfully
-- Verify later the admin managing the site has added an appropriate image from the back end data.
-- Verify that you can receive a flash messages telling you that you have completed the update successfully and are redirected to your newly updated profile page
-- Verify that you can delete the profile and that you are automatically logged out with a flash message telling that your profile is deleted whilst you are actually redirected to the regsiteration page
- 
+- Verify later the admin managing the site has added an appropriate image from the back end database MongoDB.
+- Verify that you can receive a flash message telling you that you have completed the update successfully and are redirected to your profile page.
+   - We redirected the user to the profile page to avoid creating seperate addrecipe roots in python that redirected users back to each individual recipe page.
+   - The profile page was deemed an acceptable compromise as it also has quick links to the recipe pages so the user can easily verify within 3 clicks if their recipe has been created successfully.
+- Once you have created a recipe verify that the following green buttons appear Update Recipe and Delete Recipe. Only the user who created the recipe may update or delete a recipe from the Temple Lean Website. The admin of the site may delete a recipe from MongoDB.
+- In a recipe you created verify that you can click the update recipe button and that you are taken to the edit recipe form. Make edits to the section you wish to edit. Click update recipe when you have completed your edits.
+- Verify that a flash message appears telling you that you have updated the recipe successfully and that you are again redirected to the profile page.
+   - We redirected the user to the profile page to avoid creating seperate editrecipe roots in python that redirected users back to each individual recipe page.
+   - The profile page was deemed an acceptable compromise as it also has quick links to the recipe pages so the user can easily verify within 3 clicks if their recipe has been updated successfully.
+- In a recipe you created verify that you can delete the recipe by pressing the delete button. A flash message will appear on the profile page telling the user that they have deleted the recipe successfully. 
+   - We redirected the user to the profile page to avoid creating seperate deleterecipe roots in python that redirected users back to each individual recipe page.
+   - The profile page was deemed an acceptable compromise as it also has quick links to the recipe pages so the user can easily verify within 3 clicks that their recipe has been deleted successfully. 
 
 #### Testing Log Out functionality
 
