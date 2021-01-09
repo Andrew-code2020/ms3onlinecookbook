@@ -317,34 +317,41 @@ Mobile/Tablet Device wireframe
    - The hover lets the user know that there is more information they can access here if they click. It draws attention to options which keep the user on the Temple Lean Recipe page. 
 - Icons - font awesome icons were used to add style and an intuitive feel to the user experience. 
 - jQuery & JavaScript 
-    - collapsible - On each recipes page clicking the on the Ingredients, Method, Tools or Nutitrional Information will open the collapsible revealing more content  
-    - Sidenav - On Mobile devices the Navbar containing Login, Register and Logout collapses to an apple icon
-    - Form Select - Forms are used throughout the page to allow users to register, login, update profiles, create recipes and update recipes
+    - Collapsible - On each recipes page clicking the on the Ingredients, Method, Tools or Nutitrional Information will open the collapsible revealing more content  
+    - Sidenav - On Mobile devices the Navbar containing Login, Register and Logout collapses to an apple icon which the user can click on to access
+    - Form Select - Forms are used throughout the page to allow users to register, login, update profiles, create recipes and update recipes. The select option is used to avoid long form answers and allow users to progress through the website quickly
 - CRUD Functionality
     - Create - Users can create a profile and create recipes on the Temple Lean Recipe website
     - Read - Logged in users can read recipes and their profile information on the Temple Lean Recipe site 
-    - Update - Logged in users can update recipes they created and their profile information only on the Temple Lean Recipe site
-    - Delete - Logged in users can delete recipes they created and their profile information only on the Temple Lean Recipe site
+    - Update - Logged in users can update recipes they created and their profile information only on the Temple Lean Recipes site
+    - Delete - Logged in users can delete recipes they created and their profile information only on the Temple Lean Recipes site
 
 
 ##### Features Left to Implement
 - Search function
-- Automatic image upload and rednering to the website
+- Automatic image upload and rendering to the website
 - Book and pay for a private Nutrition Consultation
 - Analytics that show user traffic flow
 - Testimonials from Users
+- Members Subscription
+- Password update
+- Forgot password feature
 
 ### Technologies Used
 
 - HTML5 - Used for structure and content of website
 - CSS3 - Used for personalised custom built styling of website
-- JavaScript - Used for email JS, Google Maps API and JS Tabs
+- JavaScript 
+   - Used for 
+    - Collapsible   
+    - Sidenav
+    - Form Select 
 - jQuery 
-    - Used to deliver interactive features such as toggle and show and hide 
+    - Used to configure interactive features above 
     - Website https://jquery.com/
 - Materialize
   - Website https://materializecss.com/
-  - Used to import generic styling
+  - Used to import generic styling for the entire website
 - Github and Gitpod
   - Website of Github repository https://github.com/Andrew-code2020/ms3onlinecookbook
   - Used to construct host and deploy the website
@@ -352,7 +359,7 @@ Mobile/Tablet Device wireframe
   - Website https://fontawesome.com/
   - Used to import icons
 - Google Font
-  - Website https://fontawesome.com/
+  - Website https://fonts.google.com/
   - Used to import font
 - Code Validators
  - HTML - https://validator.w3.org/
@@ -362,14 +369,19 @@ Mobile/Tablet Device wireframe
     - Result visible in  readmedocs/testing/codevalidators/shintcheckresult.jpg
  - Python Validator http://pep8online.com/
     - Result visible readmedocs/testing/codevalidators/pep8vaildatorresult.jpg
--Flask
--Python
--MongoDB
- -Clusters
- -Collections to hold data input by the user and pass data to the appropriate page on the Temple Lean Recipe site
--Heroku for deployment
-  - Website link to Heroku app https://lean-temple-recipes.herokuapp.com/ 
+-Flask https://flask.palletsprojects.com/en/1.1.x/
+ - Used to render information from MongoDB to templates
+ - Used to import flash messages render_template,
+    redirect, request, session and url_for)
+-Python https://www.python.org/
+  - Used to created roots,view and integrate with flask to deliver functionality to the website 
+-MongoDB https://www.mongodb.com/
+ - Used to host data for the Temple Lean Recipes
+ - Clusters and Collections to hold data input by the user and pass data to the appropriate page on the Temple Lean Recipe site
+-Heroku https://www.heroku.com/  
   - Used to deploy the website
+  - Website link to the deployed Heroku app https://lean-temple-recipes.herokuapp.com/ 
+  
 -Dependencies (Also listed in requirements.txt file)
   -click==7.1.2
   -dnspython==2.0.0
@@ -396,9 +408,9 @@ Template
 - outline of Testing
   - The objective of the test was to check if the directory to the js file was working 
 -test planning
-  - Input code into recipe.js and check the developer tools specifically the console tab to check if the js file is rednering effects across the Temple Lean Recipes  
+  - Input code into recipe.js and check the developer tools specifically the console tab to check if the js file is rendering effects across the Temple Lean Recipes website  
 -implementation
-  - In the recipe.js file we input the code  console.log('linked properly');
+  - In the recipe.js file we input the code console.log('linked properly');
 -fix (if applicable)
   - A fix was not necessary because the code worked 
 -results
