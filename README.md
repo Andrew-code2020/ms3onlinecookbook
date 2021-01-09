@@ -420,12 +420,12 @@ Template
  - Test successful. the words 'linked properly' appeared into console
 
 
-- Name of Test JS file functionality
+- Name of Test - JS file functionality
 - Outline of Testing
   - Check that js code is producing functionality on the Temple Lean Recipe Website
 - Test planning
   - Check the following js functionality
-  - Collapsible - On each recipes page clicking the on the Ingredients, Method, Tools or Nutitrional Information will open the collapsible revealing more content. Does this happen?  
+  - Collapsible - On each recipes page clicking the on the Ingredients, Method, Tools or Nutritional Information will open the collapsible revealing more content. Does this happen?  
   - Sidenav - On Mobile devices the Navbar containing Login, Register and Logout collapses to an apple icon. Does this happen?
   - Form Select - The form select option is used across the site does the menu work and the options appear. Does this happen? 
 - Implementation
@@ -433,24 +433,27 @@ Template
     - collapsible class added to brekfast, lunch, dinner and snacks html pages
     - pertinent initialisation code added to recipe.js
   - Sidenav
-    - check collapse to an apple on the right in Mobile device
+    - pertinent initialisation code added to recipe.js
+    - check nav elements collapse to an apple on the right on Mobile device
     - Open deployed site https://lean-temple-recipes.herokuapp.com/
     - Ctrl+Shift+I on the keyboard
-    - Select mobile device from responsive dropdown menu 
+    - Select mobile device from responsive dropdown menu
+    - Click apple icon
+    - Check nav items are there 
   - Form Select
     - Open deployed site https://lean-temple-recipes.herokuapp.com/
     - Go to the Register page
     - Check the Preferred Recipe Category
     - Click the dropdown carrot
     - See if options come up
-     
+    - Check Form Select occurs on all other forms in the website
 - Fix (if applicable)
   - Collapsible
     - no fix neccessary
-    - code was copied and extended to add more collapsible sections on the page
+    - code was copied and extended to add more collapsible sections on the page which also worked
   -Form Select
    - We added disabled and selected attributes to ensure the register form was blank at first
-   - We added the relevant for example value = "breakfast" to each option to ensure the that the option was passed and documented in MongoDB. 
+   - We added the relevant value ie value = "breakfast" into the html template to each option to ensure the that the option was passed and documented in MongoDB. 
   - Sidenav
     - To render the sidenav bar on the right of the page we added {edge: "right"} to the js code
 
@@ -473,59 +476,37 @@ Template
    - Sidenav
      - Side nav functionality worked and revealed sidenav elements
 
-Template
-- Name of Test Placeholder removed test
-- outline of Testing 
- - The placeholder gave the site an unclear orange placeholder
- - Despite our attempts to modify the color we were unsuccessful so we removed the placeholder code across the site.
- - This had a minimum effect on the site style 
-- test planning 
-- implementation
-- fix (if applicable)
-- results
-- outcomes
 
-##### Performance Testing 
+
+##### Performance Testing Lighthouse 
 -Name of Test 
   - Lighthouse Test
--test planning 
+-Test planning 
   - Check the Temple Lean site for performance, best practices and accessibility. 
--implementation
+-Implementation
   - access the deployed site via https://lean-temple-recipes.herokuapp.com/
   - Use Ctrl+Shift+I on your keyboard to access the developer tools
-  - Click genereate report refer to image for visual detail readmedocs/testing/lighthouse/generatereportlighthouse.jpg
-  - 
--fix (if applicable)
-  - no obvious performance issues on mobile or desktop device according to the lighthouse test
--results
+  - Click genereate report refer to image for visual detail 
+  - Sample result image readmedocs/testing/lighthouse/generatereportlighthouse.jpg
+-Fix (if applicable)
+  - no obvious performance issues on mobile or desktop device according to the lighthouse tests
+-Results
   - The lighthouse test results are documented in the images below 
     - readmedocs/testing/lighthouse/mobilelighthousetest.jpg
     - readmedocs/testing/lighthouse/desktoplighthouseresults.jpg
--outcomes
+-Outcomes
  - performance was optimum
 
-Outline of Testing
- -Name of Test - Testing Base html 
--test planning
-  -remove landing page code from base template
-  -ensure Temple Lean site opens on homepage and base template is not rendered directly anywhere on the site  
--implementation
--fix (if applicable)
--results
-  - 
--outcomes
-
-
-
--test planning 
+##### Performance Testing CSS
+-Test planning 
     - Premise is our custom css file talks to our html files through python 
--implementation
+-Implementation
     - At the beginning of the project we checked to see if the background color red appeared when we added background color red to style.css
--fix (if applicable)
+-Fix (if applicable)
     - not applicable code worked
--results
- - readmedocs/testing/testinglinkbetweenbasetemplateandcustomcss.jpg
--outcomes
+-Results
+ - readmedocs/testing/cssfiletest/testinglinkbetweenbasetemplateandcustomcss.jpg
+-Outcomes
  - test was successful
 
 
